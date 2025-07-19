@@ -1,2 +1,4 @@
 # LEARNITY
-Sebuah project website berbasis AI 
+
+Sebuah project aplikasi berbaris website dengan integrasi AI.
+
