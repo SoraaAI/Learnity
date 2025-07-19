@@ -1,29 +1,20 @@
 function BrandName() {
     return (
         <>
-            <h2 className="BrandName-navbar">Learnity</h2>
+            <h2 className="font-inter font-bold text-2xl  text-teal-300 bg-gradient-to-r from-emerald-200 to-cyan-200 bg-clip-text text-transparent">Learnity</h2>
         </>
     )
 }
 
 function NavLink() {
-    return(
-        <>
-            <ul className="NavLink-navbar">
-                <li className="navlink">
-                    <a href="#">Home</a>
-                </li>
-                <li className="navlink">
-                    <a href="#">About</a>
-                </li>
-                <li className="navlink">
-                    <a href="#">Contact</a>
-                </li>
-                <li>
-                    <NavButton/>
-                </li>
-            </ul>
-        </>
+    const links = ["Home", "About", "Contact"]
+
+    return (
+        <ul className="flex items-center">
+            {links.map((link, i) => 
+            (<li key={i} className="flex ml-9 font-inter font-medium text-teal-200">{link}</li>))}
+            <li className="ml-9 font-inter font-medium text-white bg-teal-300 px-2 py-1 rounded-3xl"><NavButton/></li>
+        </ul>
     )
 }
 
@@ -42,8 +33,8 @@ function NavButton() {
 function Navbar() {
     return (
         <>
-            <nav>
-                <BrandName/>
+            <nav className="p-4 flex justify-between">
+                <BrandName />
                 <NavLink/>
                 {/* <NavButton/> */}
             </nav>
