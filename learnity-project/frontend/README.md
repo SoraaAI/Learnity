@@ -1,6 +1,7 @@
 # Tools untuk SVG 🧸
 - Blobmaker (https://www.blobmaker.app/)
 - Simple Icons (https://simpleicons.org/)
+- Haikei SVG (https://haikei.app/)
 
 # React + Vite
 
