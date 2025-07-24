@@ -64,43 +64,68 @@ label start:
     e "Mari kita mulai!"
     python:
         try:
-            while nyawa > 0:
-                payload_question = {
-                    "model": "llama3.2:latest",
-                    "prompt": f"Beri saya pertanyaan esai pendek mengenai {tema}, bukan pertanyaan pribadi. Pastikan tidak terlalu panjang, maksimal 120 karakter! Jangan memberikan respon lain seperti 'Baik! Ini pertanyaanmu: ' atau 'Berikut pertanyaannya: ' Pastikan hanya memberikan pertanyaan saja.",
-                    "stream": True
-                }
-                question_response = requests.post("http://localhost:11434/api/generate", json=payload_question, stream=True)
-                ai_question = ""
-                for line in question_response.iter_lines():
-                    if line:
-                        data = json.loads(line.decode())
-                        ai_question += data.get("response", "")
-                renpy.say(e, ai_question)
-                user_answer = renpy.input(f"Sisa kesempatanmu: {nyawa} | Berikan jawabanmu:")
-                prompt_question = (
-                    f"{ai_question}\nPengguna menjawab: {user_answer}\n"
-                    "Apakah jawabannya benar? Jawab saja dengan 'Benar' atau 'Salah'. KECUALI jika jawabannya 'Salah', Maka anda HARUS memberikan juga jawaban yang benar."
-                )
-                payload = {
-                    "model": "llama3.2:latest",
-                    "prompt": prompt_question,
-                    "stream": True
-                }
-                response = requests.post("http://localhost:11434/api/generate", json=payload, stream=True)
-                ai_response = ""
-                for line in response.iter_lines():
-                    if line:
-                        data = json.loads(line.decode())
-                        ai_response += data.get("response", "")
-                if "Benar" in ai_response or "benar" in ai_response:
-                    renpy.say(e, "Benar!")
-                    pertanyaan += 1
-                    renpy.say(e, "Kamu mendapatkan poin!")
-                    point += 10
-                else:
-                    renpy.say(e, f"Salah.. Jawaban seharusnya (Menurut AI): {ai_response}")
-                    nyawa -= 1
+            connnection = requests.get("https://www.google.com")
+            if connection.ok:
+                while nyawa > 0:
+                    genai.configure(api_key="AIzaSyCGxd6Amr7ofBhdIjE852B0mnBDyZ6jcKw")
+                    model = genai.GenerativeModel('gemini-pro')
+                    prompt = f"Beri saya pertanyaan esai pendek mengenai {tema}, bukan pertanyaan pribadi. Pastikan tidak terlalu panjang, maksimal 120 karakter! Jangan memberikan respon lain seperti 'Baik! Ini pertanyaanmu: ' atau 'Berikut pertanyaannya: ' Pastikan hanya memberikan pertanyaan saja."
+                    renpy.say(e, model.generate_content(prompt))
+                    user_answer = renpy.input(f"Sisa kesempatanmu: {nyawa} | Berikan jawabanmu:")
+                    prompt_question = f"{ai_question}\nPengguna menjawab: {user_answer}\nApakah jawabannya benar? Jawab saja dengan 'Benar' atau 'Salah'. KECUALI jika jawabannya 'Salah', Maka anda HARUS memberikan juga jawaban yang benar."
+                    if "Benar" in ai_response or "benar" in ai_response:
+                        renpy.say(e, "Benar!")
+                        pertanyaan += 1
+                        renpy.say(e, "Kamu mendapatkan poin!")
+                        point += 10
+                    else:
+                        renpy.say(e, f"Salah.. Jawaban seharusnya (Menurut AI): {ai_response}")
+                        point -= 3
+                        nyawa -= 1
+                        if nyawa <= 0:
+                            renpy.say(e, "Kamu kehabisan kesempatan..")
+                            renpy.say(e, "...")
+            else:
+                while nyawa > 0:
+                    payload_question = {
+                        "model": "llama3.2:latest",
+                        "prompt": f"Beri saya pertanyaan esai pendek mengenai {tema}, bukan pertanyaan pribadi. Pastikan tidak terlalu panjang, maksimal 120 karakter! Jangan memberikan respon lain seperti 'Baik! Ini pertanyaanmu: ' atau 'Berikut pertanyaannya: ' Pastikan hanya memberikan pertanyaan saja.",
+                        "stream": True
+                    }
+                    question_response = requests.post("http://localhost:11434/api/generate", json=payload_question, stream=True)
+                    ai_question = ""
+                    for line in question_response.iter_lines():
+                        if line:
+                            data = json.loads(line.decode())
+                            ai_question += data.get("response", "")
+                    renpy.say(e, ai_question)
+                    user_answer = renpy.input(f"Sisa kesempatanmu: {nyawa} | Berikan jawabanmu:")
+                    prompt_question = (
+                        f"{ai_question}\nPengguna menjawab: {user_answer}\n"
+                        "Apakah jawabannya benar? Jawab saja dengan 'Benar' atau 'Salah'. KECUALI jika jawabannya 'Salah', Maka anda HARUS memberikan juga jawaban yang benar."
+                    )
+                    payload = {
+                        "model": "llama3.2:latest",
+                        "prompt": prompt_question,
+                        "stream": True
+                    }
+                    response = requests.post("http://localhost:11434/api/generate", json=payload, stream=True)
+                    ai_response = ""
+                    for line in response.iter_lines():
+                        if line:
+                            data = json.loads(line.decode())
+                            ai_response += data.get("response", "")
+                    if "Benar" in ai_response or "benar" in ai_response:
+                        renpy.say(e, "Benar!")
+                        pertanyaan += 1
+                        renpy.say(e, "Kamu mendapatkan poin!")
+                        point += 10
+                    else:
+                        renpy.say(e, f"Salah.. Jawaban seharusnya (Menurut AI): {ai_response}")
+                        nyawa -= 1
+                        if nyawa <= 0:
+                            renpy.say(e, "Kamu kehabisan kesempatan..")
+                            renpy.say(e, "...")
         except requests.ConnectionError:
             renpy.say(e, "Internet connection is not working. Please check your connection.")
             renpy.jump("menu")
