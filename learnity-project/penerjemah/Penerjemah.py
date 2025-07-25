@@ -1,25 +1,38 @@
-import speech_recognition as sr
-from googletrans import Translator
-import pyttsx3
+import whisper
+import threading
+import keyboard
+import os
 
-recognizer = sr.Recognizer()
-translator = Translator()
-engine = pyttsx3.init()
+stop_flag = False
 
-with sr.Microphone() as source:
-    print("🎙️ Silakan bicara...")
-    recognizer.adjust_for_ambient_noise(source)
-    audio = recognizer.listen(source)
+def listen_for_enter():
+    global stop_flag
+    keyboard.wait("enter")
+    stop_flag = True
+    print("\n🔴 Proses dihentikan oleh pengguna.\n")
 
-try:
-    text = recognizer.recognize_google(audio, language='id-ID')
-    print(f"Kamu bilang: {text}")
-    translated = translator.translate(text, dest='en')
-    print(f"Terjemahan: {translated.text}")
-    engine.say(translated.text)
-    engine.runAndWait()
+def transcribe_and_translate(file_path):
+    print("🔄 Memuat model Whisper...")
+    model = whisper.load_model("base")
 
-except sr.UnknownValueError:
-    print("Gagal mengenali suara.")
-except sr.RequestError as e:
-    print(f"Gagal request ke Google API: {e}")
+    print("🎧 Mendeteksi bahasa dan mentranskrip...")
+    result = model.transcribe(file_path, task="translate")
+
+    print("\n🌍 Bahasa Terdeteksi:", result.get("language", "Tidak terdeteksi"))
+    print("📝 Terjemahan ke Bahasa Indonesia:\n")
+    print(result["text"])
+
+def main():
+    global stop_flag
+    audio_path = input("Masukkan path ke file audio (.mp3/.wav): ").strip()
+    if not os.path.exists(audio_path):
+        print("❌ File tidak ditemukan.")
+        return
+    enter_thread = threading.Thread(target=listen_for_enter, daemon=True)
+    enter_thread.start()
+    transcribe_and_translate(audio_path)
+    while not stop_flag:
+        pass
+
+if __name__ == "__main__":
+    main()
