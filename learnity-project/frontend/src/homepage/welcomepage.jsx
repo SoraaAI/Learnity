@@ -1,6 +1,7 @@
 import Wizzy from '../svg/karakter1.svg'
 import Nubi from '../svg/karakter2.svg'
 import Goro from '../svg/karakter3.svg'
+import Blob from '../svg/blob.svg'
 
 function Text() {
     return (
@@ -19,7 +20,7 @@ function Image() {
     return (
         <>
             <div className="gambar flex ml-32">
-                <div className="wizzy">
+                <div className="wizzy ease-linear duration-1000 delay-0">
                     <svg width="180" viewBox="0 0 2085 4360" fill="none"
                         xmlns="http://www.w3.org/2000/svg">
                         <path
@@ -144,9 +145,23 @@ function Image() {
 function WelcomingPage() {
     return (
         <>
-            <div className="flex  mt-4 items-center justify-center">
-                <Text />
-                <Image />
+            <div className='-mb-60 -ml-12'>
+                <svg id="visual" viewBox="0 0 900 600" width="420" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1"><g transform="translate(437.573267667282 256.0569246855789)">
+                    <path d="M149.9 -177.8C188.9 -178 211.4 -127 222.8 -76.1C234.3 -25.2 234.6 25.5 209.3 57.1C184 88.6 133.2 101 94 138.2C54.9 175.5 27.4 237.8 -14.7 258C-56.8 278.2 -113.6 256.4 -149.6 218.1C-185.6 179.8 -200.7 125 -204.5 75.4C-208.3 25.9 -200.7 -18.4 -182 -54C-163.4 -89.6 -133.7 -116.4 -101.5 -118.4C-69.4 -120.5 -34.7 -97.7 10.4 -112C55.4 -126.3 110.9 -177.6 149.9 -177.8" fill="#d2c1eb" /></g>
+                </svg>
+            </div>
+            <div className="flex  mt-4 items-center justify-center relative">
+                <div className='flex items-center mb-25 -mt-12'>
+                    <Text />
+                    <Image />
+                </div>
+                <div className="custom-shape-divider-bottom-1753098403">
+                    <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none">
+                        <path d="M0,0V46.29c47.79,22.2,103.59,32.17,158,28,70.36-5.37,136.33-33.31,206.8-37.5C438.64,32.43,512.34,53.67,583,72.05c69.27,18,138.3,24.88,209.4,13.08,36.15-6,69.85-17.84,104.45-29.34C989.49,25,1113-14.29,1200,52.47V0Z" opacity=".25" class="shape-fill"></path>
+                        <path d="M0,0V15.81C13,36.92,27.64,56.86,47.69,72.05,99.41,111.27,165,111,224.58,91.58c31.15-10.15,60.09-26.07,89.67-39.8,40.92-19,84.73-46,130.83-49.67,36.26-2.85,70.9,9.42,98.6,31.56,31.77,25.39,62.32,62,103.63,73,40.44,10.79,81.35-6.69,119.13-24.28s75.16-39,116.92-43.05c59.73-5.85,113.28,22.88,168.9,38.84,30.2,8.66,59,6.17,87.09-7.5,22.43-10.89,48-26.93,60.65-49.24V0Z" opacity=".5" class="shape-fill"></path>
+                        <path d="M0,0V5.63C149.93,59,314.09,71.32,475.83,42.57c43-7.64,84.23-20.12,127.61-26.46,59-8.63,112.48,12.24,165.56,35.4C827.93,77.22,886,95.24,951.2,90c86.53-7,172.46-45.71,248.8-84.81V0Z" class="shape-fill"></path>
+                    </svg>
+                </div>
             </div>
         </>
     )
