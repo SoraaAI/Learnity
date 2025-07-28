@@ -1,9 +1,0 @@
-streamlit
-speechrecognition
-google.generativeai
-deep-translator
-speechrecognition
-torch
-openai-whisper
-whisper
-ffmpeg-python
