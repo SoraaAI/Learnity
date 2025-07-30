@@ -22,6 +22,11 @@ class API:
         messages.append(install_dependency("speech_recognition"))
         messages.append(install_dependency("speechrecognition"))
         messages.append(install_dependency("pyttsx3"))
+        messages.append(install_dependency("pyaudio"))
+        messages.append(install_dependency("requests"))
+        messages.append(install_dependency("streamlit"))
+        messages.append(install_dependency("Pillow", "PIL"))
+        messages.append(install_dependency("PyWebview"))
         return messages
 
 # Jalankan PyWebView
