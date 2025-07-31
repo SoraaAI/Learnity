@@ -13,19 +13,26 @@
 
         body {
             font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            /* background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); */
             min-height: 100vh;
             padding: 20px;
         }
 
+        .parent-container {
+            display: flex;
+            justify-content: center;
+        }
+
         .container {
             max-width: 800px;
-            margin: 0 auto;
-            background: rgba(255, 255, 255, 0.95);
+            /* margin: auto; */
+            margin-top: 20px;
+            /* background: rgba(255, 255, 255, 0.95); */
             border-radius: 20px;
-            box-shadow: 0 20px 40px rgba(0, 0, 0, 0.1);
-            overflow: hidden;
+            /* box-shadow: 0 20px 40px rgba(0, 0, 0, 0.1); */
+            /* overflow: hidden; */
             backdrop-filter: blur(10px);
+            
         }
 
         .header {
@@ -47,8 +54,11 @@
         }
 
         .section {
+            margin-top: 30px;
             padding: 30px;
+            /* border: 2px solid red; */
             border-bottom: 2px solid #ecf0f1;
+            /* display: flex; */
         }
 
         .section:last-child {
@@ -78,15 +88,15 @@
         .question {
             margin-bottom: 30px;
             padding: 25px;
-            background: #f8f9fa;
+            /* background: #f8f9fa; */
             border-radius: 15px;
-            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+            box-shadow: 0 5px 20px rgba(112, 168, 233, 0.05);
             transition: transform 0.3s ease, box-shadow 0.3s ease;
         }
 
         .question:hover {
             transform: translateY(-2px);
-            box-shadow: 0 8px 25px rgba(0, 0, 0, 0.1);
+            box-shadow: 0 5px 25px #F6FF94;
         }
 
         .question-title {
@@ -95,6 +105,7 @@
             margin-bottom: 20px;
             font-weight: 600;
             line-height: 1.5;
+            text-align: center;
         }
 
         .options {
@@ -104,6 +115,10 @@
         .option {
             margin-bottom: 12px;
             position: relative;
+            /* font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif; */
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            font-weight: 500;
+            color: #818181;
         }
 
         .option input[type="radio"] {
@@ -112,7 +127,7 @@
 
         .option label {
             display: block;
-            padding: 15px 20px;
+            padding: 20px 20px;
             background: white;
             border: 2px solid #e0e6ed;
             border-radius: 10px;
@@ -124,18 +139,30 @@
         }
 
         .option label:hover {
-            border-color: #3498db;
-            background: #f1f8ff;
+            border-color: #F6FF94;
+            background: #ffffff;
             transform: translateX(5px);
         }
 
         .option input[type="radio"]:checked + label {
-            background: linear-gradient(135deg, #3498db, #2980b9);
-            color: white;
-            border-color: #2980b9;
-            box-shadow: 0 5px 15px rgba(52, 152, 219, 0.3);
+            /* background: linear-gradient(135deg, #3498db, #2980b9); */
+            background: linear-gradient(135deg, #F6FF94, #F8FFAA);
+            color: #ffffff;
+            border-color: #f3ff6c;
+            box-shadow: 0 5px 15px #F6FF94;
         }
 
+        .option input[type="radio"]:checked + label::after {
+            content: '';
+            position: absolute;
+            left: 21px;
+            top: 50%;
+            transform: translateY(-50%);
+            width: 8px;
+            height: 8px;
+            background: #f3ff6c;
+            border-radius: 50%;
+        }
         .option label::before {
             content: '';
             position: absolute;
@@ -155,17 +182,6 @@
             background: white;
         }
 
-        .option input[type="radio"]:checked + label::after {
-            content: '';
-            position: absolute;
-            left: 21px;
-            top: 50%;
-            transform: translateY(-50%);
-            width: 8px;
-            height: 8px;
-            background: #3498db;
-            border-radius: 50%;
-        }
 
         .option label {
             padding-left: 50px;
@@ -174,7 +190,7 @@
         .submit-container {
             text-align: center;
             padding: 30px;
-            background: #f8f9fa;
+            /* background: #f8f9fa; */
         }
 
         .submit-btn {
@@ -183,7 +199,7 @@
             border: none;
             padding: 15px 40px;
             font-size: 1.2em;
-            border-radius: 50px;
+            border-radius: 20px;
             cursor: pointer;
             transition: all 0.3s ease;
             text-transform: uppercase;
@@ -247,469 +263,509 @@
         }
 
         .progress-bar {
-            width: 100%;
-            height: 4px;
-            background: #ecf0f1;
+            margin-top: 30px;
+            margin-bottom: 30px;
+            width: 80%;
+            height: 8px;
+            background: #ecf1ed;
             position: fixed;
-            top: 0;
-            left: 0;
+            /* top: 0;
+            left: 0; */
             z-index: 1000;
+            border-radius: 20px;
+            /* position: relative; */
         }
+
 
         .progress-fill {
             height: 100%;
-            background: linear-gradient(135deg, #3498db, #2c3e50);
+            background: linear-gradient(to right, #BDF1FA, #D7D1FF, #C3EFA8, #F6FF94);
             width: 0%;
             transition: width 0.3s ease;
+            border-radius: 20px;
+        }
+
+        .parent-progress-bar {
+            display: flex;
+            justify-content: center;
+            /* background-color: red; */
+        }
+
+        .parent-progress-bar::after {
+            background-color: red;
+        }
+
+        .answer-1 {
+            display: flex;
+            justify-content: space-around;
+            list-style: none;
+        }
+
+        .answer-1 li {
+            width: 30%;
+            text-align: center;
+        }
+
+        .answer-2 {
+            display: block;
+        }
+
+        .answer-3 {
+        display: block;
         }
     </style>
 </head>
 <body>
-    <div class="progress-bar">
-        <div class="progress-fill" id="progressFill"></div>
+    <div class="parent-progress-bar">
+        <div class="progress-bar">
+            <div class="progress-fill" id="progressFill"></div>
+        </div>
     </div>
 
-    <div class="container">
-        <div class="header">
-            <h1>Kuis Kepribadian Lengkap</h1>
-            <p>Temukan lebih dalam tentang kepribadian dan pandangan hidup Anda</p>
+    <div class="parent-container">
+
+        <div class="container">
+            <!-- <div class="header">
+                <h1>Kuis Kepribadian Lengkap</h1>
+                <p>Temukan lebih dalam tentang kepribadian dan pandangan hidup Anda</p>
+            </div> -->
+    
+            <form id="quizForm">
+                <!-- Bagian I: Tes Kepribadian -->
+                <div class="section">
+                    <h2 class="section-title">Bagian I: Tes Kepribadian</h2>
+    
+                    <div class="question">
+                        <div class="question-title">1. Anda rutin mendapatkan teman baru.</div>
+                        <ul class="options answer-1">
+                            <li class="option op1">
+                                <input type="radio" id="q1a" name="q1" value="setuju">
+                                <label for="q1a">Setuju</label>
+                            </li>
+                            <li class="option op1">
+                                <input type="radio" id="q1b" name="q1" value="tidak_setuju">
+                                <label for="q1b">Tidak Setuju</label>
+                            </li>
+                        </ul>
+                    </div>
+    
+                    <div class="question">
+                        <div class="question-title">2. Ide-ide kompleks dan baru lebih membuat Anda bersemangat daripada yang sederhana dan terang-terangan.</div>
+                        <ul class="options answer-1">
+                            <li class="option">
+                                <input type="radio" id="q2a" name="q2" value="setuju">
+                                <label for="q2a">Setuju</label>
+                            </li>
+                            <li class="option">
+                                <input type="radio" id="q2b" name="q2" value="tidak_setuju">
+                                <label for="q2b">Tidak Setuju</label>
+                            </li>
+                        </ul>
+                    </div>
+    
+                    <div class="question">
+                        <div class="question-title">3. Anda biasanya merasa lebih terpengaruh oleh apa yang beresonansi secara emosional dengan Anda daripada oleh argumen faktual.</div>
+                        <ul class="options answer-1">
+                            <li class="option">
+                                <input type="radio" id="q3a" name="q3" value="setuju">
+                                <label for="q3a">Setuju</label>
+                            </li>
+                            <li class="option">
+                                <input type="radio" id="q3b" name="q3" value="tidak_setuju">
+                                <label for="q3b">Tidak Setuju</label>
+                            </li>
+                        </ul>
+                    </div>
+    
+                    <div class="question">
+                        <div class="question-title">4. Ruang hidup dan kerja Anda bersih dan terorganisir.</div>
+                        <ul class="options answer-1">
+                            <li class="option">
+                                <input type="radio" id="q4a" name="q4" value="setuju">
+                                <label for="q4a">Setuju</label>
+                            </li>
+                            <li class="option">
+                                <input type="radio" id="q4b" name="q4" value="tidak_setuju">
+                                <label for="q4b">Tidak Setuju</label>
+                            </li>
+                        </ul>
+                    </div>
+    
+                    <div class="question">
+                        <div class="question-title">5. Anda biasanya tetap tenang sekalipun sedang dalam banyak tekanan.</div>
+                        <ul class="options answer-1">
+                            <li class="option">
+                                <input type="radio" id="q5a" name="q5" value="setuju">
+                                <label for="q5a">Setuju</label>
+                            </li>
+                            <li class="option">
+                                <input type="radio" id="q5b" name="q5" value="tidak_setuju">
+                                <label for="q5b">Tidak Setuju</label>
+                            </li>
+                        </ul>
+                    </div>
+    
+                    <div class="question">
+                        <div class="question-title">6. Anda merasa konsep berjejaring atau memperkenalkan diri Anda kepada orang asing sangat menakutkan.</div>
+                        <ul class="options answer-1">
+                            <li class="option">
+                                <input type="radio" id="q6a" name="q6" value="setuju">
+                                <label for="q6a">Setuju</label>
+                            </li>
+                            <li class="option">
+                                <input type="radio" id="q6b" name="q6" value="tidak_setuju">
+                                <label for="q6b">Tidak Setuju</label>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+    
+                <!-- Bagian II: Tes MBTI -->
+                <div class="section">
+                    <h2 class="section-title">Bagian II: Tes MBTI</h2>
+    
+                    <div class="question">
+                        <div class="question-title">1. Ketika bertemu dengan orang baru kamu biasanya...</div>
+                        <ul class="options answer-2">
+                            <li class="option">
+                                <input type="radio" id="q7a" name="q7" value="a">
+                                <label for="q7a">Memulai membuka topik pembicaraan.</label>
+                            </li>
+                            <li class="option">
+                                <input type="radio" id="q7b" name="q7" value="b">
+                                <label for="q7b">Menunggu orang membuka topik pembicaraan.</label>
+                            </li>
+                        </ul>
+                    </div>
+    
+                    <div class="question">
+                        <div class="question-title">2. Pekerjaan yang mengharuskan diri kamu menghadapi banyak orang baru membuat kamu...</div>
+                        <ul class="options answer-2">
+                            <li class="option">
+                                <input type="radio" id="q8a" name="q8" value="a">
+                                <label for="q8a">Lebih semangat bekerja.</label>
+                            </li>
+                            <li class="option">
+                                <input type="radio" id="q8b" name="q8" value="b">
+                                <label for="q8b">Merasa tertekan.</label>
+                            </li>
+                        </ul>
+                    </div>
+    
+                    <div class="question">
+                        <div class="question-title">3. Mana yang lebih kamu pilih?</div>
+                        <ul class="options answer-2">
+                            <li class="option">
+                                <input type="radio" id="q9a" name="q9" value="a">
+                                <label for="q9a">Sedikit teman, namun sering bertemu.</label>
+                            </li>
+                            <li class="option">
+                                <input type="radio" id="q9b" name="q9" value="b">
+                                <label for="q9b">Banyak teman walaupun jarang bertemu.</label>
+                            </li>
+                        </ul>
+                    </div>
+    
+                    <div class="question">
+                        <div class="question-title">4. Dalam kelompok pertemanan kamu, kamu adalah seorang...</div>
+                        <ul class="options answer-2">
+                            <li class="option">
+                                <input type="radio" id="q10a" name="q10" value="a">
+                                <label for="q10a">'Badut' yang meramaikan setiap pertemuan.</label>
+                            </li>
+                            <li class="option">
+                                <input type="radio" id="q10b" name="q10" value="b">
+                                <label for="q10b">'Tempat' curhat karena dianggap merupakan pendengar yang baik.</label>
+                            </li>
+                        </ul>
+                    </div>
+    
+                    <div class="question">
+                        <div class="question-title">5. Ketika ada masalah biasanya kamu...</div>
+                        <ul class="options answer-2">
+                            <li class="option">
+                                <input type="radio" id="q11a" name="q11" value="a">
+                                <label for="q11a">Memilih untuk memendamnya.</label>
+                            </li>
+                            <li class="option">
+                                <input type="radio" id="q11b" name="q11" value="b">
+                                <label for="q11b">Memilih untuk menceritakannya kepada teman-teman.</label>
+                            </li>
+                        </ul>
+                    </div>
+    
+                    <div class="question">
+                        <div class="question-title">6. Ketika ada gosip baru, kamu...</div>
+                        <ul class="options answer-2">
+                            <li class="option">
+                                <input type="radio" id="q12a" name="q12" value="a">
+                                <label for="q12a">Tidak terlalu peduli.</label>
+                            </li>
+                            <li class="option">
+                                <input type="radio" id="q12b" name="q12" value="b">
+                                <label for="q12b">Selalu ingin jadi yang pertama kali tahu.</label>
+                            </li>
+                        </ul>
+                    </div>
+    
+                    <div class="question">
+                        <div class="question-title">7. Ketika bertemu orang baru, kamu biasanya...</div>
+                        <ul class="options answer-2">
+                            <li class="option">
+                                <input type="radio" id="q13a" name="q13" value="a">
+                                <label for="q13a">Mudah memulai pembicaraan dan pembicaraan tersebut bertahan lama.</label>
+                            </li>
+                            <li class="option">
+                                <input type="radio" id="q13b" name="q13" value="b">
+                                <label for="q13b">Sulit mencari topik pembicaraan dan biasanya pembicaraan tidak bertahan lama.</label>
+                            </li>
+                        </ul>
+                    </div>
+    
+                    <div class="question">
+                        <div class="question-title">8. Ketika harus berbicara di depan publik, kamu biasanya...</div>
+                        <ul class="options answer-2">
+                            <li class="option">
+                                <input type="radio" id="q14a" name="q14" value="a">
+                                <label for="q14a">Spontan dengan apa yang ingin dibicarakan.</label>
+                            </li>
+                            <li class="option">
+                                <input type="radio" id="q14b" name="q14" value="b">
+                                <label for="q14b">Melatih apa yang ingin dibicarakan beberapa kali sebelum acara berlangsung.</label>
+                            </li>
+                        </ul>
+                    </div>
+    
+                    <div class="question">
+                        <div class="question-title">9. Ketika mendatangi pesta, kamu biasanya...</div>
+                        <ul class="options answer-2">
+                            <li class="option">
+                                <input type="radio" id="q15a" name="q15" value="a">
+                                <label for="q15a">Memilih untuk pulang lebih awal karena merasa semakin lelah.</label>
+                            </li>
+                            <li class="option">
+                                <input type="radio" id="q15b" name="q15" value="b">
+                                <label for="q15b">Bertahan sampai acara selesai karena merasa semakin bersemangat.</label>
+                            </li>
+                        </ul>
+                    </div>
+    
+                    <div class="question">
+                        <div class="question-title">10. Ketika tidak suka pada seseorang, kamu biasanya...</div>
+                        <ul class="options answer-2">
+                            <li class="option">
+                                <input type="radio" id="q16a" name="q16" value="a">
+                                <label for="q16a">Langsung mengomunikasikan kepada orang tersebut.</label>
+                            </li>
+                            <li class="option">
+                                <input type="radio" id="q16b" name="q16" value="b">
+                                <label for="q16b">Tidak mengutarakan kepada orang tersebut karena merasa diri sendiri memiliki kekurangan.</label>
+                            </li>
+                        </ul>
+                    </div>
+    
+                    <div class="question">
+                        <div class="question-title">11. Mana yang lebih kamu percayai?</div>
+                        <ul class="options answer-2">
+                            <li class="option">
+                                <input type="radio" id="q17a" name="q17" value="a">
+                                <label for="q17a">Intuisi</label>
+                            </li>
+                            <li class="option">
+                                <input type="radio" id="q17b" name="q17" value="b">
+                                <label for="q17b">Fakta</label>
+                            </li>
+                        </ul>
+                    </div>
+    
+                    <div class="question">
+                        <div class="question-title">12. Jika sekarang kamu diminta untuk menulis buku, judul apa yang akan kamu pilih?</div>
+                        <ul class="options answer-2">
+                            <li class="option">
+                                <input type="radio" id="q18a" name="q18" value="a">
+                                <label for="q18a">"Peluang Bisnis di Masa Depan"</label>
+                            </li>
+                            <li class="option">
+                                <input type="radio" id="q18b" name="q18" value="b">
+                                <label for="q18b">"Cara Praktis Menjadi Kaya dalam Waktu 1 Bulan"</label>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+    
+                <!-- Bagian III: Pertanyaan Psikologi -->
+                <div class="section">
+                    <h2 class="section-title">Bagian III: Pertanyaan Psikologi</h2>
+    
+                    <div class="question">
+                        <div class="question-title">1. Ketika dihadapkan pada kegagalan besar dalam suatu proyek yang sangat Anda impikan, reaksi pertama Anda adalah:</div>
+                        <ul class="options answer-3">
+                            <li class="option answer-3-1">
+                                <input type="radio" id="q19a" name="q19" value="a">
+                                <label for="q19a">Mencari kesalahan pada orang lain atau faktor eksternal untuk menjelaskan kegagalan tersebut.</label>
+                            </li>
+                            <li class="option answer-3-1">
+                                <input type="radio" id="q19b" name="q19" value="b">
+                                <label for="q19b">Merenung dalam kesendirian, merasa sangat kecewa dan mempertanyakan kemampuan diri sendiri secara mendalam.</label>
+                            </li>
+                            <li class="option answer-3-2">
+                                <input type="radio" id="q19c" name="q19" value="c">
+                                <label for="q19c">Menganalisis setiap langkah yang salah secara objektif untuk menemukan pelajaran berharga, meskipun terasa menyakitkan.</label>
+                            </li>
+                            <li class="option answer-3-2">
+                                <input type="radio" id="q19d" name="q19" value="d">
+                                <label for="q19d">Segera bangkit dan mencari peluang baru, meskipun ada rasa takut akan terulangnya kegagalan.</label>
+                            </li>
+                        </ul>
+                    </div>
+    
+                    <div class="question">
+                        <div class="question-title">2. Jika Anda memiliki kesempatan untuk mengubah satu hal tentang masa lalu Anda, tanpa mempertimbangkan dampaknya pada masa kini atau masa depan, apa yang akan Anda ubah?</div>
+                        <ul class="options answer-3">
+                            <li class="option answer-3-1">
+                                <input type="radio" id="q20a" name="q20" value="a">
+                                <label for="q20a">Kesempatan yang terlewatkan untuk belajar atau mengembangkan diri.</label>
+                            </li>
+                            <li class="option answer-3-1">
+                                <input type="radio" id="q20b" name="q20" value="b">
+                                <label for="q20b">Hubungan yang rusak atau konflik yang belum terselesaikan.</label>
+                            </li>
+                            <li class="option answer-3-2">
+                                <input type="radio" id="q20c" name="q20" value="c">
+                                <label for="q20c">Keputusan yang menyebabkan penyesalan mendalam atau rasa bersalah.</label>
+                            </li>
+                            <li class="option answer-3-2">
+                                <input type="radio" id="q20d" name="q20" value="d">
+                                <label for="q20d">Momen ketidakberdayaan atau kerentanan yang membuat Anda merasa lemah.</label>
+                            </li>
+                        </ul>
+                    </div>
+    
+                    <div class="question">
+                        <div class="question-title">3. Ketika Anda merasa tidak aman atau rentan, apa yang paling Anda butuhkan dari orang-orang di sekitar Anda?</div>
+                        <ul class="options answer-3">
+                            <li class="option answer-3-1">
+                                <input type="radio" id="q21a" name="q21" value="a">
+                                <label for="q21a">Jaminan dan pujian yang meyakinkan akan nilai diri Anda.</label>
+                            </li>
+                            <li class="option answer-3-1">
+                                <input type="radio" id="q21b" name="q21" value="b">
+                                <label for="q21b">Ruang dan waktu untuk memproses emosi sendiri tanpa interupsi.</label>
+                            </li>
+                            <li class="option answer-3-2">
+                                <input type="radio" id="q21c" name="q21" value="c">
+                                <label for="q21c">Dukungan praktis dan saran konkret untuk mengatasi masalah.</label>
+                            </li>
+                            <li class="option answer-3-2">
+                                <input type="radio" id="q21d" name="q21" value="d">
+                                <label for="q21d">Pengertian dan penerimaan tanpa syarat, bahkan di saat terlemah Anda.</label>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+    
+                <!-- Bagian IV: Pertanyaan Filosofi -->
+                <div class="section">
+                    <h2 class="section-title">Bagian IV: Pertanyaan Filosofi</h2>
+    
+                    <div class="question">
+                        <div class="question-title">1. Apa yang Anda yakini sebagai tujuan utama kehidupan manusia?</div>
+                        <ul class="options answer-3">
+                            <li class="option answer-3-1">
+                                <input type="radio" id="q22a" name="q22" value="a">
+                                <label for="q22a">Mencari kebahagiaan dan kepuasan pribadi.</label>
+                            </li>
+                            <li class="option answer-3-1">
+                                <input type="radio" id="q22b" name="q22" value="b">
+                                <label for="q22b">Memberikan kontribusi positif bagi masyarakat dan lingkungan.</label>
+                            </li>
+                            <li class="option answer-3-2">
+                                <input type="radio" id="q22c" name="q22" value="c">
+                                <label for="q22c">Mencapai potensi tertinggi diri sendiri dan terus belajar.</label>
+                            </li>
+                            <li class="option answer-3-2">
+                                <input type="radio" id="q22d" name="q22" value="d">
+                                <label for="q22d">Menemukan makna dan kebenaran universal.</label>
+                            </li>
+                        </ul>
+                    </div>
+    
+                    <div class="question">
+                        <div class="question-title">2. Bagaimana Anda mendefinisikan "keadilan" dalam masyarakat?</div>
+                        <ul class="options answer-3">
+                            <li class="option answer-3-1">
+                                <input type="radio" id="q23a" name="q23" value="a">
+                                <label for="q23a">Setiap individu menerima apa yang pantas mereka dapatkan berdasarkan usaha dan meritokrasi.</label>
+                            </li>
+                            <li class="option answer-3-1">
+                                <input type="radio" id="q23b" name="q23" value="b">
+                                <label for="q23b">Sumber daya dan peluang didistribusikan secara merata untuk mengurangi ketimpangan.</label>
+                            </li>
+                            <li class="option answer-3-2>
+                                <input type="radio" id="q23c" name="q23" value="c">
+                                <label for="q23c">Semua orang memiliki hak dan kesempatan yang sama di mata hukum, tanpa memandang latar belakang.</label>
+                            </li>
+                            <li class="option answer-3-2">
+                                <input type="radio" id="q23d" name="q23" value="d">
+                                <label for="q23d">Sistem yang memastikan perlindungan bagi yang paling rentan dan memberikan kesempatan kedua bagi yang gagal.</label>
+                            </li>
+                        </ul>
+                    </div>
+    
+                    <div class="question">
+                        <div class="question-title">3. Jika Anda harus memilih antara kebenaran yang menyakitkan atau ilusi yang membahagiakan, mana yang akan Anda pilih?</div>
+                        <ul class="options answer-3">
+                            <li class="option answer-3-1">
+                                <input type="radio" id="q24a" name="q24" value="a">
+                                <label for="q24a">Kebenaran yang menyakitkan, karena saya percaya kejujuran adalah fondasi dari pertumbuhan.</label>
+                            </li>
+                            <li class="option answer-3-1">
+                                <input type="radio" id="q24b" name="q24" value="b">
+                                <label for="q24b">Ilusi yang membahagiakan, jika itu melindungi diri saya atau orang lain dari penderitaan yang tidak perlu.</label>
+                            </li>
+                            <li class="option answer-3-2">
+                                <input type="radio" id="q24c" name="q24" value="c">
+                                <label for="q24c">Mencari cara untuk menemukan kebenaran yang dapat diterima, meskipun itu berarti menghadapi kenyataan yang sulit.</label>
+                            </li>
+                            <li class="option answer-3-2">
+                                <input type="radio" id="q24d" name="q24" value="d">
+                                <label for="q24d">Saya akan mempertimbangkan konteks dan dampaknya sebelum memutuskan.</label>
+                            </li>
+                        </ul>
+                    </div>
+    
+                    <div class="question">
+                        <div class="question-title">4. Menurut Anda, apa peran utama teknologi dalam kehidupan manusia di masa depan?</div>
+                        <ul class="options answer-3">
+                            <li class="option answer-3-1">
+                                <input type="radio" id="q25a" name="q25" value="a">
+                                <label for="q25a">Sebagai alat untuk meningkatkan efisiensi dan kenyamanan hidup.</label>
+                            </li>
+                            <li class="option answer-3-1">
+                                <input type="radio" id="q25b" name="q25" value="b">
+                                <label for="q25b">Sebagai pendorong evolusi kesadaran dan pemahaman manusia.</label>
+                            </li>
+                            <li class="option answer-3-2">
+                                <input type="radio" id="q25c" name="q25" value="c">
+                                <label for="q25c">Sebagai potensi ancaman terhadap kemanusiaan jika tidak dikelola dengan bijak.</label>
+                            </li>
+                            <li class="option answer-3-2">
+                                <input type="radio" id="q25d" name="q25" value="d">
+                                <label for="q25d">Sebagai sarana untuk menjembatani kesenjangan dan menciptakan dunia yang lebih inklusif.</label>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+    
+                <div class="submit-container">
+                    <button type="submit" class="submit-btn">Kirim Jawaban</button>
+                    <div class="results" id="results">
+                        <h3>Terima kasih telah mengikuti kuis!</h3>
+                        <p>Jawaban Anda telah disimpan dan akan dianalisis untuk memberikan wawasan tentang kepribadian dan pandangan filosofis Anda.</p>
+                    </div>
+                </div>
+            </form>
         </div>
-
-        <form id="quizForm">
-            <!-- Bagian I: Tes Kepribadian -->
-            <div class="section">
-                <h2 class="section-title">Bagian I: Tes Kepribadian</h2>
-
-                <div class="question">
-                    <div class="question-title">1. Anda rutin mendapatkan teman baru.</div>
-                    <ul class="options">
-                        <li class="option">
-                            <input type="radio" id="q1a" name="q1" value="setuju">
-                            <label for="q1a">Setuju</label>
-                        </li>
-                        <li class="option">
-                            <input type="radio" id="q1b" name="q1" value="tidak_setuju">
-                            <label for="q1b">Tidak Setuju</label>
-                        </li>
-                    </ul>
-                </div>
-
-                <div class="question">
-                    <div class="question-title">2. Ide-ide kompleks dan baru lebih membuat Anda bersemangat daripada yang sederhana dan terang-terangan.</div>
-                    <ul class="options">
-                        <li class="option">
-                            <input type="radio" id="q2a" name="q2" value="setuju">
-                            <label for="q2a">Setuju</label>
-                        </li>
-                        <li class="option">
-                            <input type="radio" id="q2b" name="q2" value="tidak_setuju">
-                            <label for="q2b">Tidak Setuju</label>
-                        </li>
-                    </ul>
-                </div>
-
-                <div class="question">
-                    <div class="question-title">3. Anda biasanya merasa lebih terpengaruh oleh apa yang beresonansi secara emosional dengan Anda daripada oleh argumen faktual.</div>
-                    <ul class="options">
-                        <li class="option">
-                            <input type="radio" id="q3a" name="q3" value="setuju">
-                            <label for="q3a">Setuju</label>
-                        </li>
-                        <li class="option">
-                            <input type="radio" id="q3b" name="q3" value="tidak_setuju">
-                            <label for="q3b">Tidak Setuju</label>
-                        </li>
-                    </ul>
-                </div>
-
-                <div class="question">
-                    <div class="question-title">4. Ruang hidup dan kerja Anda bersih dan terorganisir.</div>
-                    <ul class="options">
-                        <li class="option">
-                            <input type="radio" id="q4a" name="q4" value="setuju">
-                            <label for="q4a">Setuju</label>
-                        </li>
-                        <li class="option">
-                            <input type="radio" id="q4b" name="q4" value="tidak_setuju">
-                            <label for="q4b">Tidak Setuju</label>
-                        </li>
-                    </ul>
-                </div>
-
-                <div class="question">
-                    <div class="question-title">5. Anda biasanya tetap tenang sekalipun sedang dalam banyak tekanan.</div>
-                    <ul class="options">
-                        <li class="option">
-                            <input type="radio" id="q5a" name="q5" value="setuju">
-                            <label for="q5a">Setuju</label>
-                        </li>
-                        <li class="option">
-                            <input type="radio" id="q5b" name="q5" value="tidak_setuju">
-                            <label for="q5b">Tidak Setuju</label>
-                        </li>
-                    </ul>
-                </div>
-
-                <div class="question">
-                    <div class="question-title">6. Anda merasa konsep berjejaring atau memperkenalkan diri Anda kepada orang asing sangat menakutkan.</div>
-                    <ul class="options">
-                        <li class="option">
-                            <input type="radio" id="q6a" name="q6" value="setuju">
-                            <label for="q6a">Setuju</label>
-                        </li>
-                        <li class="option">
-                            <input type="radio" id="q6b" name="q6" value="tidak_setuju">
-                            <label for="q6b">Tidak Setuju</label>
-                        </li>
-                    </ul>
-                </div>
-            </div>
-
-            <!-- Bagian II: Tes MBTI -->
-            <div class="section">
-                <h2 class="section-title">Bagian II: Tes MBTI</h2>
-
-                <div class="question">
-                    <div class="question-title">1. Ketika bertemu dengan orang baru kamu biasanya...</div>
-                    <ul class="options">
-                        <li class="option">
-                            <input type="radio" id="q7a" name="q7" value="a">
-                            <label for="q7a">Memulai membuka topik pembicaraan.</label>
-                        </li>
-                        <li class="option">
-                            <input type="radio" id="q7b" name="q7" value="b">
-                            <label for="q7b">Menunggu orang membuka topik pembicaraan.</label>
-                        </li>
-                    </ul>
-                </div>
-
-                <div class="question">
-                    <div class="question-title">2. Pekerjaan yang mengharuskan diri kamu menghadapi banyak orang baru membuat kamu...</div>
-                    <ul class="options">
-                        <li class="option">
-                            <input type="radio" id="q8a" name="q8" value="a">
-                            <label for="q8a">Lebih semangat bekerja.</label>
-                        </li>
-                        <li class="option">
-                            <input type="radio" id="q8b" name="q8" value="b">
-                            <label for="q8b">Merasa tertekan.</label>
-                        </li>
-                    </ul>
-                </div>
-
-                <div class="question">
-                    <div class="question-title">3. Mana yang lebih kamu pilih?</div>
-                    <ul class="options">
-                        <li class="option">
-                            <input type="radio" id="q9a" name="q9" value="a">
-                            <label for="q9a">Sedikit teman, namun sering bertemu.</label>
-                        </li>
-                        <li class="option">
-                            <input type="radio" id="q9b" name="q9" value="b">
-                            <label for="q9b">Banyak teman walaupun jarang bertemu.</label>
-                        </li>
-                    </ul>
-                </div>
-
-                <div class="question">
-                    <div class="question-title">4. Dalam kelompok pertemanan kamu, kamu adalah seorang...</div>
-                    <ul class="options">
-                        <li class="option">
-                            <input type="radio" id="q10a" name="q10" value="a">
-                            <label for="q10a">'Badut' yang meramaikan setiap pertemuan.</label>
-                        </li>
-                        <li class="option">
-                            <input type="radio" id="q10b" name="q10" value="b">
-                            <label for="q10b">'Tempat' curhat karena dianggap merupakan pendengar yang baik.</label>
-                        </li>
-                    </ul>
-                </div>
-
-                <div class="question">
-                    <div class="question-title">5. Ketika ada masalah biasanya kamu...</div>
-                    <ul class="options">
-                        <li class="option">
-                            <input type="radio" id="q11a" name="q11" value="a">
-                            <label for="q11a">Memilih untuk memendamnya.</label>
-                        </li>
-                        <li class="option">
-                            <input type="radio" id="q11b" name="q11" value="b">
-                            <label for="q11b">Memilih untuk menceritakannya kepada teman-teman.</label>
-                        </li>
-                    </ul>
-                </div>
-
-                <div class="question">
-                    <div class="question-title">6. Ketika ada gosip baru, kamu...</div>
-                    <ul class="options">
-                        <li class="option">
-                            <input type="radio" id="q12a" name="q12" value="a">
-                            <label for="q12a">Tidak terlalu peduli.</label>
-                        </li>
-                        <li class="option">
-                            <input type="radio" id="q12b" name="q12" value="b">
-                            <label for="q12b">Selalu ingin jadi yang pertama kali tahu.</label>
-                        </li>
-                    </ul>
-                </div>
-
-                <div class="question">
-                    <div class="question-title">7. Ketika bertemu orang baru, kamu biasanya...</div>
-                    <ul class="options">
-                        <li class="option">
-                            <input type="radio" id="q13a" name="q13" value="a">
-                            <label for="q13a">Mudah memulai pembicaraan dan pembicaraan tersebut bertahan lama.</label>
-                        </li>
-                        <li class="option">
-                            <input type="radio" id="q13b" name="q13" value="b">
-                            <label for="q13b">Sulit mencari topik pembicaraan dan biasanya pembicaraan tidak bertahan lama.</label>
-                        </li>
-                    </ul>
-                </div>
-
-                <div class="question">
-                    <div class="question-title">8. Ketika harus berbicara di depan publik, kamu biasanya...</div>
-                    <ul class="options">
-                        <li class="option">
-                            <input type="radio" id="q14a" name="q14" value="a">
-                            <label for="q14a">Spontan dengan apa yang ingin dibicarakan.</label>
-                        </li>
-                        <li class="option">
-                            <input type="radio" id="q14b" name="q14" value="b">
-                            <label for="q14b">Melatih apa yang ingin dibicarakan beberapa kali sebelum acara berlangsung.</label>
-                        </li>
-                    </ul>
-                </div>
-
-                <div class="question">
-                    <div class="question-title">9. Ketika mendatangi pesta, kamu biasanya...</div>
-                    <ul class="options">
-                        <li class="option">
-                            <input type="radio" id="q15a" name="q15" value="a">
-                            <label for="q15a">Memilih untuk pulang lebih awal karena merasa semakin lelah.</label>
-                        </li>
-                        <li class="option">
-                            <input type="radio" id="q15b" name="q15" value="b">
-                            <label for="q15b">Bertahan sampai acara selesai karena merasa semakin bersemangat.</label>
-                        </li>
-                    </ul>
-                </div>
-
-                <div class="question">
-                    <div class="question-title">10. Ketika tidak suka pada seseorang, kamu biasanya...</div>
-                    <ul class="options">
-                        <li class="option">
-                            <input type="radio" id="q16a" name="q16" value="a">
-                            <label for="q16a">Langsung mengomunikasikan kepada orang tersebut.</label>
-                        </li>
-                        <li class="option">
-                            <input type="radio" id="q16b" name="q16" value="b">
-                            <label for="q16b">Tidak mengutarakan kepada orang tersebut karena merasa diri sendiri memiliki kekurangan.</label>
-                        </li>
-                    </ul>
-                </div>
-
-                <div class="question">
-                    <div class="question-title">11. Mana yang lebih kamu percayai?</div>
-                    <ul class="options">
-                        <li class="option">
-                            <input type="radio" id="q17a" name="q17" value="a">
-                            <label for="q17a">Intuisi</label>
-                        </li>
-                        <li class="option">
-                            <input type="radio" id="q17b" name="q17" value="b">
-                            <label for="q17b">Fakta</label>
-                        </li>
-                    </ul>
-                </div>
-
-                <div class="question">
-                    <div class="question-title">12. Jika sekarang kamu diminta untuk menulis buku, judul apa yang akan kamu pilih?</div>
-                    <ul class="options">
-                        <li class="option">
-                            <input type="radio" id="q18a" name="q18" value="a">
-                            <label for="q18a">"Peluang Bisnis di Masa Depan"</label>
-                        </li>
-                        <li class="option">
-                            <input type="radio" id="q18b" name="q18" value="b">
-                            <label for="q18b">"Cara Praktis Menjadi Kaya dalam Waktu 1 Bulan"</label>
-                        </li>
-                    </ul>
-                </div>
-            </div>
-
-            <!-- Bagian III: Pertanyaan Psikologi -->
-            <div class="section">
-                <h2 class="section-title">Bagian III: Pertanyaan Psikologi</h2>
-
-                <div class="question">
-                    <div class="question-title">1. Ketika dihadapkan pada kegagalan besar dalam suatu proyek yang sangat Anda impikan, reaksi pertama Anda adalah:</div>
-                    <ul class="options">
-                        <li class="option">
-                            <input type="radio" id="q19a" name="q19" value="a">
-                            <label for="q19a">Mencari kesalahan pada orang lain atau faktor eksternal untuk menjelaskan kegagalan tersebut.</label>
-                        </li>
-                        <li class="option">
-                            <input type="radio" id="q19b" name="q19" value="b">
-                            <label for="q19b">Merenung dalam kesendirian, merasa sangat kecewa dan mempertanyakan kemampuan diri sendiri secara mendalam.</label>
-                        </li>
-                        <li class="option">
-                            <input type="radio" id="q19c" name="q19" value="c">
-                            <label for="q19c">Menganalisis setiap langkah yang salah secara objektif untuk menemukan pelajaran berharga, meskipun terasa menyakitkan.</label>
-                        </li>
-                        <li class="option">
-                            <input type="radio" id="q19d" name="q19" value="d">
-                            <label for="q19d">Segera bangkit dan mencari peluang baru, meskipun ada rasa takut akan terulangnya kegagalan.</label>
-                        </li>
-                    </ul>
-                </div>
-
-                <div class="question">
-                    <div class="question-title">2. Jika Anda memiliki kesempatan untuk mengubah satu hal tentang masa lalu Anda, tanpa mempertimbangkan dampaknya pada masa kini atau masa depan, apa yang akan Anda ubah?</div>
-                    <ul class="options">
-                        <li class="option">
-                            <input type="radio" id="q20a" name="q20" value="a">
-                            <label for="q20a">Kesempatan yang terlewatkan untuk belajar atau mengembangkan diri.</label>
-                        </li>
-                        <li class="option">
-                            <input type="radio" id="q20b" name="q20" value="b">
-                            <label for="q20b">Hubungan yang rusak atau konflik yang belum terselesaikan.</label>
-                        </li>
-                        <li class="option">
-                            <input type="radio" id="q20c" name="q20" value="c">
-                            <label for="q20c">Keputusan yang menyebabkan penyesalan mendalam atau rasa bersalah.</label>
-                        </li>
-                        <li class="option">
-                            <input type="radio" id="q20d" name="q20" value="d">
-                            <label for="q20d">Momen ketidakberdayaan atau kerentanan yang membuat Anda merasa lemah.</label>
-                        </li>
-                    </ul>
-                </div>
-
-                <div class="question">
-                    <div class="question-title">3. Ketika Anda merasa tidak aman atau rentan, apa yang paling Anda butuhkan dari orang-orang di sekitar Anda?</div>
-                    <ul class="options">
-                        <li class="option">
-                            <input type="radio" id="q21a" name="q21" value="a">
-                            <label for="q21a">Jaminan dan pujian yang meyakinkan akan nilai diri Anda.</label>
-                        </li>
-                        <li class="option">
-                            <input type="radio" id="q21b" name="q21" value="b">
-                            <label for="q21b">Ruang dan waktu untuk memproses emosi sendiri tanpa interupsi.</label>
-                        </li>
-                        <li class="option">
-                            <input type="radio" id="q21c" name="q21" value="c">
-                            <label for="q21c">Dukungan praktis dan saran konkret untuk mengatasi masalah.</label>
-                        </li>
-                        <li class="option">
-                            <input type="radio" id="q21d" name="q21" value="d">
-                            <label for="q21d">Pengertian dan penerimaan tanpa syarat, bahkan di saat terlemah Anda.</label>
-                        </li>
-                    </ul>
-                </div>
-            </div>
-
-            <!-- Bagian IV: Pertanyaan Filosofi -->
-            <div class="section">
-                <h2 class="section-title">Bagian IV: Pertanyaan Filosofi</h2>
-
-                <div class="question">
-                    <div class="question-title">1. Apa yang Anda yakini sebagai tujuan utama kehidupan manusia?</div>
-                    <ul class="options">
-                        <li class="option">
-                            <input type="radio" id="q22a" name="q22" value="a">
-                            <label for="q22a">Mencari kebahagiaan dan kepuasan pribadi.</label>
-                        </li>
-                        <li class="option">
-                            <input type="radio" id="q22b" name="q22" value="b">
-                            <label for="q22b">Memberikan kontribusi positif bagi masyarakat dan lingkungan.</label>
-                        </li>
-                        <li class="option">
-                            <input type="radio" id="q22c" name="q22" value="c">
-                            <label for="q22c">Mencapai potensi tertinggi diri sendiri dan terus belajar.</label>
-                        </li>
-                        <li class="option">
-                            <input type="radio" id="q22d" name="q22" value="d">
-                            <label for="q22d">Menemukan makna dan kebenaran universal.</label>
-                        </li>
-                    </ul>
-                </div>
-
-                <div class="question">
-                    <div class="question-title">2. Bagaimana Anda mendefinisikan "keadilan" dalam masyarakat?</div>
-                    <ul class="options">
-                        <li class="option">
-                            <input type="radio" id="q23a" name="q23" value="a">
-                            <label for="q23a">Setiap individu menerima apa yang pantas mereka dapatkan berdasarkan usaha dan meritokrasi.</label>
-                        </li>
-                        <li class="option">
-                            <input type="radio" id="q23b" name="q23" value="b">
-                            <label for="q23b">Sumber daya dan peluang didistribusikan secara merata untuk mengurangi ketimpangan.</label>
-                        </li>
-                        <li class="option">
-                            <input type="radio" id="q23c" name="q23" value="c">
-                            <label for="q23c">Semua orang memiliki hak dan kesempatan yang sama di mata hukum, tanpa memandang latar belakang.</label>
-                        </li>
-                        <li class="option">
-                            <input type="radio" id="q23d" name="q23" value="d">
-                            <label for="q23d">Sistem yang memastikan perlindungan bagi yang paling rentan dan memberikan kesempatan kedua bagi yang gagal.</label>
-                        </li>
-                    </ul>
-                </div>
-
-                <div class="question">
-                    <div class="question-title">3. Jika Anda harus memilih antara kebenaran yang menyakitkan atau ilusi yang membahagiakan, mana yang akan Anda pilih?</div>
-                    <ul class="options">
-                        <li class="option">
-                            <input type="radio" id="q24a" name="q24" value="a">
-                            <label for="q24a">Kebenaran yang menyakitkan, karena saya percaya kejujuran adalah fondasi dari pertumbuhan.</label>
-                        </li>
-                        <li class="option">
-                            <input type="radio" id="q24b" name="q24" value="b">
-                            <label for="q24b">Ilusi yang membahagiakan, jika itu melindungi diri saya atau orang lain dari penderitaan yang tidak perlu.</label>
-                        </li>
-                        <li class="option">
-                            <input type="radio" id="q24c" name="q24" value="c">
-                            <label for="q24c">Mencari cara untuk menemukan kebenaran yang dapat diterima, meskipun itu berarti menghadapi kenyataan yang sulit.</label>
-                        </li>
-                        <li class="option">
-                            <input type="radio" id="q24d" name="q24" value="d">
-                            <label for="q24d">Saya akan mempertimbangkan konteks dan dampaknya sebelum memutuskan.</label>
-                        </li>
-                    </ul>
-                </div>
-
-                <div class="question">
-                    <div class="question-title">4. Menurut Anda, apa peran utama teknologi dalam kehidupan manusia di masa depan?</div>
-                    <ul class="options">
-                        <li class="option">
-                            <input type="radio" id="q25a" name="q25" value="a">
-                            <label for="q25a">Sebagai alat untuk meningkatkan efisiensi dan kenyamanan hidup.</label>
-                        </li>
-                        <li class="option">
-                            <input type="radio" id="q25b" name="q25" value="b">
-                            <label for="q25b">Sebagai pendorong evolusi kesadaran dan pemahaman manusia.</label>
-                        </li>
-                        <li class="option">
-                            <input type="radio" id="q25c" name="q25" value="c">
-                            <label for="q25c">Sebagai potensi ancaman terhadap kemanusiaan jika tidak dikelola dengan bijak.</label>
-                        </li>
-                        <li class="option">
-                            <input type="radio" id="q25d" name="q25" value="d">
-                            <label for="q25d">Sebagai sarana untuk menjembatani kesenjangan dan menciptakan dunia yang lebih inklusif.</label>
-                        </li>
-                    </ul>
-                </div>
-            </div>
-
-            <div class="submit-container">
-                <button type="submit" class="submit-btn">Kirim Jawaban</button>
-                <div class="results" id="results">
-                    <h3>Terima kasih telah mengikuti kuis!</h3>
-                    <p>Jawaban Anda telah disimpan dan akan dianalisis untuk memberikan wawasan tentang kepribadian dan pandangan filosofis Anda.</p>
-                </div>
-            </div>
-        </form>
     </div>
 
     <script>
