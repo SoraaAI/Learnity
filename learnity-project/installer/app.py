@@ -17,7 +17,7 @@ def install_dependency(pkg_name, module_name=None):
         return f"✅ {pkg_name} sudah terinstall."
     else:
         os.system(f"pip install {module_name}")
-        return f"❌ {pkg_name} belum terinstall, menginstall.."
+        return f"❌ {pkg_name} belum terinstall, coba untuk jalankan pengecekan sekali lagi.."
 
 class API:
     def check_dependicies(self):

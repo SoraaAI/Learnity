@@ -35,7 +35,7 @@
   <script>
     async function checkDependencies() {
       const outputDiv = document.getElementById('output');
-      outputDiv.textContent = '⏳ Mengecek dependensi...';
+      outputDiv.textContent = '⏳ Mengecek dan menginstall dependensi...';
       try {
         if (!window.pywebview || !window.pywebview.api) {
           throw new Error('Sebentar yaa, API nya lagi disiapin nih. Kasi waktu sekitar 10-15 detik.')
