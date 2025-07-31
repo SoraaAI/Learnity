@@ -37,7 +37,7 @@ class API:
         messages.append(install_dependency("pyautogui"))
         return messages
 
-html_path = os.path.abspath("index.html")
+html_path = 'index.html'
 api = API()
 window = webview.create_window("Learnity Setup",
                                html_path,
