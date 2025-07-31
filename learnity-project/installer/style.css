@@ -95,7 +95,9 @@ button:hover {
     padding: 15px;
     border-radius: 8px;
     font-size: 14px;
-    text-align: center;
-    /* white-space: pre-line; */
+    text-align: left;
+    white-space: pre-line;
     line-height: 1.6;
+    max-height: 200px;
+    overflow-y: auto;
 }

@@ -36,8 +36,10 @@
     async function checkDependencies() {
       const outputDiv = document.getElementById('output');
       outputDiv.textContent = '⏳ Mengecek dependensi...';
-
       try {
+        if (!window.pywebview || !window.pywebview.api) {
+          throw new Error('Sebentar yaa, API nya lagi disiapin nih. Kasi waktu sekitar 10-15 detik.')
+        }
         const result = await window.pywebview.api.check_dependicies();
         outputDiv.textContent = result.join('\n');
       } catch (e) {
