@@ -417,7 +417,7 @@
                     }
                     
                     // Kita localhost kan
-                    const response = await fetch('../database/user_data.json');
+                    const response = await fetch('/database/user_data.json');
                     if (response.ok) {
                         this.userData = await response.json();
                         console.log('User data loaded from file:', this.userData);
