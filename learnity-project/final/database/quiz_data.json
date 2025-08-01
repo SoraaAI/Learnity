@@ -1,0 +1,3958 @@
+{
+  "Bahasa Indonesia": [
+    {
+      "q": "'Hujan emas di negeri orang' adalah contoh?",
+      "a": "peribahasa",
+      "options": [
+        "pantun",
+        "peribahasa",
+        "puisi",
+        "cerpen"
+      ]
+    },
+    {
+      "q": "Sinonim dari kata 'pandai' adalah?",
+      "a": "cerdas",
+      "options": [
+        "bodoh",
+        "cerdas",
+        "lambat",
+        "pelupa"
+      ]
+    },
+    {
+      "q": "Antonim dari kata 'baik' adalah?",
+      "a": "buruk",
+      "options": [
+        "ramah",
+        "bagus",
+        "buruk",
+        "manis"
+      ]
+    },
+    {
+      "q": "Cerita pendek disebut juga dengan?",
+      "a": "cerpen",
+      "options": [
+        "novel",
+        "puisi",
+        "cerpen",
+        "esai"
+      ]
+    },
+    {
+      "q": "Kata 'berlari' termasuk jenis kata?",
+      "a": "kata kerja",
+      "options": [
+        "kata kerja",
+        "kata benda",
+        "kata sifat",
+        "kata ganti"
+      ]
+    },
+    {
+      "q": "Kata 'merah' termasuk jenis kata?",
+      "a": "kata sifat",
+      "options": [
+        "kata benda",
+        "kata kerja",
+        "kata sifat",
+        "kata keterangan"
+      ]
+    },
+    {
+      "q": "Kalimat 'Dia pergi ke sekolah' adalah kalimat?",
+      "a": "kalimat berita",
+      "options": [
+        "kalimat tanya",
+        "kalimat perintah",
+        "kalimat berita",
+        "kalimat seru"
+      ]
+    },
+    {
+      "q": "Puisi lama yang terdiri dari empat baris dan bersajak a-b-a-b adalah?",
+      "a": "pantun",
+      "options": [
+        "syair",
+        "pantun",
+        "gurindam",
+        "mantra"
+      ]
+    },
+    {
+      "q": "Kata baku dari 'aktifitas' adalah?",
+      "a": "aktivitas",
+      "options": [
+        "aktifitas",
+        "aktivitas",
+        "aktipitas",
+        "aktivet"
+      ]
+    },
+    {
+      "q": "Kalimat yang mengandung dua klausa disebut?",
+      "a": "kalimat majemuk",
+      "options": [
+        "kalimat tunggal",
+        "kalimat majemuk",
+        "kalimat sederhana",
+        "kalimat utama"
+      ]
+    },
+    {
+      "q": "Kata yang digunakan untuk menggantikan benda atau orang disebut?",
+      "a": "kata ganti",
+      "options": [
+        "kata sifat",
+        "kata kerja",
+        "kata ganti",
+        "kata tanya"
+      ]
+    },
+    {
+      "q": "Tokoh utama dalam cerita disebut juga dengan?",
+      "a": "protagonis",
+      "options": [
+        "narator",
+        "protagonis",
+        "antagonis",
+        "figuran"
+      ]
+    },
+    {
+      "q": "Kata 'rumah-rumah' adalah contoh?",
+      "a": "kata ulang",
+      "options": [
+        "kata kerja",
+        "kata ulang",
+        "kata dasar",
+        "kata sifat"
+      ]
+    },
+    {
+      "q": "Kata 'karena', 'sehingga', dan 'tetapi' termasuk?",
+      "a": "konjungsi",
+      "options": [
+        "preposisi",
+        "konjungsi",
+        "interjeksi",
+        "kata benda"
+      ]
+    },
+    {
+      "q": "Kalimat yang mengandung kata kerja imperatif disebut?",
+      "a": "kalimat perintah",
+      "options": [
+        "kalimat tanya",
+        "kalimat berita",
+        "kalimat perintah",
+        "kalimat ajakan"
+      ]
+    },
+    {
+      "q": "Judul, orientasi, komplikasi, dan resolusi adalah struktur dari teks?",
+      "a": "narasi",
+      "options": [
+        "eksposisi",
+        "narasi",
+        "deskripsi",
+        "argumentasi"
+      ]
+    },
+    {
+      "q": "Bahasa Indonesia berasal dari bahasa?",
+      "a": "Melayu",
+      "options": [
+        "Jawa",
+        "Sunda",
+        "Melayu",
+        "Bugis"
+      ]
+    },
+    {
+      "q": "Kata 'saya', 'kami', 'mereka' adalah contoh?",
+      "a": "pronomina",
+      "options": [
+        "konjungsi",
+        "pronomina",
+        "adjektiva",
+        "adverbia"
+      ]
+    },
+    {
+      "q": "Kalimat yang bertujuan untuk menanyakan sesuatu disebut?",
+      "a": "kalimat tanya",
+      "options": [
+        "kalimat berita",
+        "kalimat perintah",
+        "kalimat tanya",
+        "kalimat ajakan"
+      ]
+    },
+    {
+      "q": "Paragraf yang berisi gagasan utama disebut paragraf?",
+      "a": "deduktif",
+      "options": [
+        "deduktif",
+        "induktif",
+        "campuran",
+        "naratif"
+      ]
+    },
+    {
+      "q": "Unsur intrinsik cerpen yang menggambarkan waktu dan tempat disebut?",
+      "a": "latar",
+      "options": [
+        "tema",
+        "tokoh",
+        "latar",
+        "alur"
+      ]
+    },
+    {
+      "q": "Kalimat 'Andi bermain bola di lapangan' mengandung unsur?",
+      "a": "SPOK",
+      "options": [
+        "SP",
+        "SPO",
+        "SPOK",
+        "POK"
+      ]
+    },
+    {
+      "q": "Kata 'mengajar' terdiri dari awalan?",
+      "a": "me-",
+      "options": [
+        "me-",
+        "di-",
+        "ter-",
+        "ber-"
+      ]
+    },
+    {
+      "q": "Kata 'membaca' adalah kata kerja bentuk?",
+      "a": "aktif",
+      "options": [
+        "aktif",
+        "pasif",
+        "netral",
+        "tidak baku"
+      ]
+    },
+    {
+      "q": "Kalimat 'Pintu itu dibuka oleh ayah' termasuk bentuk?",
+      "a": "kalimat pasif",
+      "options": [
+        "kalimat aktif",
+        "kalimat pasif",
+        "kalimat majemuk",
+        "kalimat langsung"
+      ]
+    },
+    {
+      "q": "Kalimat 'Dia membaca buku di perpustakaan' memiliki pola?",
+      "a": "SPOK",
+      "options": [
+        "SPO",
+        "SPOK",
+        "SPK",
+        "SOP"
+      ]
+    },
+    {
+      "q": "Antonim dari kata 'tinggi' adalah?",
+      "a": "rendah",
+      "options": [
+        "kecil",
+        "rendah",
+        "pendek",
+        "kurus"
+      ]
+    },
+    {
+      "q": "Kata 'bermain' merupakan jenis kata kerja yang memiliki awalan?",
+      "a": "ber-",
+      "options": [
+        "me-",
+        "di-",
+        "ber-",
+        "ter-"
+      ]
+    },
+    {
+      "q": "Sinonim dari kata 'lelah' adalah?",
+      "a": "capai",
+      "options": [
+        "capai",
+        "malas",
+        "sakit",
+        "ngantuk"
+      ]
+    },
+    {
+      "q": "Teks yang bertujuan menjelaskan sesuatu disebut teks?",
+      "a": "eksplanasi",
+      "options": [
+        "narasi",
+        "eksposisi",
+        "deskripsi",
+        "eksplanasi"
+      ]
+    },
+    {
+      "q": "Tokoh yang menentang tokoh utama disebut?",
+      "a": "antagonis",
+      "options": [
+        "tokoh pendukung",
+        "antagonis",
+        "narator",
+        "protagonis"
+      ]
+    },
+    {
+      "q": "Kalimat langsung ditandai dengan penggunaan?",
+      "a": "tanda petik",
+      "options": [
+        "huruf miring",
+        "tanda titik",
+        "tanda petik",
+        "tanda koma"
+      ]
+    },
+    {
+      "q": "Kata 'diambil' termasuk kata kerja bentuk?",
+      "a": "pasif",
+      "options": [
+        "aktif",
+        "pasif",
+        "imperatif",
+        "transitif"
+      ]
+    },
+    {
+      "q": "Kalimat 'Apakah kamu sudah makan?' adalah contoh kalimat?",
+      "a": "tanya",
+      "options": [
+        "perintah",
+        "berita",
+        "seru",
+        "tanya"
+      ]
+    },
+    {
+      "q": "Teks yang menggambarkan suatu objek secara rinci disebut teks?",
+      "a": "deskripsi",
+      "options": [
+        "narasi",
+        "deskripsi",
+        "eksposisi",
+        "cerita"
+      ]
+    },
+    {
+      "q": "Kata 'kemerdekaan' termasuk dalam kata berimbuhan?",
+      "a": "ke-an",
+      "options": [
+        "me-",
+        "ber-",
+        "ke-an",
+        "di-"
+      ]
+    },
+    {
+      "q": "Puisi yang tidak terikat rima dan irama disebut?",
+      "a": "puisi bebas",
+      "options": [
+        "pantun",
+        "puisi bebas",
+        "syair",
+        "gurindam"
+      ]
+    },
+    {
+      "q": "Kata 'kami' digunakan untuk mengganti nama orang dalam bentuk?",
+      "a": "jamak",
+      "options": [
+        "tunggal",
+        "jamak",
+        "umum",
+        "baku"
+      ]
+    },
+    {
+      "q": "Kata 'sebagai', 'bagaikan', dan 'laksana' biasanya terdapat dalam?",
+      "a": "majas perbandingan",
+      "options": [
+        "majas sindiran",
+        "majas perbandingan",
+        "majas hiperbola",
+        "majas personifikasi"
+      ]
+    },
+    {
+      "q": "Kata baku dari 'analisa' adalah?",
+      "a": "analisis",
+      "options": [
+        "analisa",
+        "analis",
+        "analisis",
+        "analisasi"
+      ]
+    },
+    {
+      "q": "Kalimat yang digunakan untuk menyuruh seseorang melakukan sesuatu adalah kalimat?",
+      "a": "perintah",
+      "options": [
+        "berita",
+        "perintah",
+        "tanya",
+        "seru"
+      ]
+    },
+    {
+      "q": "Makna tersirat dalam sebuah peribahasa disebut?",
+      "a": "makna kiasan",
+      "options": [
+        "makna denotatif",
+        "makna literal",
+        "makna kiasan",
+        "makna langsung"
+      ]
+    },
+    {
+      "q": "Cerita fiksi yang biasanya mengandung pelajaran moral disebut?",
+      "a": "fabel",
+      "options": [
+        "fabel",
+        "legenda",
+        "cerpen",
+        "anekdot"
+      ]
+    },
+    {
+      "q": "Kata 'berbicara' termasuk jenis kata?",
+      "a": "kata kerja",
+      "options": [
+        "kata benda",
+        "kata sifat",
+        "kata kerja",
+        "kata ganti"
+      ]
+    },
+    {
+      "q": "Kata 'sangat' termasuk dalam jenis kata?",
+      "a": "adverbia",
+      "options": [
+        "adjektiva",
+        "adverbia",
+        "konjungsi",
+        "interjeksi"
+      ]
+    },
+    {
+      "q": "Kalimat yang mengandung kata 'jangan' termasuk kalimat?",
+      "a": "larangan",
+      "options": [
+        "perintah",
+        "berita",
+        "tanya",
+        "larangan"
+      ]
+    },
+    {
+      "q": "Kata 'bertemu' terdiri dari awalan?",
+      "a": "ber-",
+      "options": [
+        "me-",
+        "di-",
+        "ber-",
+        "ter-"
+      ]
+    },
+    {
+      "q": "Kata 'makanan' termasuk dalam jenis kata?",
+      "a": "kata benda",
+      "options": [
+        "kata kerja",
+        "kata sifat",
+        "kata benda",
+        "kata ganti"
+      ]
+    },
+    {
+      "q": "Kalimat 'Dia sedang belajar di rumah' memiliki pola?",
+      "a": "SPOK",
+      "options": [
+        "SPO",
+        "SPOK",
+        "SPK",
+        "SOP"
+      ]
+    },
+    {
+      "q": "Kata 'bermain' adalah contoh kata kerja bentuk?",
+      "a": "aktif",
+      "options": [
+        "aktif",
+        "pasif",
+        "netral",
+        "imperatif"
+      ]
+    }
+  ],
+  "Sejarah Indonesia": [
+    {
+      "q": "Siapakah proklamator kemerdekaan Indonesia?",
+      "a": "Soekarno dan Mohammad Hatta",
+      "options": [
+        "Soekarno dan H. Agus Salim",
+        "Soekarno dan Mohammad Hatta",
+        "Sutan Sjahrir dan Soekarno",
+        "Mohammad Hatta dan Tan Malaka"
+      ]
+    },
+    {
+      "q": "Proklamasi kemerdekaan Indonesia dibacakan pada tanggal?",
+      "a": "17 Agustus 1945",
+      "options": [
+        "1 Juni 1945",
+        "17 Agustus 1945",
+        "10 November 1945",
+        "27 Desember 1949"
+      ]
+    },
+    {
+      "q": "Naskah proklamasi diketik oleh?",
+      "a": "Sayuti Melik",
+      "options": [
+        "BM Diah",
+        "Sutan Sjahrir",
+        "Sayuti Melik",
+        "Ahmad Subardjo"
+      ]
+    },
+    {
+      "q": "Tokoh pendiri Budi Utomo adalah?",
+      "a": "Dr. Soetomo",
+      "options": [
+        "H. Agus Salim",
+        "Ki Hajar Dewantara",
+        "Dr. Soetomo",
+        "Mohammad Yamin"
+      ]
+    },
+    {
+      "q": "Peristiwa Rengasdengklok terjadi karena?",
+      "a": "Perbedaan pendapat tentang waktu proklamasi",
+      "options": [
+        "Penyerbuan tentara Jepang",
+        "Kudeta oleh PETA",
+        "Perbedaan pendapat tentang waktu proklamasi",
+        "Sumpah Pemuda"
+      ]
+    },
+    {
+      "q": "Organisasi pemuda yang pertama kali lahir di Indonesia adalah?",
+      "a": "Budi Utomo",
+      "options": [
+        "Budi Utomo",
+        "Jong Java",
+        "Indische Partij",
+        "Tri Koro Dharmo"
+      ]
+    },
+    {
+      "q": "Sumpah Pemuda dicetuskan pada tanggal?",
+      "a": "28 Oktober 1928",
+      "options": [
+        "17 Agustus 1945",
+        "1 Juni 1945",
+        "28 Oktober 1928",
+        "20 Mei 1908"
+      ]
+    },
+    {
+      "q": "Gagasan negara Indonesia merdeka pertama kali dikemukakan oleh?",
+      "a": "Mohammad Yamin",
+      "options": [
+        "Soekarno",
+        "Mohammad Yamin",
+        "Tan Malaka",
+        "Dr. Soetomo"
+      ]
+    },
+    {
+      "q": "Lambang Garuda Pancasila diciptakan oleh?",
+      "a": "Sultan Hamid II",
+      "options": [
+        "Soeharto",
+        "Mohammad Hatta",
+        "Sultan Hamid II",
+        "Ki Hajar Dewantara"
+      ]
+    },
+    {
+      "q": "Kapan VOC dibubarkan?",
+      "a": "1799",
+      "options": [
+        "1602",
+        "1800",
+        "1799",
+        "1700"
+      ]
+    },
+    {
+      "q": "Perang Diponegoro terjadi pada tahun?",
+      "a": "1825–1830",
+      "options": [
+        "1810–1815",
+        "1825–1830",
+        "1835–1840",
+        "1800–1805"
+      ]
+    },
+    {
+      "q": "Siapakah pemimpin Perang Aceh?",
+      "a": "Cut Nyak Dhien",
+      "options": [
+        "Pattimura",
+        "Teuku Umar",
+        "Cut Nyak Dhien",
+        "Sisingamangaraja"
+      ]
+    },
+    {
+      "q": "Organisasi kepanduan yang didirikan oleh Ki Hajar Dewantara adalah?",
+      "a": "Taman Siswa",
+      "options": [
+        "Taman Siswa",
+        "Hizbul Wathan",
+        "Jong Java",
+        "Gerindo"
+      ]
+    },
+    {
+      "q": "Negara Indonesia secara de jure diakui kemerdekaannya oleh Belanda pada?",
+      "a": "27 Desember 1949",
+      "options": [
+        "17 Agustus 1945",
+        "1 Januari 1946",
+        "27 Desember 1949",
+        "28 Oktober 1928"
+      ]
+    },
+    {
+      "q": "Apa nama konstitusi pertama Indonesia setelah merdeka?",
+      "a": "UUD 1945",
+      "options": [
+        "UUD 1945",
+        "Konstitusi RIS",
+        "UUD Sementara",
+        "Piagam Jakarta"
+      ]
+    },
+    {
+      "q": "Presiden Indonesia pertama adalah?",
+      "a": "Soekarno",
+      "options": [
+        "Soekarno",
+        "Mohammad Hatta",
+        "Soeharto",
+        "BJ Habibie"
+      ]
+    },
+    {
+      "q": "G30S/PKI terjadi pada tahun?",
+      "a": "1965",
+      "options": [
+        "1948",
+        "1965",
+        "1975",
+        "1998"
+      ]
+    },
+    {
+      "q": "Reformasi Indonesia dimulai pada tahun?",
+      "a": "1998",
+      "options": [
+        "1995",
+        "1997",
+        "1998",
+        "2000"
+      ]
+    },
+    {
+      "q": "Perang Pattimura terjadi di daerah?",
+      "a": "Maluku",
+      "options": [
+        "Bali",
+        "Maluku",
+        "Aceh",
+        "Sumatera"
+      ]
+    },
+    {
+      "q": "Bung Tomo dikenal sebagai tokoh penting dalam peristiwa?",
+      "a": "10 November di Surabaya",
+      "options": [
+        "Sumpah Pemuda",
+        "Proklamasi",
+        "10 November di Surabaya",
+        "Konferensi Meja Bundar"
+      ]
+    },
+    {
+      "q": "Trikora dicetuskan oleh?",
+      "a": "Soekarno",
+      "options": [
+        "Soeharto",
+        "BJ Habibie",
+        "Soekarno",
+        "Adam Malik"
+      ]
+    },
+    {
+      "q": "Apa isi utama Trikora?",
+      "a": "Membebaskan Irian Barat",
+      "options": [
+        "Menggulingkan Belanda",
+        "Membentuk ABRI",
+        "Membebaskan Irian Barat",
+        "Membentuk kabinet baru"
+      ]
+    },
+    {
+      "q": "Pancasila pertama kali dikemukakan oleh?",
+      "a": "Soekarno",
+      "options": [
+        "Mohammad Yamin",
+        "Soekarno",
+        "Ki Hajar Dewantara",
+        "Sultan Syahrir"
+      ]
+    },
+    {
+      "q": "Tujuan utama Kongres Pemuda II adalah?",
+      "a": "Persatuan pemuda Indonesia",
+      "options": [
+        "Menjajah Belanda",
+        "Proklamasi kemerdekaan",
+        "Persatuan pemuda Indonesia",
+        "Mendirikan partai politik"
+      ]
+    },
+    {
+      "q": "Kapitulasi Kalijati adalah?",
+      "a": "Penyerahan Belanda kepada Jepang",
+      "options": [
+        "Perjanjian dagang",
+        "Penyerahan Belanda kepada Jepang",
+        "Deklarasi perang",
+        "Pendirian tentara Indonesia"
+      ]
+    },
+    {
+      "q": "Soekarno-Hatta dibawa ke Rengasdengklok oleh kelompok?",
+      "a": "Pemuda",
+      "options": [
+        "Kaigun",
+        "Pemuda",
+        "Tentara Jepang",
+        "KNIP"
+      ]
+    },
+    {
+      "q": "Jepang masuk ke Indonesia pada tahun?",
+      "a": "1942",
+      "options": [
+        "1941",
+        "1942",
+        "1943",
+        "1945"
+      ]
+    },
+    {
+      "q": "Konferensi Asia-Afrika berlangsung di kota?",
+      "a": "Bandung",
+      "options": [
+        "Jakarta",
+        "Bandung",
+        "Surabaya",
+        "Yogyakarta"
+      ]
+    },
+    {
+      "q": "Salah satu tokoh nasional wanita yang gigih memperjuangkan pendidikan adalah?",
+      "a": "RA Kartini",
+      "options": [
+        "RA Kartini",
+        "Cut Nyak Meutia",
+        "Martha Christina",
+        "Fatmawati"
+      ]
+    },
+    {
+      "q": "Politik etis Belanda bertujuan?",
+      "a": "Meningkatkan kesejahteraan rakyat pribumi",
+      "options": [
+        "Menambah kekayaan Belanda",
+        "Meningkatkan kesejahteraan rakyat pribumi",
+        "Menguasai tambang",
+        "Menumpas pemberontakan"
+      ]
+    },
+    {
+      "q": "Tujuan Belanda mendirikan VOC adalah?",
+      "a": "Menguasai perdagangan di Asia",
+      "options": [
+        "Membantu rakyat Indonesia",
+        "Menguasai tambang",
+        "Menguasai perdagangan di Asia",
+        "Menyebarkan agama"
+      ]
+    },
+    {
+      "q": "Budi Utomo berdiri pada tahun?",
+      "a": "1908",
+      "options": [
+        "1928",
+        "1945",
+        "1908",
+        "1933"
+      ]
+    },
+    {
+      "q": "Siapakah penulis buku 'Indonesia Menggugat'?",
+      "a": "Soekarno",
+      "options": [
+        "Mohammad Hatta",
+        "Sutan Sjahrir",
+        "Soekarno",
+        "Tan Malaka"
+      ]
+    },
+    {
+      "q": "Bung Hatta dikenal sebagai?",
+      "a": "Bapak Koperasi Indonesia",
+      "options": [
+        "Bapak Proklamator",
+        "Bapak TNI",
+        "Bapak Koperasi Indonesia",
+        "Bapak Pancasila"
+      ]
+    },
+    {
+      "q": "Tujuan dibentuknya BPUPKI adalah?",
+      "a": "Mempersiapkan kemerdekaan Indonesia",
+      "options": [
+        "Mengatur pemerintahan Jepang",
+        "Mempersiapkan kemerdekaan Indonesia",
+        "Membuat perjanjian internasional",
+        "Mendirikan partai"
+      ]
+    },
+    {
+      "q": "Ketua BPUPKI adalah?",
+      "a": "Radjiman Wedyodiningrat",
+      "options": [
+        "Soekarno",
+        "Mohammad Yamin",
+        "Radjiman Wedyodiningrat",
+        "Soeharto"
+      ]
+    },
+    {
+      "q": "Konferensi Meja Bundar (KMB) berlangsung di?",
+      "a": "Den Haag",
+      "options": [
+        "Jakarta",
+        "Den Haag",
+        "Amsterdam",
+        "Brussels"
+      ]
+    },
+    {
+      "q": "Apa hasil utama dari KMB?",
+      "a": "Pengakuan kedaulatan Indonesia",
+      "options": [
+        "Dekolonisasi",
+        "Pengakuan kedaulatan Indonesia",
+        "Perdagangan bebas",
+        "Pembentukan PBB"
+      ]
+    },
+    {
+      "q": "Angkatan 66 dikenal dalam peristiwa?",
+      "a": "Tuntutan Tritura",
+      "options": [
+        "G30S",
+        "Tuntutan Tritura",
+        "Supersemar",
+        "Reformasi"
+      ]
+    },
+    {
+      "q": "Supersemar adalah surat perintah kepada?",
+      "a": "Soeharto",
+      "options": [
+        "Soekarno",
+        "Soeharto",
+        "Habibie",
+        "Yusuf Kalla"
+      ]
+    },
+    {
+      "q": "Perang Puputan Bali dipimpin oleh?",
+      "a": "I Gusti Ngurah Rai",
+      "options": [
+        "I Gusti Ngurah Rai",
+        "Pattimura",
+        "Kapitan Toba",
+        "Sultan Ageng Tirtayasa"
+      ]
+    },
+    {
+      "q": "Siapakah pendiri Sarekat Islam?",
+      "a": "Haji Samanhudi",
+      "options": [
+        "Haji Agus Salim",
+        "Haji Samanhudi",
+        "KH Ahmad Dahlan",
+        "KH Hasyim Asy'ari"
+      ]
+    },
+    {
+      "q": "Apa nama ideologi Belanda yang ingin menyatukan wilayah koloninya?",
+      "a": "Indonesia Raya",
+      "options": [
+        "Nasionalisme",
+        "Indonesianisasi",
+        "Politik Etis",
+        "Nederlandsch-Indië"
+      ]
+    },
+    {
+      "q": "Kerajaan Islam pertama di Indonesia adalah?",
+      "a": "Samudra Pasai",
+      "options": [
+        "Demak",
+        "Samudra Pasai",
+        "Mataram",
+        "Aceh"
+      ]
+    },
+    {
+      "q": "Peristiwa Malari terjadi pada masa pemerintahan?",
+      "a": "Soeharto",
+      "options": [
+        "Soekarno",
+        "Soeharto",
+        "Habibie",
+        "Megawati"
+      ]
+    },
+    {
+      "q": "Penjajahan Jepang di Indonesia berlangsung selama?",
+      "a": "3,5 tahun",
+      "options": [
+        "2 tahun",
+        "3,5 tahun",
+        "4 tahun",
+        "5 tahun"
+      ]
+    },
+    {
+      "q": "Masa Orde Baru dimulai pada tahun?",
+      "a": "1966",
+      "options": [
+        "1945",
+        "1965",
+        "1966",
+        "1998"
+      ]
+    },
+    {
+      "q": "Kerajaan Hindu pertama di Indonesia adalah?",
+      "a": "Kutai",
+      "options": [
+        "Majapahit",
+        "Sriwijaya",
+        "Kutai",
+        "Tarumanegara"
+      ]
+    }
+  ],
+  "Matematika": [
+    {
+      "q": "Hasil dari 8 × 7 adalah?",
+      "a": "56",
+      "options": [
+        "49",
+        "54",
+        "56",
+        "58"
+      ]
+    },
+    {
+      "q": "Berapa hasil dari 36 ÷ 6?",
+      "a": "6",
+      "options": [
+        "5",
+        "6",
+        "7",
+        "8"
+      ]
+    },
+    {
+      "q": "Hasil dari 25 + 17 adalah?",
+      "a": "42",
+      "options": [
+        "32",
+        "42",
+        "35",
+        "44"
+      ]
+    },
+    {
+      "q": "Berapakah 5 kuadrat?",
+      "a": "25",
+      "options": [
+        "20",
+        "10",
+        "25",
+        "15"
+      ]
+    },
+    {
+      "q": "Nilai dari 100 − 47 adalah?",
+      "a": "53",
+      "options": [
+        "43",
+        "53",
+        "57",
+        "63"
+      ]
+    },
+    {
+      "q": "Angka yang berada di antara 40 dan 50 yang habis dibagi 7 adalah?",
+      "a": "42",
+      "options": [
+        "41",
+        "42",
+        "43",
+        "49"
+      ]
+    },
+    {
+      "q": "Jika sisi persegi adalah 6 cm, maka luasnya adalah?",
+      "a": "36 cm²",
+      "options": [
+        "30 cm²",
+        "36 cm²",
+        "24 cm²",
+        "42 cm²"
+      ]
+    },
+    {
+      "q": "Keliling segitiga dengan sisi 5 cm, 6 cm, dan 7 cm adalah?",
+      "a": "18 cm",
+      "options": [
+        "16 cm",
+        "17 cm",
+        "18 cm",
+        "19 cm"
+      ]
+    },
+    {
+      "q": "Hasil dari 3 × (4 + 2) adalah?",
+      "a": "18",
+      "options": [
+        "15",
+        "16",
+        "18",
+        "20"
+      ]
+    },
+    {
+      "q": "Nilai tempat angka 7 dalam bilangan 7.341 adalah?",
+      "a": "ribuan",
+      "options": [
+        "satuan",
+        "puluhan",
+        "ratusan",
+        "ribuan"
+      ]
+    },
+    {
+      "q": "Bilangan genap yang kurang dari 10 adalah?",
+      "a": "8",
+      "options": [
+        "3",
+        "5",
+        "7",
+        "8"
+      ]
+    },
+    {
+      "q": "Pecahan setara dari 1/2 adalah?",
+      "a": "2/4",
+      "options": [
+        "1/3",
+        "2/4",
+        "3/5",
+        "1/4"
+      ]
+    },
+    {
+      "q": "Berapakah 3/4 dari 20?",
+      "a": "15",
+      "options": [
+        "10",
+        "12",
+        "15",
+        "16"
+      ]
+    },
+    {
+      "q": "Sudut siku-siku besarnya adalah?",
+      "a": "90°",
+      "options": [
+        "45°",
+        "60°",
+        "90°",
+        "120°"
+      ]
+    },
+    {
+      "q": "Bangun yang memiliki 4 sisi sama panjang dan 4 sudut siku-siku adalah?",
+      "a": "persegi",
+      "options": [
+        "persegi panjang",
+        "jajar genjang",
+        "persegi",
+        "trapesium"
+      ]
+    },
+    {
+      "q": "Jika 2x = 12, maka nilai x adalah?",
+      "a": "6",
+      "options": [
+        "4",
+        "5",
+        "6",
+        "7"
+      ]
+    },
+    {
+      "q": "Hasil dari -4 + 9 adalah?",
+      "a": "5",
+      "options": [
+        "13",
+        "3",
+        "5",
+        "-5"
+      ]
+    },
+    {
+      "q": "Jika jari-jari lingkaran adalah 7 cm, maka diameternya adalah?",
+      "a": "14 cm",
+      "options": [
+        "10 cm",
+        "14 cm",
+        "21 cm",
+        "28 cm"
+      ]
+    },
+    {
+      "q": "Hasil dari 2³ adalah?",
+      "a": "8",
+      "options": [
+        "6",
+        "8",
+        "9",
+        "12"
+      ]
+    },
+    {
+      "q": "Angka romawi untuk 50 adalah?",
+      "a": "L",
+      "options": [
+        "X",
+        "L",
+        "V",
+        "C"
+      ]
+    },
+    {
+      "q": "Volume kubus dengan sisi 3 cm adalah?",
+      "a": "27 cm³",
+      "options": [
+        "9 cm³",
+        "18 cm³",
+        "27 cm³",
+        "36 cm³"
+      ]
+    },
+    {
+      "q": "Berapa hasil dari 5² − 4²?",
+      "a": "9",
+      "options": [
+        "1",
+        "7",
+        "9",
+        "11"
+      ]
+    },
+    {
+      "q": "Rumus luas segitiga adalah?",
+      "a": "½ × alas × tinggi",
+      "options": [
+        "alas × tinggi",
+        "sisi × sisi",
+        "½ × alas × tinggi",
+        "π × r²"
+      ]
+    },
+    {
+      "q": "Jika jam menunjukkan pukul 3, maka sudut antara jarum pendek dan panjang adalah?",
+      "a": "90°",
+      "options": [
+        "45°",
+        "90°",
+        "180°",
+        "270°"
+      ]
+    },
+    {
+      "q": "Berapakah 20% dari 200?",
+      "a": "40",
+      "options": [
+        "30",
+        "40",
+        "50",
+        "60"
+      ]
+    },
+    {
+      "q": "Bentuk sederhana dari 8/16 adalah?",
+      "a": "1/2",
+      "options": [
+        "1/4",
+        "1/2",
+        "2/3",
+        "3/4"
+      ]
+    },
+    {
+      "q": "Berapa banyak sisi segi lima?",
+      "a": "5",
+      "options": [
+        "3",
+        "4",
+        "5",
+        "6"
+      ]
+    },
+    {
+      "q": "Berapakah hasil dari 7²?",
+      "a": "49",
+      "options": [
+        "36",
+        "42",
+        "49",
+        "56"
+      ]
+    },
+    {
+      "q": "Rumus keliling lingkaran adalah?",
+      "a": "2πr",
+      "options": [
+        "πr²",
+        "πd",
+        "2πr",
+        "2r"
+      ]
+    },
+    {
+      "q": "Jika 3x + 2 = 11, maka x adalah?",
+      "a": "3",
+      "options": [
+        "2",
+        "3",
+        "4",
+        "5"
+      ]
+    },
+    {
+      "q": "Berapakah hasil 10! (10 faktorial)?",
+      "a": "3628800",
+      "options": [
+        "100000",
+        "362880",
+        "3628800",
+        "9999999"
+      ]
+    },
+    {
+      "q": "Satu jam sama dengan berapa detik?",
+      "a": "3600",
+      "options": [
+        "600",
+        "3600",
+        "7200",
+        "1800"
+      ]
+    },
+    {
+      "q": "Rumus luas persegi panjang adalah?",
+      "a": "panjang × lebar",
+      "options": [
+        "sisi × sisi",
+        "panjang × lebar",
+        "alas × tinggi",
+        "π × r²"
+      ]
+    },
+    {
+      "q": "Jika suhu di kulkas -5°C dan di luar 20°C, beda suhunya adalah?",
+      "a": "25°C",
+      "options": [
+        "15°C",
+        "20°C",
+        "25°C",
+        "30°C"
+      ]
+    },
+    {
+      "q": "Jika kamu membeli 3 buku seharga Rp20.000 per buku, berapa total harganya?",
+      "a": "Rp60.000",
+      "options": [
+        "Rp40.000",
+        "Rp60.000",
+        "Rp70.000",
+        "Rp80.000"
+      ]
+    },
+    {
+      "q": "Apa nama bangun ruang yang memiliki 6 sisi berbentuk persegi panjang?",
+      "a": "balok",
+      "options": [
+        "kubus",
+        "tabung",
+        "balok",
+        "bola"
+      ]
+    },
+    {
+      "q": "Hasil dari 0,25 × 100 adalah?",
+      "a": "25",
+      "options": [
+        "20",
+        "25",
+        "30",
+        "35"
+      ]
+    },
+    {
+      "q": "Akar kuadrat dari 81 adalah?",
+      "a": "9",
+      "options": [
+        "7",
+        "8",
+        "9",
+        "10"
+      ]
+    },
+    {
+      "q": "Berapakah 1/5 dari 100?",
+      "a": "20",
+      "options": [
+        "15",
+        "20",
+        "25",
+        "30"
+      ]
+    },
+    {
+      "q": "Sisi alas pada limas segitiga berbentuk?",
+      "a": "segitiga",
+      "options": [
+        "persegi",
+        "segitiga",
+        "trapesium",
+        "lingkaran"
+      ]
+    },
+    {
+      "q": "Berapa hasil 0 × 999?",
+      "a": "0",
+      "options": [
+        "999",
+        "1",
+        "0",
+        "9"
+      ]
+    },
+    {
+      "q": "Jika x = 4, berapa nilai dari x² + 2x?",
+      "a": "24",
+      "options": [
+        "16",
+        "20",
+        "24",
+        "28"
+      ]
+    },
+    {
+      "q": "Jika panjang sisi kubus adalah 10 cm, luas seluruh permukaannya adalah?",
+      "a": "600 cm²",
+      "options": [
+        "500 cm²",
+        "600 cm²",
+        "700 cm²",
+        "800 cm²"
+      ]
+    },
+    {
+      "q": "Dalam desimal, 1/4 sama dengan?",
+      "a": "0,25",
+      "options": [
+        "0,2",
+        "0,25",
+        "0,3",
+        "0,4"
+      ]
+    },
+    {
+      "q": "Garis yang membagi lingkaran menjadi dua bagian sama besar disebut?",
+      "a": "diameter",
+      "options": [
+        "jari-jari",
+        "diameter",
+        "busur",
+        "tali busur"
+      ]
+    },
+    {
+      "q": "Jika bilangan ganjil pertama adalah 1, bilangan ganjil ke-5 adalah?",
+      "a": "9",
+      "options": [
+        "7",
+        "9",
+        "11",
+        "13"
+      ]
+    },
+    {
+      "q": "Jumlah sudut dalam segitiga adalah?",
+      "a": "180°",
+      "options": [
+        "90°",
+        "180°",
+        "270°",
+        "360°"
+      ]
+    },
+    {
+      "q": "Panjang sisi persegi 12 cm. Maka kelilingnya adalah?",
+      "a": "48 cm",
+      "options": [
+        "36 cm",
+        "48 cm",
+        "24 cm",
+        "60 cm"
+      ]
+    },
+    {
+      "q": "Bilangan bulat antara -3 dan 2 adalah?",
+      "a": "-2, -1, 0, 1",
+      "options": [
+        "-3, -2, -1",
+        "-2, -1, 0, 1",
+        "-3, -2, -1, 0",
+        "-1, 0, 1, 2"
+      ]
+    },
+    {
+      "q": "Dalam pecahan campuran, 2 1/2 sama dengan?",
+      "a": "5/2",
+      "options": [
+        "3/2",
+        "5/2",
+        "6/2",
+        "7/2"
+      ]
+    }
+  ],
+  "Sains": [
+    {
+      "q": "Alat optik yang digunakan untuk melihat benda sangat kecil adalah?",
+      "a": "Mikroskop",
+      "options": [
+        "Teleskop",
+        "Kaca pembesar",
+        "Mikroskop",
+        "Kamera"
+      ]
+    },
+    {
+      "q": "Organ manusia yang berfungsi memompa darah adalah?",
+      "a": "Jantung",
+      "options": [
+        "Paru-paru",
+        "Lambung",
+        "Jantung",
+        "Usus"
+      ]
+    },
+    {
+      "q": "Planet terbesar di tata surya adalah?",
+      "a": "Jupiter",
+      "options": [
+        "Mars",
+        "Saturnus",
+        "Jupiter",
+        "Bumi"
+      ]
+    },
+    {
+      "q": "Benda yang tidak dapat menghantarkan listrik disebut?",
+      "a": "Isolator",
+      "options": [
+        "Konduktor",
+        "Isolator",
+        "Elektroda",
+        "Dinamo"
+      ]
+    },
+    {
+      "q": "Sumber energi utama bagi kehidupan di bumi adalah?",
+      "a": "Matahari",
+      "options": [
+        "Air",
+        "Bensin",
+        "Matahari",
+        "Angin"
+      ]
+    },
+    {
+      "q": "Gas yang paling banyak di atmosfer bumi adalah?",
+      "a": "Nitrogen",
+      "options": [
+        "Oksigen",
+        "Karbon dioksida",
+        "Hidrogen",
+        "Nitrogen"
+      ]
+    },
+    {
+      "q": "Bagian tumbuhan yang berfungsi untuk fotosintesis adalah?",
+      "a": "Daun",
+      "options": [
+        "Akar",
+        "Batang",
+        "Daun",
+        "Bunga"
+      ]
+    },
+    {
+      "q": "Gaya yang menyebabkan benda jatuh ke bumi disebut?",
+      "a": "Gravitasi",
+      "options": [
+        "Dorong",
+        "Tarik",
+        "Gravitasi",
+        "Magnet"
+      ]
+    },
+    {
+      "q": "Perubahan wujud dari cair menjadi gas disebut?",
+      "a": "Menguap",
+      "options": [
+        "Mencair",
+        "Menguap",
+        "Membeku",
+        "Mengembun"
+      ]
+    },
+    {
+      "q": "Contoh hewan herbivora adalah?",
+      "a": "Kambing",
+      "options": [
+        "Harimau",
+        "Kambing",
+        "Ular",
+        "Ayam"
+      ]
+    },
+    {
+      "q": "Zat tunggal yang tidak dapat diuraikan lagi disebut?",
+      "a": "Unsur",
+      "options": [
+        "Unsur",
+        "Campuran",
+        "Larutan",
+        "Senawa"
+      ]
+    },
+    {
+      "q": "Makhluk hidup yang dapat membuat makanan sendiri disebut?",
+      "a": "Autotrof",
+      "options": [
+        "Heterotrof",
+        "Autotrof",
+        "Parasit",
+        "Herbivora"
+      ]
+    },
+    {
+      "q": "Urutan planet dari yang terdekat ke matahari adalah?",
+      "a": "Merkurius, Venus, Bumi, Mars",
+      "options": [
+        "Mars, Bumi, Venus, Merkurius",
+        "Merkurius, Venus, Bumi, Mars",
+        "Venus, Bumi, Mars, Jupiter",
+        "Bumi, Mars, Venus, Merkurius"
+      ]
+    },
+    {
+      "q": "Bagian terkecil dari makhluk hidup adalah?",
+      "a": "Sel",
+      "options": [
+        "Jaringan",
+        "Organ",
+        "Sel",
+        "Sistem organ"
+      ]
+    },
+    {
+      "q": "Perubahan energi pada kipas angin adalah?",
+      "a": "Listrik menjadi gerak",
+      "options": [
+        "Gerak ke listrik",
+        "Panas ke listrik",
+        "Listrik menjadi gerak",
+        "Listrik ke suara"
+      ]
+    },
+    {
+      "q": "Tumbuhan berkembang biak dengan cara?",
+      "a": "Penyerbukan",
+      "options": [
+        "Fotosintesis",
+        "Penyerapan",
+        "Penyerbukan",
+        "Pernafasan"
+      ]
+    },
+    {
+      "q": "Benda cair akan berubah bentuk sesuai dengan?",
+      "a": "Wadahnya",
+      "options": [
+        "Suhunya",
+        "Tekanannya",
+        "Wadahnya",
+        "Massa jenisnya"
+      ]
+    },
+    {
+      "q": "Zat yang dapat berubah bentuk dan volume disebut?",
+      "a": "Gas",
+      "options": [
+        "Padat",
+        "Cair",
+        "Gas",
+        "Campuran"
+      ]
+    },
+    {
+      "q": "Organ pernapasan utama pada manusia adalah?",
+      "a": "Paru-paru",
+      "options": [
+        "Hidung",
+        "Tenggorokan",
+        "Paru-paru",
+        "Jantung"
+      ]
+    },
+    {
+      "q": "Alat untuk mengukur suhu adalah?",
+      "a": "Termometer",
+      "options": [
+        "Barometer",
+        "Termometer",
+        "Altimeter",
+        "Volt meter"
+      ]
+    },
+    {
+      "q": "Hewan ovipar berkembang biak dengan cara?",
+      "a": "Bertelur",
+      "options": [
+        "Melahirkan",
+        "Membelah diri",
+        "Bertelur",
+        "Mencangkok"
+      ]
+    },
+    {
+      "q": "Contoh perubahan kimia adalah?",
+      "a": "Kertas dibakar",
+      "options": [
+        "Es mencair",
+        "Air menguap",
+        "Kertas dibakar",
+        "Air membeku"
+      ]
+    },
+    {
+      "q": "Bumi berputar pada porosnya disebut?",
+      "a": "Rotasi",
+      "options": [
+        "Revolusi",
+        "Rotasi",
+        "Orbit",
+        "Gravitasi"
+      ]
+    },
+    {
+      "q": "Air laut yang menguap menjadi awan disebut proses?",
+      "a": "Evaporasi",
+      "options": [
+        "Kondensasi",
+        "Presipitasi",
+        "Evaporasi",
+        "Transpirasi"
+      ]
+    },
+    {
+      "q": "Lapisan bumi tempat manusia hidup disebut?",
+      "a": "Litosfer",
+      "options": [
+        "Atmosfer",
+        "Hidrosfer",
+        "Litosfer",
+        "Biosfer"
+      ]
+    },
+    {
+      "q": "Bagian mata yang mengatur jumlah cahaya yang masuk adalah?",
+      "a": "Iris",
+      "options": [
+        "Kornea",
+        "Retina",
+        "Iris",
+        "Lensa"
+      ]
+    },
+    {
+      "q": "Contoh gaya gesek adalah?",
+      "a": "Rem sepeda",
+      "options": [
+        "Kipas angin",
+        "Rem sepeda",
+        "Peluru meluncur",
+        "Bola menggelinding"
+      ]
+    },
+    {
+      "q": "Benda padat memiliki bentuk dan volume yang?",
+      "a": "Tetap",
+      "options": [
+        "Berubah",
+        "Tetap",
+        "Lembek",
+        "Berlapis"
+      ]
+    },
+    {
+      "q": "Makhluk hidup disebut juga sebagai?",
+      "a": "Organisme",
+      "options": [
+        "Zat",
+        "Sel",
+        "Organisme",
+        "Unsur"
+      ]
+    },
+    {
+      "q": "Vitamin yang dibutuhkan untuk kesehatan mata adalah?",
+      "a": "Vitamin A",
+      "options": [
+        "Vitamin A",
+        "Vitamin B",
+        "Vitamin C",
+        "Vitamin D"
+      ]
+    },
+    {
+      "q": "Jenis tulang yang melindungi otak adalah?",
+      "a": "Tengkorak",
+      "options": [
+        "Tulang rusuk",
+        "Tulang belakang",
+        "Tengkorak",
+        "Tulang paha"
+      ]
+    },
+    {
+      "q": "Pusat tata surya adalah?",
+      "a": "Matahari",
+      "options": [
+        "Bumi",
+        "Matahari",
+        "Bulan",
+        "Venus"
+      ]
+    },
+    {
+      "q": "Zat makanan yang digunakan untuk sumber energi adalah?",
+      "a": "Karbohidrat",
+      "options": [
+        "Protein",
+        "Vitamin",
+        "Karbohidrat",
+        "Mineral"
+      ]
+    },
+    {
+      "q": "Pencemaran udara salah satunya disebabkan oleh?",
+      "a": "Asap kendaraan",
+      "options": [
+        "Sampah plastik",
+        "Air limbah",
+        "Asap kendaraan",
+        "Pupuk kimia"
+      ]
+    },
+    {
+      "q": "Perubahan wujud dari gas ke cair disebut?",
+      "a": "Kondensasi",
+      "options": [
+        "Evaporasi",
+        "Sublimasi",
+        "Kondensasi",
+        "Pembekuan"
+      ]
+    },
+    {
+      "q": "Panca indera manusia terdiri dari?",
+      "a": "5",
+      "options": [
+        "3",
+        "4",
+        "5",
+        "6"
+      ]
+    },
+    {
+      "q": "Tanaman membutuhkan ... untuk fotosintesis.",
+      "a": "Cahaya matahari",
+      "options": [
+        "Udara malam",
+        "Cahaya matahari",
+        "Bakteri",
+        "Hewan"
+      ]
+    },
+    {
+      "q": "Bagian tumbuhan tempat berlangsungnya fotosintesis?",
+      "a": "Klorofil",
+      "options": [
+        "Stomata",
+        "Klorofil",
+        "Akar",
+        "Batang"
+      ]
+    },
+    {
+      "q": "Hewan pemakan tumbuhan disebut?",
+      "a": "Herbivora",
+      "options": [
+        "Karnivora",
+        "Omnivora",
+        "Herbivora",
+        "Insektivora"
+      ]
+    },
+    {
+      "q": "Bagian sel yang mengandung DNA adalah?",
+      "a": "Inti sel",
+      "options": [
+        "Membran sel",
+        "Sitoplasma",
+        "Inti sel",
+        "Ribosom"
+      ]
+    },
+    {
+      "q": "Bagian dari bunga yang menghasilkan serbuk sari adalah?",
+      "a": "Benang sari",
+      "options": [
+        "Putik",
+        "Benang sari",
+        "Daun",
+        "Kelopak"
+      ]
+    },
+    {
+      "q": "Fungsi akar pada tumbuhan adalah?",
+      "a": "Menyerap air dan mineral",
+      "options": [
+        "Fotosintesis",
+        "Bernapas",
+        "Menyerap air dan mineral",
+        "Menarik serangga"
+      ]
+    },
+    {
+      "q": "Suara dapat merambat melalui?",
+      "a": "Zat padat, cair, dan gas",
+      "options": [
+        "Vakum",
+        "Gas saja",
+        "Padat dan cair",
+        "Zat padat, cair, dan gas"
+      ]
+    },
+    {
+      "q": "Perubahan wujud dari padat ke gas disebut?",
+      "a": "Sublimasi",
+      "options": [
+        "Menguap",
+        "Mencair",
+        "Sublimasi",
+        "Mengembun"
+      ]
+    },
+    {
+      "q": "Alat untuk mengukur panjang adalah?",
+      "a": "Penggaris",
+      "options": [
+        "Stopwatch",
+        "Penggaris",
+        "Termometer",
+        "Barometer"
+      ]
+    },
+    {
+      "q": "Lapisan ozon berfungsi untuk?",
+      "a": "Melindungi bumi dari sinar UV",
+      "options": [
+        "Mendinginkan bumi",
+        "Menyerap air",
+        "Melindungi bumi dari sinar UV",
+        "Menghasilkan oksigen"
+      ]
+    },
+    {
+      "q": "Contoh sumber energi alternatif adalah?",
+      "a": "Angin",
+      "options": [
+        "Batu bara",
+        "Minyak",
+        "Angin",
+        "Gas alam"
+      ]
+    },
+    {
+      "q": "Bumi membutuhkan waktu ... untuk mengelilingi matahari.",
+      "a": "365 hari",
+      "options": [
+        "24 jam",
+        "30 hari",
+        "365 hari",
+        "12 jam"
+      ]
+    },
+    {
+      "q": "Zat yang tidak dapat dilihat tapi memiliki massa disebut?",
+      "a": "Gas",
+      "options": [
+        "Padat",
+        "Cair",
+        "Gas",
+        "Campuran"
+      ]
+    }
+  ],
+  "Ekonomi": [
+    {
+      "q": "Ilmu ekonomi mempelajari tentang?",
+      "a": "Kegiatan manusia memenuhi kebutuhan",
+      "options": [
+        "Perdagangan internasional",
+        "Hukum pidana",
+        "Kegiatan manusia memenuhi kebutuhan",
+        "Teknologi industri"
+      ]
+    },
+    {
+      "q": "Kegiatan menghasilkan barang dan jasa disebut?",
+      "a": "Produksi",
+      "options": [
+        "Distribusi",
+        "Produksi",
+        "Konsumsi",
+        "Eksploitasi"
+      ]
+    },
+    {
+      "q": "Pelaku ekonomi yang melakukan kegiatan konsumsi disebut?",
+      "a": "Konsumen",
+      "options": [
+        "Produsen",
+        "Konsumen",
+        "Distributor",
+        "Investor"
+      ]
+    },
+    {
+      "q": "Contoh barang kebutuhan primer adalah?",
+      "a": "Pakaian",
+      "options": [
+        "Mobil",
+        "Televisi",
+        "Pakaian",
+        "Perhiasan"
+      ]
+    },
+    {
+      "q": "Kegiatan menyalurkan barang dari produsen ke konsumen adalah?",
+      "a": "Distribusi",
+      "options": [
+        "Konsumsi",
+        "Distribusi",
+        "Produksi",
+        "Investasi"
+      ]
+    },
+    {
+      "q": "Kegiatan menabung di bank disebut juga?",
+      "a": "Simpanan",
+      "options": [
+        "Pinjaman",
+        "Kredit",
+        "Simpanan",
+        "Transaksi"
+      ]
+    },
+    {
+      "q": "Jika harga naik, maka permintaan biasanya?",
+      "a": "Menurun",
+      "options": [
+        "Tetap",
+        "Meningkat",
+        "Menurun",
+        "Tidak berubah"
+      ]
+    },
+    {
+      "q": "Orang yang membeli barang atau jasa disebut?",
+      "a": "Konsumen",
+      "options": [
+        "Pedagang",
+        "Konsumen",
+        "Produsen",
+        "Distributor"
+      ]
+    },
+    {
+      "q": "Tujuan utama dari kegiatan produksi adalah?",
+      "a": "Memenuhi kebutuhan",
+      "options": [
+        "Memenuhi pajak",
+        "Memenuhi kebutuhan",
+        "Mengurangi tenaga kerja",
+        "Meningkatkan impor"
+      ]
+    },
+    {
+      "q": "Barang yang dapat digunakan berulang-ulang disebut?",
+      "a": "Barang tahan lama",
+      "options": [
+        "Barang mentah",
+        "Barang modal",
+        "Barang tahan lama",
+        "Barang konsumsi langsung"
+      ]
+    },
+    {
+      "q": "Contoh barang bebas adalah?",
+      "a": "Udara",
+      "options": [
+        "Emas",
+        "Air kemasan",
+        "Udara",
+        "Telepon genggam"
+      ]
+    },
+    {
+      "q": "Uang logam terbuat dari?",
+      "a": "Logam",
+      "options": [
+        "Kertas",
+        "Plastik",
+        "Logam",
+        "Kaca"
+      ]
+    },
+    {
+      "q": "Barang yang diperoleh dari alam tanpa campur tangan manusia disebut?",
+      "a": "Barang bebas",
+      "options": [
+        "Barang ekonomi",
+        "Barang substitusi",
+        "Barang bebas",
+        "Barang modal"
+      ]
+    },
+    {
+      "q": "Upah termasuk ke dalam?",
+      "a": "Pendapatan",
+      "options": [
+        "Biaya",
+        "Pendapatan",
+        "Pajak",
+        "Simpanan"
+      ]
+    },
+    {
+      "q": "Contoh jasa adalah?",
+      "a": "Jasa transportasi",
+      "options": [
+        "Beras",
+        "Mobil",
+        "Pakaian",
+        "Jasa transportasi"
+      ]
+    },
+    {
+      "q": "Lembaga yang mencetak uang di Indonesia adalah?",
+      "a": "Bank Indonesia",
+      "options": [
+        "BI Checking",
+        "BPK",
+        "Bank Indonesia",
+        "OJK"
+      ]
+    },
+    {
+      "q": "Kegiatan menjual barang ke luar negeri disebut?",
+      "a": "Ekspor",
+      "options": [
+        "Ekspor",
+        "Impor",
+        "Distribusi",
+        "Produksi"
+      ]
+    },
+    {
+      "q": "Kebutuhan yang harus segera dipenuhi disebut?",
+      "a": "Kebutuhan mendesak",
+      "options": [
+        "Kebutuhan sekunder",
+        "Kebutuhan mewah",
+        "Kebutuhan mendesak",
+        "Kebutuhan masa depan"
+      ]
+    },
+    {
+      "q": "Pihak yang menyalurkan barang dari produsen ke konsumen disebut?",
+      "a": "Distributor",
+      "options": [
+        "Konsumen",
+        "Distributor",
+        "Investor",
+        "Direktur"
+      ]
+    },
+    {
+      "q": "Perdagangan antara dua negara disebut?",
+      "a": "Perdagangan internasional",
+      "options": [
+        "Perdagangan lokal",
+        "Perdagangan antarpulau",
+        "Perdagangan internasional",
+        "Perdagangan regional"
+      ]
+    },
+    {
+      "q": "Barang yang digunakan untuk menghasilkan barang lain disebut?",
+      "a": "Barang modal",
+      "options": [
+        "Barang konsumsi",
+        "Barang bebas",
+        "Barang mewah",
+        "Barang modal"
+      ]
+    },
+    {
+      "q": "Lembaga yang mengatur dan mengawasi pasar modal adalah?",
+      "a": "OJK",
+      "options": [
+        "BI",
+        "BPK",
+        "OJK",
+        "DJP"
+      ]
+    },
+    {
+      "q": "Fungsi utama uang adalah sebagai?",
+      "a": "Alat tukar",
+      "options": [
+        "Alat pembayaran utang",
+        "Alat tukar",
+        "Barang dagangan",
+        "Surat berharga"
+      ]
+    },
+    {
+      "q": "Pajak yang dikenakan kepada penghasilan disebut?",
+      "a": "Pajak penghasilan",
+      "options": [
+        "Pajak bumi dan bangunan",
+        "Pajak penghasilan",
+        "Pajak kendaraan",
+        "Pajak barang mewah"
+      ]
+    },
+    {
+      "q": "Perusahaan yang seluruh sahamnya dimiliki negara disebut?",
+      "a": "BUMN",
+      "options": [
+        "BUMD",
+        "BUMN",
+        "Swasta",
+        "Koperasi"
+      ]
+    },
+    {
+      "q": "Tindakan manusia dalam memilih barang karena keterbatasan disebut?",
+      "a": "Prinsip ekonomi",
+      "options": [
+        "Kebutuhan ekonomi",
+        "Prinsip ekonomi",
+        "Distribusi ekonomi",
+        "Produksi ekonomi"
+      ]
+    },
+    {
+      "q": "Sumber daya alam termasuk ke dalam?",
+      "a": "Faktor produksi alam",
+      "options": [
+        "Tenaga kerja",
+        "Modal",
+        "Faktor produksi alam",
+        "Konsumsi primer"
+      ]
+    },
+    {
+      "q": "Faktor yang memengaruhi permintaan adalah?",
+      "a": "Harga barang",
+      "options": [
+        "Jumlah distributor",
+        "Harga barang",
+        "Jumlah produksi",
+        "Kualitas mesin"
+      ]
+    },
+    {
+      "q": "Orang yang menjalankan kegiatan usaha disebut?",
+      "a": "Wirausaha",
+      "options": [
+        "Investor",
+        "Karyawan",
+        "Distributor",
+        "Wirausaha"
+      ]
+    },
+    {
+      "q": "Harga pasar terjadi ketika?",
+      "a": "Permintaan sama dengan penawaran",
+      "options": [
+        "Penawaran lebih banyak",
+        "Permintaan lebih tinggi",
+        "Permintaan sama dengan penawaran",
+        "Permintaan tidak ada"
+      ]
+    },
+    {
+      "q": "Kegiatan membeli barang dari luar negeri disebut?",
+      "a": "Impor",
+      "options": [
+        "Ekspor",
+        "Impor",
+        "Distribusi",
+        "Konsumsi"
+      ]
+    },
+    {
+      "q": "Lembaga ekonomi yang dimiliki oleh anggota disebut?",
+      "a": "Koperasi",
+      "options": [
+        "PT",
+        "CV",
+        "Firma",
+        "Koperasi"
+      ]
+    },
+    {
+      "q": "Jika barang sedikit dan permintaan banyak, maka harga akan?",
+      "a": "Naik",
+      "options": [
+        "Turun",
+        "Tetap",
+        "Naik",
+        "Sama"
+      ]
+    },
+    {
+      "q": "Kebutuhan yang muncul karena pengaruh lingkungan disebut?",
+      "a": "Kebutuhan kultural",
+      "options": [
+        "Kebutuhan biologis",
+        "Kebutuhan kultural",
+        "Kebutuhan fisik",
+        "Kebutuhan sekunder"
+      ]
+    },
+    {
+      "q": "Tingkat konsumsi biasanya meningkat ketika?",
+      "a": "Pendapatan meningkat",
+      "options": [
+        "Harga naik",
+        "Pendapatan meningkat",
+        "Produksi turun",
+        "Kualitas menurun"
+      ]
+    },
+    {
+      "q": "Perusahaan milik perorangan disebut juga?",
+      "a": "Usaha dagang",
+      "options": [
+        "Firma",
+        "CV",
+        "Persero",
+        "Usaha dagang"
+      ]
+    },
+    {
+      "q": "Bursa Efek Indonesia memperdagangkan?",
+      "a": "Saham",
+      "options": [
+        "Properti",
+        "Kredit",
+        "Saham",
+        "Valuta asing"
+      ]
+    },
+    {
+      "q": "Salah satu tujuan koperasi adalah?",
+      "a": "Meningkatkan kesejahteraan anggota",
+      "options": [
+        "Memperoleh laba maksimal",
+        "Meningkatkan pajak",
+        "Menambah hutang",
+        "Meningkatkan kesejahteraan anggota"
+      ]
+    },
+    {
+      "q": "Sistem ekonomi Indonesia berdasarkan?",
+      "a": "Pancasila",
+      "options": [
+        "Kapitalis",
+        "Pancasila",
+        "Komunis",
+        "Liberal"
+      ]
+    },
+    {
+      "q": "Kegiatan menciptakan barang dan jasa disebut?",
+      "a": "Produksi",
+      "options": [
+        "Distribusi",
+        "Produksi",
+        "Konsumsi",
+        "Pemasaran"
+      ]
+    },
+    {
+      "q": "Jika produksi meningkat dan permintaan tetap, maka harga akan?",
+      "a": "Turun",
+      "options": [
+        "Naik",
+        "Tetap",
+        "Turun",
+        "Tidak berubah"
+      ]
+    },
+    {
+      "q": "Orang yang melakukan kegiatan distribusi disebut?",
+      "a": "Distributor",
+      "options": [
+        "Distributor",
+        "Produsen",
+        "Konsumen",
+        "Investor"
+      ]
+    },
+    {
+      "q": "Uang yang berlaku dalam suatu negara disebut?",
+      "a": "Mata uang",
+      "options": [
+        "Kurs",
+        "Valuta",
+        "Mata uang",
+        "Cek"
+      ]
+    },
+    {
+      "q": "Ilmu ekonomi mikro membahas?",
+      "a": "Perilaku individu dan perusahaan",
+      "options": [
+        "Inflasi nasional",
+        "Pertumbuhan ekonomi negara",
+        "Perilaku individu dan perusahaan",
+        "Anggaran negara"
+      ]
+    },
+    {
+      "q": "Pengeluaran negara tercatat dalam?",
+      "a": "APBN",
+      "options": [
+        "APBN",
+        "RAPBN",
+        "APBD",
+        "Laporan bank"
+      ]
+    },
+    {
+      "q": "Tindakan ekonomi rasional artinya?",
+      "a": "Memperoleh hasil maksimal dengan biaya minimal",
+      "options": [
+        "Mengikuti kebiasaan",
+        "Mengutamakan gengsi",
+        "Memperoleh hasil maksimal dengan biaya minimal",
+        "Membeli produk termahal"
+      ]
+    },
+    {
+      "q": "Pasar tenaga kerja mempertemukan?",
+      "a": "Pencari kerja dan penyedia kerja",
+      "options": [
+        "Pedagang dan pembeli",
+        "Bank dan nasabah",
+        "Pencari kerja dan penyedia kerja",
+        "Investor dan peminjam"
+      ]
+    },
+    {
+      "q": "Contoh pengeluaran rumah tangga konsumsi adalah?",
+      "a": "Membeli sembako",
+      "options": [
+        "Membangun jalan",
+        "Membeli mesin",
+        "Membeli sembako",
+        "Menjual produk"
+      ]
+    },
+    {
+      "q": "Tujuan rumah tangga produksi adalah?",
+      "a": "Mendapatkan keuntungan",
+      "options": [
+        "Menghemat biaya",
+        "Mendapatkan keuntungan",
+        "Menghindari pajak",
+        "Mengurangi persaingan"
+      ]
+    }
+  ],
+  "Astronomi": [
+    {
+      "q": "Planet terdekat dengan Matahari adalah?",
+      "a": "Merkurius",
+      "options": [
+        "Venus",
+        "Bumi",
+        "Mars",
+        "Merkurius"
+      ]
+    },
+    {
+      "q": "Benda langit yang memiliki cahaya sendiri adalah?",
+      "a": "Bintang",
+      "options": [
+        "Planet",
+        "Meteor",
+        "Asteroid",
+        "Bintang"
+      ]
+    },
+    {
+      "q": "Urutan planet dalam tata surya dimulai dari yang paling dekat ke matahari adalah?",
+      "a": "Merkurius, Venus, Bumi, Mars",
+      "options": [
+        "Bumi, Venus, Mars, Merkurius",
+        "Mars, Bumi, Venus, Merkurius",
+        "Merkurius, Venus, Bumi, Mars",
+        "Venus, Mars, Bumi, Merkurius"
+      ]
+    },
+    {
+      "q": "Planet yang memiliki cincin paling besar adalah?",
+      "a": "Saturnus",
+      "options": [
+        "Jupiter",
+        "Neptunus",
+        "Saturnus",
+        "Uranus"
+      ]
+    },
+    {
+      "q": "Planet yang dikenal sebagai planet merah adalah?",
+      "a": "Mars",
+      "options": [
+        "Venus",
+        "Mars",
+        "Merkurius",
+        "Saturnus"
+      ]
+    },
+    {
+      "q": "Bulan mengelilingi Bumi dalam waktu sekitar?",
+      "a": "29,5 hari",
+      "options": [
+        "30 hari",
+        "27 hari",
+        "31 hari",
+        "29,5 hari"
+      ]
+    },
+    {
+      "q": "Benda langit kecil yang masuk ke atmosfer bumi dan terbakar disebut?",
+      "a": "Meteor",
+      "options": [
+        "Asteroid",
+        "Komet",
+        "Meteor",
+        "Satelit"
+      ]
+    },
+    {
+      "q": "Nama galaksi tempat tata surya berada adalah?",
+      "a": "Bima Sakti",
+      "options": [
+        "Andromeda",
+        "Bima Sakti",
+        "Cartwheel",
+        "Sombrero"
+      ]
+    },
+    {
+      "q": "Gerhana bulan terjadi ketika?",
+      "a": "Bumi berada di antara Matahari dan Bulan",
+      "options": [
+        "Matahari di antara Bumi dan Bulan",
+        "Bulan di antara Bumi dan Matahari",
+        "Bumi berada di antara Matahari dan Bulan",
+        "Bulan jauh dari Bumi"
+      ]
+    },
+    {
+      "q": "Planet terbesar dalam tata surya adalah?",
+      "a": "Jupiter",
+      "options": [
+        "Saturnus",
+        "Jupiter",
+        "Uranus",
+        "Neptunus"
+      ]
+    },
+    {
+      "q": "Bulan tidak bersinar sendiri karena?",
+      "a": "Memantulkan cahaya Matahari",
+      "options": [
+        "Cahayanya diserap Bumi",
+        "Matahari menghalanginya",
+        "Memantulkan cahaya Matahari",
+        "Tidak punya atmosfer"
+      ]
+    },
+    {
+      "q": "Satelit alami milik Bumi adalah?",
+      "a": "Bulan",
+      "options": [
+        "ISS",
+        "Bulan",
+        "Sputnik",
+        "Voyager"
+      ]
+    },
+    {
+      "q": "Tata surya terdiri atas?",
+      "a": "Matahari dan benda-benda langit yang mengitarinya",
+      "options": [
+        "Planet dan bintang",
+        "Matahari saja",
+        "Matahari dan planet dalam",
+        "Matahari dan benda-benda langit yang mengitarinya"
+      ]
+    },
+    {
+      "q": "Alat untuk mengamati benda langit disebut?",
+      "a": "Teleskop",
+      "options": [
+        "Kompas",
+        "Teleskop",
+        "Mikroskop",
+        "Radar"
+      ]
+    },
+    {
+      "q": "Bulan purnama terjadi ketika?",
+      "a": "Bulan berada berseberangan dengan Matahari",
+      "options": [
+        "Bulan dekat dengan Matahari",
+        "Bulan tampak sebagian",
+        "Bulan berada berseberangan dengan Matahari",
+        "Gerhana Matahari terjadi"
+      ]
+    },
+    {
+      "q": "Komet sering disebut sebagai?",
+      "a": "Bintang berekor",
+      "options": [
+        "Bintang jatuh",
+        "Planet kecil",
+        "Bintang berekor",
+        "Benda gelap"
+      ]
+    },
+    {
+      "q": "Planet yang memiliki atmosfer paling tebal adalah?",
+      "a": "Venus",
+      "options": [
+        "Bumi",
+        "Jupiter",
+        "Venus",
+        "Saturnus"
+      ]
+    },
+    {
+      "q": "Planet yang dikenal sebagai planet biru adalah?",
+      "a": "Neptunus",
+      "options": [
+        "Uranus",
+        "Neptunus",
+        "Bumi",
+        "Venus"
+      ]
+    },
+    {
+      "q": "Rotasi bumi menyebabkan?",
+      "a": "Terjadinya siang dan malam",
+      "options": [
+        "Perubahan musim",
+        "Gerhana",
+        "Terjadinya siang dan malam",
+        "Pasang surut"
+      ]
+    },
+    {
+      "q": "Revolusi Bumi menyebabkan?",
+      "a": "Perubahan musim",
+      "options": [
+        "Siang dan malam",
+        "Pasang surut",
+        "Perubahan musim",
+        "Gerhana bulan"
+      ]
+    },
+    {
+      "q": "Nama lain dari asteroid adalah?",
+      "a": "Planetoid",
+      "options": [
+        "Komet",
+        "Planetoid",
+        "Meteor",
+        "Satelit"
+      ]
+    },
+    {
+      "q": "Planet yang memiliki rotasi tercepat adalah?",
+      "a": "Jupiter",
+      "options": [
+        "Jupiter",
+        "Saturnus",
+        "Mars",
+        "Uranus"
+      ]
+    },
+    {
+      "q": "Lapisan terluar Matahari disebut?",
+      "a": "Fotosfer",
+      "options": [
+        "Inti",
+        "Kromosfer",
+        "Korona",
+        "Fotosfer"
+      ]
+    },
+    {
+      "q": "Suhu tertinggi Matahari terdapat di?",
+      "a": "Inti",
+      "options": [
+        "Fotosfer",
+        "Inti",
+        "Korona",
+        "Kromosfer"
+      ]
+    },
+    {
+      "q": "Bintang yang paling dekat dengan Bumi adalah?",
+      "a": "Matahari",
+      "options": [
+        "Sirius",
+        "Vega",
+        "Matahari",
+        "Proxima Centauri"
+      ]
+    },
+    {
+      "q": "Bumi mengelilingi Matahari selama?",
+      "a": "365,25 hari",
+      "options": [
+        "360 hari",
+        "366 hari",
+        "365,25 hari",
+        "364 hari"
+      ]
+    },
+    {
+      "q": "Urutan planet dari yang terbesar ke terkecil (massa)?",
+      "a": "Jupiter, Saturnus, Uranus, Neptunus",
+      "options": [
+        "Jupiter, Mars, Bumi, Merkurius",
+        "Jupiter, Saturnus, Uranus, Neptunus",
+        "Saturnus, Jupiter, Bumi, Venus",
+        "Jupiter, Uranus, Saturnus, Mars"
+      ]
+    },
+    {
+      "q": "Warna bintang menunjukkan?",
+      "a": "Suhu permukaan",
+      "options": [
+        "Jarak dari Bumi",
+        "Kandungan kimia",
+        "Suhu permukaan",
+        "Ukuran bintang"
+      ]
+    },
+    {
+      "q": "Planet yang poros rotasinya hampir sejajar dengan orbitnya adalah?",
+      "a": "Uranus",
+      "options": [
+        "Neptunus",
+        "Saturnus",
+        "Uranus",
+        "Mars"
+      ]
+    },
+    {
+      "q": "Gerhana Matahari total terjadi ketika?",
+      "a": "Bulan menutupi seluruh Matahari",
+      "options": [
+        "Bulan jauh dari Bumi",
+        "Matahari lebih besar dari Bulan",
+        "Bulan menutupi seluruh Matahari",
+        "Matahari tertutup awan"
+      ]
+    },
+    {
+      "q": "Bulan sabit terlihat saat fase?",
+      "a": "Awal dan akhir bulan",
+      "options": [
+        "Pertengahan bulan",
+        "Awal dan akhir bulan",
+        "Purnama",
+        "Gerhana"
+      ]
+    },
+    {
+      "q": "Benda langit yang sering menabrak Bumi adalah?",
+      "a": "Meteor",
+      "options": [
+        "Komet",
+        "Meteor",
+        "Planet kecil",
+        "Satelit"
+      ]
+    },
+    {
+      "q": "Langit malam tampak berputar karena?",
+      "a": "Rotasi Bumi",
+      "options": [
+        "Rotasi Matahari",
+        "Revolusi Bulan",
+        "Rotasi Bumi",
+        "Revolusi Bumi"
+      ]
+    },
+    {
+      "q": "Kumpulan miliaran bintang disebut?",
+      "a": "Galaksi",
+      "options": [
+        "Nebula",
+        "Asteroid",
+        "Galaksi",
+        "Komet"
+      ]
+    },
+    {
+      "q": "Galaksi Andromeda termasuk galaksi?",
+      "a": "Spiral",
+      "options": [
+        "Elips",
+        "Tidak beraturan",
+        "Spiral",
+        "Bulat"
+      ]
+    },
+    {
+      "q": "Lapisan Matahari yang terlihat saat gerhana adalah?",
+      "a": "Korona",
+      "options": [
+        "Inti",
+        "Fotosfer",
+        "Kromosfer",
+        "Korona"
+      ]
+    },
+    {
+      "q": "Planet yang permukaannya sangat panas karena efek rumah kaca ekstrem?",
+      "a": "Venus",
+      "options": [
+        "Mars",
+        "Merkurius",
+        "Venus",
+        "Saturnus"
+      ]
+    },
+    {
+      "q": "Benda langit yang terdiri dari es dan debu adalah?",
+      "a": "Komet",
+      "options": [
+        "Meteor",
+        "Planet",
+        "Asteroid",
+        "Komet"
+      ]
+    },
+    {
+      "q": "Bulan baru terjadi ketika?",
+      "a": "Bulan berada di antara Bumi dan Matahari",
+      "options": [
+        "Bulan jauh dari Bumi",
+        "Bumi antara Bulan dan Matahari",
+        "Bulan berada di antara Bumi dan Matahari",
+        "Matahari terhalang awan"
+      ]
+    },
+    {
+      "q": "Bulan memiliki gravitasi?",
+      "a": "Lebih kecil dari Bumi",
+      "options": [
+        "Sama seperti Bumi",
+        "Tidak ada gravitasi",
+        "Lebih besar dari Bumi",
+        "Lebih kecil dari Bumi"
+      ]
+    },
+    {
+      "q": "Astronot adalah?",
+      "a": "Orang yang pergi ke luar angkasa",
+      "options": [
+        "Peneliti lautan",
+        "Ahli bintang",
+        "Orang yang pergi ke luar angkasa",
+        "Pilot jet tempur"
+      ]
+    },
+    {
+      "q": "Bintang lahir di dalam?",
+      "a": "Nebula",
+      "options": [
+        "Galaksi",
+        "Komet",
+        "Nebula",
+        "Meteor"
+      ]
+    },
+    {
+      "q": "Planet yang memiliki hari lebih panjang dari tahunnya adalah?",
+      "a": "Venus",
+      "options": [
+        "Merkurius",
+        "Mars",
+        "Venus",
+        "Jupiter"
+      ]
+    },
+    {
+      "q": "Alat luar angkasa tanpa awak yang menjelajah tata surya adalah?",
+      "a": "Wahana antariksa",
+      "options": [
+        "Satelit",
+        "Teleskop",
+        "Wahana antariksa",
+        "Radar"
+      ]
+    },
+    {
+      "q": "Bintang yang berada di akhir siklus hidupnya bisa menjadi?",
+      "a": "Lubang hitam",
+      "options": [
+        "Nebula",
+        "Komet",
+        "Lubang hitam",
+        "Planet"
+      ]
+    },
+    {
+      "q": "Objek terpadat di alam semesta adalah?",
+      "a": "Lubang hitam",
+      "options": [
+        "Planet",
+        "Asteroid",
+        "Lubang hitam",
+        "Komet"
+      ]
+    },
+    {
+      "q": "Titik di langit tempat semua bintang tampak berputar disebut?",
+      "a": "Kutub langit",
+      "options": [
+        "Zenit",
+        "Kutub langit",
+        "Horizon",
+        "Equator"
+      ]
+    },
+    {
+      "q": "Rotasi Venus berlawanan arah dengan planet lain. Ini disebut rotasi?",
+      "a": "Retrograde",
+      "options": [
+        "Prograde",
+        "Retrograde",
+        "Cepat",
+        "Searah"
+      ]
+    },
+    {
+      "q": "Lapisan pelindung Bumi dari radiasi Matahari adalah?",
+      "a": "Atmosfer",
+      "options": [
+        "Awan",
+        "Magnetosfer",
+        "Atmosfer",
+        "Stratosfer"
+      ]
+    }
+  ],
+  "Bahasa Inggris": [
+    {
+      "q": "What is the plural form of 'child'?",
+      "a": "children",
+      "options": [
+        "childs",
+        "childes",
+        "children",
+        "childrens"
+      ]
+    },
+    {
+      "q": "Which one is a noun?",
+      "a": "apple",
+      "options": [
+        "quick",
+        "apple",
+        "run",
+        "blue"
+      ]
+    },
+    {
+      "q": "‘He ___ to school every day.’ What is the correct verb?",
+      "a": "goes",
+      "options": [
+        "go",
+        "goes",
+        "going",
+        "gone"
+      ]
+    },
+    {
+      "q": "What is the opposite of 'hot'?",
+      "a": "cold",
+      "options": [
+        "cool",
+        "warm",
+        "cold",
+        "heat"
+      ]
+    },
+    {
+      "q": "Choose the correct article: 'She has ___ orange cat.'",
+      "a": "an",
+      "options": [
+        "a",
+        "an",
+        "the",
+        "some"
+      ]
+    },
+    {
+      "q": "Which sentence is in present continuous tense?",
+      "a": "She is reading a book.",
+      "options": [
+        "She read a book.",
+        "She is reading a book.",
+        "She was reading a book.",
+        "She has read a book."
+      ]
+    },
+    {
+      "q": "What is the past tense of 'buy'?",
+      "a": "bought",
+      "options": [
+        "buys",
+        "buyed",
+        "bought",
+        "buy"
+      ]
+    },
+    {
+      "q": "What is the correct pronoun for 'My brother and I'?",
+      "a": "we",
+      "options": [
+        "they",
+        "us",
+        "we",
+        "you"
+      ]
+    },
+    {
+      "q": "‘I ___ my homework last night.’",
+      "a": "did",
+      "options": [
+        "do",
+        "doing",
+        "did",
+        "done"
+      ]
+    },
+    {
+      "q": "The word 'beautiful' is a/an?",
+      "a": "adjective",
+      "options": [
+        "noun",
+        "verb",
+        "adjective",
+        "adverb"
+      ]
+    },
+    {
+      "q": "Which is a greeting?",
+      "a": "Good morning",
+      "options": [
+        "Goodbye",
+        "Thanks",
+        "Good morning",
+        "See you"
+      ]
+    },
+    {
+      "q": "How do you say ‘terima kasih’ in English?",
+      "a": "thank you",
+      "options": [
+        "sorry",
+        "please",
+        "thank you",
+        "hello"
+      ]
+    },
+    {
+      "q": "‘Can you help me, ___?’ (polite)",
+      "a": "please",
+      "options": [
+        "okay",
+        "please",
+        "yes",
+        "sorry"
+      ]
+    },
+    {
+      "q": "Which sentence is correct?",
+      "a": "She doesn’t like tea.",
+      "options": [
+        "She don’t like tea.",
+        "She doesn’t like tea.",
+        "She not like tea.",
+        "She didn’t likes tea."
+      ]
+    },
+    {
+      "q": "Choose the correct comparative: 'big – ___ – biggest'",
+      "a": "bigger",
+      "options": [
+        "biggest",
+        "more big",
+        "bigger",
+        "biger"
+      ]
+    },
+    {
+      "q": "What does 'hungry' mean?",
+      "a": "lapar",
+      "options": [
+        "haus",
+        "kenyang",
+        "lapar",
+        "lelah"
+      ]
+    },
+    {
+      "q": "‘Where ___ you from?’",
+      "a": "are",
+      "options": [
+        "is",
+        "do",
+        "are",
+        "does"
+      ]
+    },
+    {
+      "q": "Which word is a verb?",
+      "a": "eat",
+      "options": [
+        "happy",
+        "apple",
+        "eat",
+        "red"
+      ]
+    },
+    {
+      "q": "‘He ___ TV now.’",
+      "a": "is watching",
+      "options": [
+        "watch",
+        "is watching",
+        "watched",
+        "watches"
+      ]
+    },
+    {
+      "q": "The synonym of 'happy' is?",
+      "a": "glad",
+      "options": [
+        "sad",
+        "glad",
+        "angry",
+        "tired"
+      ]
+    },
+    {
+      "q": "‘This is my book.’ What part of speech is 'my'?",
+      "a": "possessive pronoun",
+      "options": [
+        "noun",
+        "verb",
+        "adjective",
+        "possessive pronoun"
+      ]
+    },
+    {
+      "q": "How do you say 'pena' in English?",
+      "a": "pen",
+      "options": [
+        "pencil",
+        "pen",
+        "eraser",
+        "ruler"
+      ]
+    },
+    {
+      "q": "‘What time ___ it?’",
+      "a": "is",
+      "options": [
+        "are",
+        "do",
+        "is",
+        "does"
+      ]
+    },
+    {
+      "q": "Which one is an animal?",
+      "a": "lion",
+      "options": [
+        "book",
+        "table",
+        "lion",
+        "pencil"
+      ]
+    },
+    {
+      "q": "‘There ___ some apples on the table.’",
+      "a": "are",
+      "options": [
+        "is",
+        "are",
+        "was",
+        "be"
+      ]
+    },
+    {
+      "q": "How do you respond to ‘Thank you’?",
+      "a": "You’re welcome",
+      "options": [
+        "Hello",
+        "You’re welcome",
+        "Sorry",
+        "Please"
+      ]
+    },
+    {
+      "q": "What does ‘library’ mean?",
+      "a": "perpustakaan",
+      "options": [
+        "laboratorium",
+        "kelas",
+        "perpustakaan",
+        "kantin"
+      ]
+    },
+    {
+      "q": "Which sentence uses future tense?",
+      "a": "I will study tomorrow.",
+      "options": [
+        "I study now.",
+        "I will study tomorrow.",
+        "I studied yesterday.",
+        "I have studied."
+      ]
+    },
+    {
+      "q": "‘My father is ___ engineer.’",
+      "a": "an",
+      "options": [
+        "a",
+        "an",
+        "the",
+        "some"
+      ]
+    },
+    {
+      "q": "‘She has ___ umbrella.’",
+      "a": "an",
+      "options": [
+        "a",
+        "an",
+        "the",
+        "some"
+      ]
+    },
+    {
+      "q": "How do you say ‘kucing’ in English?",
+      "a": "cat",
+      "options": [
+        "dog",
+        "cat",
+        "mouse",
+        "bird"
+      ]
+    },
+    {
+      "q": "Which one is a fruit?",
+      "a": "banana",
+      "options": [
+        "carrot",
+        "banana",
+        "rice",
+        "bread"
+      ]
+    },
+    {
+      "q": "‘Do you like tea?’ The correct short answer is?",
+      "a": "Yes, I do",
+      "options": [
+        "Yes, I like",
+        "Yes, I do",
+        "Yes, I does",
+        "Yes, I am"
+      ]
+    },
+    {
+      "q": "‘___ is your name?’",
+      "a": "What",
+      "options": [
+        "Who",
+        "What",
+        "Where",
+        "How"
+      ]
+    },
+    {
+      "q": "‘We ___ playing football now.’",
+      "a": "are",
+      "options": [
+        "is",
+        "am",
+        "are",
+        "was"
+      ]
+    },
+    {
+      "q": "‘How ___ you?’",
+      "a": "are",
+      "options": [
+        "do",
+        "is",
+        "am",
+        "are"
+      ]
+    },
+    {
+      "q": "‘He is ___ than me.’",
+      "a": "taller",
+      "options": [
+        "tallest",
+        "tall",
+        "taller",
+        "more tall"
+      ]
+    },
+    {
+      "q": "‘Yesterday, I ___ to school.’",
+      "a": "went",
+      "options": [
+        "go",
+        "going",
+        "went",
+        "gone"
+      ]
+    },
+    {
+      "q": "Which one is a job?",
+      "a": "teacher",
+      "options": [
+        "pen",
+        "banana",
+        "teacher",
+        "happy"
+      ]
+    },
+    {
+      "q": "‘I have ___ books.’",
+      "a": "some",
+      "options": [
+        "any",
+        "some",
+        "a",
+        "an"
+      ]
+    },
+    {
+      "q": "How do you say ‘mobil’ in English?",
+      "a": "car",
+      "options": [
+        "bike",
+        "car",
+        "train",
+        "bus"
+      ]
+    },
+    {
+      "q": "‘He ___ a good singer.’",
+      "a": "is",
+      "options": [
+        "are",
+        "is",
+        "am",
+        "be"
+      ]
+    },
+    {
+      "q": "‘Can you ___ me, please?’",
+      "a": "help",
+      "options": [
+        "help",
+        "helps",
+        "helping",
+        "helped"
+      ]
+    },
+    {
+      "q": "What is the antonym of 'slow'?",
+      "a": "fast",
+      "options": [
+        "lazy",
+        "quick",
+        "fast",
+        "hot"
+      ]
+    },
+    {
+      "q": "‘I ___ coffee every morning.’",
+      "a": "drink",
+      "options": [
+        "drink",
+        "drinks",
+        "drinking",
+        "drank"
+      ]
+    },
+    {
+      "q": "‘How many brothers ___ you have?’",
+      "a": "do",
+      "options": [
+        "does",
+        "do",
+        "are",
+        "have"
+      ]
+    },
+    {
+      "q": "Choose the correct one: '___ is she crying?'",
+      "a": "Why",
+      "options": [
+        "What",
+        "Why",
+        "Where",
+        "How"
+      ]
+    },
+    {
+      "q": "‘It is ___ umbrella.’",
+      "a": "my",
+      "options": [
+        "me",
+        "I",
+        "my",
+        "mine"
+      ]
+    },
+    {
+      "q": "Which is a question word?",
+      "a": "where",
+      "options": [
+        "book",
+        "where",
+        "run",
+        "fast"
+      ]
+    },
+    {
+      "q": "‘Let’s ___ a song!’",
+      "a": "sing",
+      "options": [
+        "sings",
+        "sing",
+        "sang",
+        "singing"
+      ]
+    }
+  ],
+  "Rekayasa Perangkat Lunak": [
+    {
+      "q": "Apa kepanjangan dari RPL?",
+      "a": "Rekayasa Perangkat Lunak",
+      "options": [
+        "Rekayasa Peralatan Listrik",
+        "Rekayasa Perangkat Lunak",
+        "Rekayasa Pembuatan Listrik",
+        "Rencana Pengembangan Listrik"
+      ]
+    },
+    {
+      "q": "Apa tujuan utama dari SDLC?",
+      "a": "Mengembangkan sistem perangkat lunak dengan proses yang terstruktur",
+      "options": [
+        "Menghindari penggunaan kode",
+        "Meningkatkan biaya produksi",
+        "Mengembangkan sistem perangkat lunak dengan proses yang terstruktur",
+        "Membuang dokumentasi"
+      ]
+    },
+    {
+      "q": "Langkah pertama dalam SDLC adalah?",
+      "a": "Perencanaan",
+      "options": [
+        "Desain",
+        "Implementasi",
+        "Perencanaan",
+        "Pemeliharaan"
+      ]
+    },
+    {
+      "q": "Contoh bahasa pemrograman tingkat tinggi adalah?",
+      "a": "Python",
+      "options": [
+        "Assembly",
+        "Machine Code",
+        "Binary",
+        "Python"
+      ]
+    },
+    {
+      "q": "Apa itu debugging?",
+      "a": "Proses mencari dan memperbaiki kesalahan dalam program",
+      "options": [
+        "Menambah fitur",
+        "Menghapus data",
+        "Membuat desain UI",
+        "Proses mencari dan memperbaiki kesalahan dalam program"
+      ]
+    },
+    {
+      "q": "Apa kepanjangan dari OOP?",
+      "a": "Object Oriented Programming",
+      "options": [
+        "Open Operating Program",
+        "Object Oriented Programming",
+        "Operation Oriented Process",
+        "Object Order Programming"
+      ]
+    },
+    {
+      "q": "Salah satu konsep OOP adalah?",
+      "a": "Inheritance",
+      "options": [
+        "Compilation",
+        "Routing",
+        "Inheritance",
+        "Looping"
+      ]
+    },
+    {
+      "q": "SQL digunakan untuk?",
+      "a": "Mengelola basis data",
+      "options": [
+        "Desain UI",
+        "Menjalankan server",
+        "Mengelola basis data",
+        "Mengedit gambar"
+      ]
+    },
+    {
+      "q": "Apa itu ‘class’ dalam OOP?",
+      "a": "Blueprint dari objek",
+      "options": [
+        "Variable sementara",
+        "Fungsi utama",
+        "Blueprint dari objek",
+        "Nilai konstan"
+      ]
+    },
+    {
+      "q": "Apa itu ‘function’ dalam pemrograman?",
+      "a": "Sekumpulan kode yang melakukan tugas tertentu",
+      "options": [
+        "Tempat menyimpan data",
+        "Sekumpulan kode yang melakukan tugas tertentu",
+        "Deklarasi objek",
+        "Operator logika"
+      ]
+    },
+    {
+      "q": "Apa itu IDE?",
+      "a": "Lingkungan pengembangan perangkat lunak",
+      "options": [
+        "Bahasa pemrograman",
+        "Sistem operasi",
+        "Lingkungan pengembangan perangkat lunak",
+        "Alat komunikasi jaringan"
+      ]
+    },
+    {
+      "q": "Contoh IDE populer adalah?",
+      "a": "Visual Studio Code",
+      "options": [
+        "Photoshop",
+        "Visual Studio Code",
+        "Google Chrome",
+        "Slack"
+      ]
+    },
+    {
+      "q": "Tipe testing yang mengecek setiap unit kode secara individual disebut?",
+      "a": "Unit testing",
+      "options": [
+        "Integration testing",
+        "System testing",
+        "Unit testing",
+        "UI testing"
+      ]
+    },
+    {
+      "q": "Git adalah tools untuk?",
+      "a": "Version control",
+      "options": [
+        "Database",
+        "Desain UI",
+        "Version control",
+        "Analisis jaringan"
+      ]
+    },
+    {
+      "q": "Perintah Git untuk menyimpan perubahan lokal ke repositori disebut?",
+      "a": "commit",
+      "options": [
+        "clone",
+        "pull",
+        "commit",
+        "merge"
+      ]
+    },
+    {
+      "q": "Framework adalah?",
+      "a": "Kerangka kerja untuk mempermudah pengembangan aplikasi",
+      "options": [
+        "Sistem operasi",
+        "Kerangka kerja untuk mempermudah pengembangan aplikasi",
+        "Alat debugging",
+        "Editor teks"
+      ]
+    },
+    {
+      "q": "Salah satu framework backend Python adalah?",
+      "a": "Django",
+      "options": [
+        "Laravel",
+        "React",
+        "Django",
+        "Bootstrap"
+      ]
+    },
+    {
+      "q": "Bahasa pemrograman untuk pengembangan Android adalah?",
+      "a": "Kotlin",
+      "options": [
+        "Python",
+        "JavaScript",
+        "Kotlin",
+        "Swift"
+      ]
+    },
+    {
+      "q": "Salah satu metode pengembangan perangkat lunak agile adalah?",
+      "a": "Scrum",
+      "options": [
+        "Waterfall",
+        "V-Model",
+        "Scrum",
+        "Spiral"
+      ]
+    },
+    {
+      "q": "Fitur utama metode waterfall adalah?",
+      "a": "Tahapan linear berurutan",
+      "options": [
+        "Tahapan acak",
+        "Interaktif",
+        "Berulang",
+        "Tahapan linear berurutan"
+      ]
+    },
+    {
+      "q": "Apa itu repository?",
+      "a": "Tempat menyimpan dan mengelola kode proyek",
+      "options": [
+        "Editor kode",
+        "Server lokal",
+        "Tempat menyimpan dan mengelola kode proyek",
+        "Framework UI"
+      ]
+    },
+    {
+      "q": "Apa itu bug?",
+      "a": "Kesalahan dalam program",
+      "options": [
+        "Pengguna",
+        "Fitur baru",
+        "Kesalahan dalam program",
+        "Update sistem"
+      ]
+    },
+    {
+      "q": "Apa fungsi dari database?",
+      "a": "Menyimpan dan mengelola data",
+      "options": [
+        "Menggambar",
+        "Menampilkan animasi",
+        "Menyimpan dan mengelola data",
+        "Memainkan musik"
+      ]
+    },
+    {
+      "q": "Apa itu API?",
+      "a": "Antarmuka untuk menghubungkan aplikasi",
+      "options": [
+        "Antivirus",
+        "Antarmuka untuk menghubungkan aplikasi",
+        "Animasi Pengguna",
+        "Alat pengedit data"
+      ]
+    },
+    {
+      "q": "Contoh database relasional adalah?",
+      "a": "MySQL",
+      "options": [
+        "MongoDB",
+        "MySQL",
+        "Firebase",
+        "Neo4j"
+      ]
+    },
+    {
+      "q": "Perintah SQL untuk menampilkan semua data dari tabel adalah?",
+      "a": "SELECT * FROM",
+      "options": [
+        "GET ALL FROM",
+        "SELECT * FROM",
+        "SHOW ALL",
+        "READ *"
+      ]
+    },
+    {
+      "q": "Algoritma adalah?",
+      "a": "Langkah-langkah logis untuk menyelesaikan masalah",
+      "options": [
+        "Bahasa program",
+        "Langkah-langkah logis untuk menyelesaikan masalah",
+        "Fungsi UI",
+        "Nama variabel"
+      ]
+    },
+    {
+      "q": "Apa itu syntax?",
+      "a": "Aturan penulisan kode program",
+      "options": [
+        "Nama variabel",
+        "Aturan penulisan kode program",
+        "Database",
+        "Alat testing"
+      ]
+    },
+    {
+      "q": "Versi Python terbaru bisa dicek lewat perintah?",
+      "a": "python --version",
+      "options": [
+        "pyversion",
+        "python-version",
+        "python --version",
+        "ver python"
+      ]
+    },
+    {
+      "q": "Salah satu jenis loop dalam Python adalah?",
+      "a": "for",
+      "options": [
+        "looping",
+        "for",
+        "times",
+        "repeat"
+      ]
+    },
+    {
+      "q": "Fungsi dari diagram alir (flowchart)?",
+      "a": "Visualisasi logika program",
+      "options": [
+        "Dekorasi UI",
+        "Pembuatan basis data",
+        "Visualisasi logika program",
+        "Perintah terminal"
+      ]
+    },
+    {
+      "q": "Contoh tools untuk membuat mockup UI?",
+      "a": "Figma",
+      "options": [
+        "XAMPP",
+        "Figma",
+        "MySQL",
+        "Laravel"
+      ]
+    },
+    {
+      "q": "Metode testing untuk memastikan sistem sesuai kebutuhan disebut?",
+      "a": "Acceptance Testing",
+      "options": [
+        "Unit Testing",
+        "Regression Testing",
+        "Acceptance Testing",
+        "Stress Testing"
+      ]
+    },
+    {
+      "q": "Konsep encapsulation dalam OOP berarti?",
+      "a": "Menyembunyikan data dan hanya bisa diakses lewat metode tertentu",
+      "options": [
+        "Duplikasi kode",
+        "Menyatukan class",
+        "Menyembunyikan data dan hanya bisa diakses lewat metode tertentu",
+        "Memanggil fungsi lain"
+      ]
+    },
+    {
+      "q": "Contoh library HTTP Python?",
+      "a": "requests",
+      "options": [
+        "math",
+        "json",
+        "requests",
+        "os"
+      ]
+    },
+    {
+      "q": "Apa itu pseudocode?",
+      "a": "Kode semu untuk merancang program",
+      "options": [
+        "Kode error",
+        "Bahasa pemrograman baru",
+        "Kode semu untuk merancang program",
+        "Enkripsi data"
+      ]
+    },
+    {
+      "q": "Contoh struktur data adalah?",
+      "a": "Array",
+      "options": [
+        "Looping",
+        "Array",
+        "Syntax",
+        "Module"
+      ]
+    },
+    {
+      "q": "Apa itu responsive design?",
+      "a": "Desain UI yang menyesuaikan ukuran layar",
+      "options": [
+        "Desain untuk desktop saja",
+        "Desain dengan warna banyak",
+        "Desain UI yang menyesuaikan ukuran layar",
+        "Desain tanpa gambar"
+      ]
+    },
+    {
+      "q": "Perintah untuk mencetak teks di Python adalah?",
+      "a": "print()",
+      "options": [
+        "display()",
+        "echo()",
+        "print()",
+        "output()"
+      ]
+    },
+    {
+      "q": "Apa itu loop?",
+      "a": "Perulangan instruksi dalam program",
+      "options": [
+        "Penyimpanan data",
+        "Pengambilan input",
+        "Perulangan instruksi dalam program",
+        "Pemanggilan library"
+      ]
+    },
+    {
+      "q": "Database non-relasional juga disebut?",
+      "a": "NoSQL",
+      "options": [
+        "NoDB",
+        "SQL",
+        "MyDB",
+        "NoSQL"
+      ]
+    },
+    {
+      "q": "Apa itu CRUD?",
+      "a": "Create, Read, Update, Delete",
+      "options": [
+        "Create, Render, Update, Drop",
+        "Compute, Read, Use, Delete",
+        "Create, Read, Update, Delete",
+        "Compile, Run, Update, Delete"
+      ]
+    },
+    {
+      "q": "Salah satu aplikasi XAMPP adalah?",
+      "a": "Menjalankan server lokal",
+      "options": [
+        "Mendesain UI",
+        "Menjalankan server lokal",
+        "Menulis kode Python",
+        "Menggambar grafik"
+      ]
+    },
+    {
+      "q": "Tipe data boolean hanya punya nilai?",
+      "a": "True dan False",
+      "options": [
+        "Yes dan No",
+        "0 dan 1",
+        "True dan False",
+        "Left dan Right"
+      ]
+    },
+    {
+      "q": "Bahasa pemrograman yang dikenal sangat cepat dan kuat untuk game adalah?",
+      "a": "C++",
+      "options": [
+        "Python",
+        "HTML",
+        "C++",
+        "CSS"
+      ]
+    },
+    {
+      "q": "Perintah untuk membuat fungsi di Python adalah?",
+      "a": "def",
+      "options": [
+        "func",
+        "function",
+        "def",
+        "declare"
+      ]
+    },
+    {
+      "q": "Jenis pengujian keamanan sistem disebut?",
+      "a": "Penetration testing",
+      "options": [
+        "Unit testing",
+        "Penetration testing",
+        "UI testing",
+        "Performance testing"
+      ]
+    },
+    {
+      "q": "Metode pengembangan dengan rilis kecil dan cepat disebut?",
+      "a": "Agile",
+      "options": [
+        "Waterfall",
+        "V-Model",
+        "Agile",
+        "RAD"
+      ]
+    },
+    {
+      "q": "Perintah git untuk mengunduh project dari remote?",
+      "a": "clone",
+      "options": [
+        "commit",
+        "push",
+        "clone",
+        "fork"
+      ]
+    }
+  ]
+}
