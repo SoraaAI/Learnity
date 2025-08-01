@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <title>Learnity Setup</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="icon" href="../front-end/svg/icons-learnity.svg">
+</head>
+
+<body>
+  <div class="content">
+    <h1>Learnity Setup</h1>
+    <div class="text">
+      <p>
+        Sebelum mulai, kita perlu menyiapkan beberapa data penting agar semua fitur di Learnity bisa berjalan dengan baik.
+        Tenang aja, proses ini hanya butuh satu klik.
+        <br><br>
+        <span style="color: red;">
+          *Pastikan perangkat kamu terhubung ke internet, ya!
+        </span>
+      </p>
+    </div>
+  </div>
+  <div class="container">
+    <button onclick="checkDependencies()">
+      <img src="../front-end/image/inbox-in.png" alt="" width="30">
+      <span>Install data</span>
+    </button>
+    <div id="output">
+      <span>Data belum terinstall</span>
+    </div>
+  </div>
+
+  <script>
+    async function checkDependencies() {
+      const outputDiv = document.getElementById('output');
+      outputDiv.textContent = '⏳ Mengecek dan menginstall dependensi...';
+      try {
+        if (!window.pywebview || !window.pywebview.api) {
+          throw new Error('Sebentar yaa, API nya lagi disiapin nih. Kasi waktu sekitar 10-15 detik.')
+        }
+        const result = await window.pywebview.api.check_dependicies();
+        outputDiv.textContent = result.join('\n');
+      } catch (e) {
+        outputDiv.textContent = `❌ Terjadi error: ${e}`;
+      }
+    }
+  </script>
+</body>
+
+</html>
