@@ -23,7 +23,7 @@ http_server_thread.start()
 
 time.sleep(1)
 
-window = webview.create_window("Blue Ollama Chatbot", "http://localhost:8000/chatbot_htm.html", width=1080, height=720, resizable=True)
+window = webview.create_window("Blue Ollama Chatbot", "http://localhost:8000/chatbot.html", width=1080, height=720, resizable=True)
 webview.start()
 ollama_thread.join()
 http_server_thread.join()
