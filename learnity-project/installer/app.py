@@ -31,7 +31,7 @@ class API:
         messages.append(install_dependency("streamlit"))
         messages.append(install_dependency("Pillow", "PIL"))
         messages.append(install_dependency("pywebview", "webview"))
-        messages.append(install_dependency("cv2"))
+        messages.append(install_dependency("cv2", "opencv-python"))
         messages.append(install_dependency("mediapipe"))
         messages.append(install_dependency("pygetwindow"))
         messages.append(install_dependency("pyautogui"))
