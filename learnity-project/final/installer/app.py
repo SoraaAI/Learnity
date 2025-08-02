@@ -1,40 +1,42 @@
 import subprocess
-import importlib.util
+import importlib
 import sys
 import os
-import importlib
 import time
+import webview
 
-try:
-    import webview
-except ImportError:
-    os.system("pip install pywebview")
+modules_to_check = [
+    ("google-generativeai", "google.generativeai"),
+    ("SpeechRecognition", "speech_recognition"),
+    ("pyttsx3", "pyttsx3"),
+    ("pyaudio", "pyaudio"),
+    ("requests", "requests"),
+    ("streamlit", "streamlit"),
+    ("Pillow", "PIL"),
+    ("pywebview", "webview"),
+    ("opencv-python", "cv2"),
+    ("mediapipe", "mediapipe"),
+    ("pygetwindow", "pygetwindow"),
+    ("pyautogui", "pyautogui")
+]
 
-def install_dependency(pkg_name, module_name=None):
-    if module_name is None:
-        module_name = pkg_name
-    if importlib.util.find_spec(module_name) is not None:
+def install_package(pkg_name):
+    os.system(f"pip install {pkg_name}")
+
+def try_import(pkg_name, module_name):
+    try:
+        importlib.import_module(module_name)
         return f"✅ {pkg_name} sudah terinstall."
-    else:
-        os.system(f"pip install {module_name}")
+    except ImportError:
+        install_package(pkg_name)
         return f"❌ {pkg_name} belum terinstall, coba untuk jalankan pengecekan sekali lagi.."
 
 class API:
     def check_dependicies(self):
         time.sleep(5.0)
         messages = []
-        messages.append(install_dependency("google-generativeai", "google.generativeai"))
-        messages.append(install_dependency("SpeechRecognition", "speech_recognition"))
-        messages.append(install_dependency("pyttsx3", "pyttsx3"))
-        messages.append(install_dependency("pyaudio", "pyaudio"))
-        messages.append(install_dependency("requests", "requests"))
-        messages.append(install_dependency("streamlit", "streamlit"))
-        messages.append(install_dependency("Pillow", "PIL"))
-        messages.append(install_dependency("pywebview", "webview"))
-        messages.append(install_dependency("opencv-python", "cv2"))
-        messages.append(install_dependency("mediapipe", "mediapipe"))
-        messages.append(install_dependency("pygetwindow", "pygetwindow"))
-        messages.append(install_dependency("pyautogui", "pyautogui"))
+        for pkg_name, module_name in modules_to_check:
+            messages.append(try_import(pkg_name, module_name))
         return messages
 
 html_path = 'index.html'
