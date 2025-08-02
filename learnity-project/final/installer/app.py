@@ -25,16 +25,16 @@ class API:
         messages = []
         messages.append(install_dependency("google-generativeai", "google.generativeai"))
         messages.append(install_dependency("SpeechRecognition", "speech_recognition"))
-        messages.append(install_dependency("pyttsx3"))
-        messages.append(install_dependency("pyaudio"))
-        messages.append(install_dependency("requests"))
-        messages.append(install_dependency("streamlit"))
+        messages.append(install_dependency("pyttsx3", "pyttsx3"))
+        messages.append(install_dependency("pyaudio", "pyaudio"))
+        messages.append(install_dependency("requests", "requests"))
+        messages.append(install_dependency("streamlit", "streamlit"))
         messages.append(install_dependency("Pillow", "PIL"))
         messages.append(install_dependency("pywebview", "webview"))
-        messages.append(install_dependency("cv2", "opencv-python"))
-        messages.append(install_dependency("mediapipe"))
-        messages.append(install_dependency("pygetwindow"))
-        messages.append(install_dependency("pyautogui"))
+        messages.append(install_dependency("opencv-python", "cv2"))
+        messages.append(install_dependency("mediapipe", "mediapipe"))
+        messages.append(install_dependency("pygetwindow", "pygetwindow"))
+        messages.append(install_dependency("pyautogui", "pyautogui"))
         return messages
 
 html_path = 'index.html'
