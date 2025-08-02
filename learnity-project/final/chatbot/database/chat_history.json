@@ -1,0 +1,76 @@
+[
+  {
+    "id": "chat_1754133038909_l206iainx",
+    "timestamp": "2025-08-02T11:10:43.839Z",
+    "mode": "offline",
+    "userId": "123456789",
+    "messages": [
+      {
+        "sender": "user",
+        "content": "p",
+        "timestamp": "2025-08-02T11:10:41.486Z"
+      },
+      {
+        "sender": "assistant",
+        "content": "Sorry, I encountered an error while processing your request. Please make sure Ollama is running and the llama3.2:latest model is available.",
+        "timestamp": "2025-08-02T11:10:41.549Z"
+      },
+      {
+        "sender": "user",
+        "content": "n",
+        "timestamp": "2025-08-02T11:10:43.100Z"
+      },
+      {
+        "sender": "assistant",
+        "content": "Sorry, I encountered an error while processing your request. Please make sure Ollama is running and the llama3.2:latest model is available.",
+        "timestamp": "2025-08-02T11:10:43.839Z"
+      }
+    ]
+  },
+  {
+    "id": "chat_1754132924164_194sn6vo2",
+    "timestamp": "2025-08-02T11:10:38.908Z",
+    "mode": "offline",
+    "userId": "123456789",
+    "messages": [
+      {
+        "sender": "user",
+        "content": "hii",
+        "timestamp": "2025-08-02T11:08:47.672Z"
+      },
+      {
+        "sender": "assistant",
+        "content": "Sorry, I encountered an error while connecting to Gemini. Please check your API key and internet connection.",
+        "timestamp": "2025-08-02T11:08:47.935Z"
+      }
+    ]
+  },
+  {
+    "id": "chat_1754132884581_cg9nycjzd",
+    "timestamp": "2025-08-02T11:08:44.164Z",
+    "mode": "online",
+    "userId": "123456789",
+    "messages": [
+      {
+        "sender": "user",
+        "content": "halooo",
+        "timestamp": "2025-08-02T11:08:16.330Z"
+      },
+      {
+        "sender": "assistant",
+        "content": "Sorry, I encountered an error while connecting to Gemini. Please check your API key and internet connection.",
+        "timestamp": "2025-08-02T11:08:17.662Z"
+      },
+      {
+        "sender": "user",
+        "content": "wowi",
+        "timestamp": "2025-08-02T11:08:34.781Z"
+      },
+      {
+        "sender": "assistant",
+        "content": "Sorry, I encountered an error while connecting to Gemini. Please check your API key and internet connection.",
+        "timestamp": "2025-08-02T11:08:35.066Z"
+      }
+    ]
+  }
+]
