@@ -29,7 +29,7 @@ def try_import(pkg_name, module_name):
         return f"✅ {pkg_name} sudah terinstall."
     except ImportError:
         install_package(pkg_name)
-        return f"❌ {pkg_name} belum terinstall, coba untuk jalankan pengecekan sekali lagi.."
+        return f"❌ {pkg_name} seharusnya baru saja terinstall yaa, boleh tekan tombol Cek dan Install Dependensi sekali lagi.."
 
 class API:
     def check_dependicies(self):
