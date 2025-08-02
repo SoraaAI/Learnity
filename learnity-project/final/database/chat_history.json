@@ -1,0 +1,20 @@
+[
+  {
+    "id": "chat_1754174853624_2kentriob",
+    "timestamp": "2025-08-02T22:48:25.125Z",
+    "mode": "offline",
+    "userId": "123456789",
+    "messages": [
+      {
+        "sender": "user",
+        "content": "apa 1_9",
+        "timestamp": "2025-08-02T22:47:40.119Z"
+      },
+      {
+        "sender": "assistant",
+        "content": "Anda ingin tahu tentang nomor 1-9? Baiklah, aku akan menjelaskannya!\n\nNomor-nomor 1 hingga 9 adalah angka-angka dasar dalam sistem bilangan. Mereka digunakan sebagai bagian dari sistem numerik untuk menghitung dan menyimpan data.\n\nBerikut adalah penjelasan singkat tentang setiap nomor:\n\n1. Satu (1) - Awal dari semua sesuatu, mula-mula\n2. Dua (2) - Jumlah yang sederhana dan mudah dipahami\n3. Tiga (3) - Jumlah yang unik dan tidak dapat dibagi menjadi dua bagian yang sama\n4. Empat (4) - Jumlah yang stabil dan terstruktur\n5. Lima (5) - Jumlah yang santai dan mudah diingat\n6. Enam (6) - Jumlah yang menarik dan memiliki sifat-sifat unik\n7. Tujuh (7) - Jumlah yang berbeda dan tidak dapat dibagi menjadi dua bagian yang sama\n8. Delapan (8) - Jumlah yang kuat dan stabil\n9. Sembilan (9) - Jumlah yang penuh dan lengkap\n\nTapi, perlu diingat bahwa nomor-nomor ini hanya memiliki nilai matematika dan tidak memiliki arti simbolik atau filosofis yang kuat. Mereka hanya digunakan sebagai alat untuk menghitung dan menyimpan data.",
+        "timestamp": "2025-08-02T22:48:25.125Z"
+      }
+    ]
+  }
+]
