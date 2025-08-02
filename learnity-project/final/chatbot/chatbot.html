@@ -4,41 +4,559 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Blue Ollama Chatbot</title>
-    <link rel="stylesheet" href="chatbot.css">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .chatbot-container {
+            width: 100%;
+            max-width: 800px;
+            height: 90vh;
+            background: rgba(255, 255, 255, 0.95);
+            border-radius: 20px;
+            box-shadow: 0 20px 40px rgba(0, 0, 0, 0.1);
+            backdrop-filter: blur(10px);
+            display: flex;
+            flex-direction: column;
+            overflow: hidden;
+        }
+
+        .header {
+            background: linear-gradient(135deg, #4f46e5, #7c3aed);
+            color: white;
+            padding: 20px;
+            text-align: center;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+            position: relative;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+
+        .header-left {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+
+        .new-chat-btn {
+            background: rgba(255, 255, 255, 0.2);
+            border: 1px solid rgba(255, 255, 255, 0.3);
+            color: white;
+            padding: 8px 16px;
+            border-radius: 20px;
+            cursor: pointer;
+            font-size: 14px;
+            transition: all 0.3s ease;
+            backdrop-filter: blur(10px);
+        }
+
+        .new-chat-btn:hover {
+            background: rgba(255, 255, 255, 0.3);
+            transform: translateY(-1px);
+        }
+
+        .header-center {
+            flex: 1;
+            text-align: center;
+        }
+
+        .header-right {
+            display: flex;
+            align-items: center;
+            gap: 15px;
+        }
+
+        .history-btn {
+            background: rgba(255, 255, 255, 0.2);
+            border: 1px solid rgba(255, 255, 255, 0.3);
+            color: white;
+            padding: 8px 16px;
+            border-radius: 20px;
+            cursor: pointer;
+            font-size: 14px;
+            transition: all 0.3s ease;
+            backdrop-filter: blur(10px);
+        }
+
+        .history-btn:hover {
+            background: rgba(255, 255, 255, 0.3);
+            transform: translateY(-1px);
+        }
+
+        .chat-container {
+            display: flex;
+            flex: 1;
+            overflow: hidden;
+        }
+
+        .main-chat {
+            flex: 1;
+            display: flex;
+            flex-direction: column;
+        }
+
+        .history-sidebar {
+            width: 300px;
+            background: #f8fafc;
+            border-left: 1px solid #e5e7eb;
+            display: none;
+            flex-direction: column;
+            overflow: hidden;
+        }
+
+        .history-sidebar.open {
+            display: flex;
+        }
+
+        .history-header {
+            padding: 15px 20px;
+            background: white;
+            border-bottom: 1px solid #e5e7eb;
+            font-weight: 600;
+            color: #374151;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .close-history {
+            background: none;
+            border: none;
+            font-size: 18px;
+            cursor: pointer;
+            color: #6b7280;
+            padding: 5px;
+            border-radius: 50%;
+            transition: background 0.2s;
+        }
+
+        .close-history:hover {
+            background: #f3f4f6;
+        }
+
+        .history-list {
+            flex: 1;
+            overflow-y: auto;
+            padding: 10px;
+        }
+
+        .history-item {
+            background: white;
+            border: 1px solid #e5e7eb;
+            border-radius: 10px;
+            padding: 12px;
+            margin-bottom: 8px;
+            cursor: pointer;
+            transition: all 0.2s;
+        }
+
+        .history-item:hover {
+            border-color: #3b82f6;
+            box-shadow: 0 2px 5px rgba(59, 130, 246, 0.1);
+        }
+
+        .history-item-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 5px;
+        }
+
+        .history-date {
+            font-size: 12px;
+            color: #6b7280;
+        }
+
+        .history-mode {
+            font-size: 10px;
+            padding: 2px 6px;
+            border-radius: 10px;
+            background: #ddd6fe;
+            color: #7c3aed;
+        }
+
+        .history-preview {
+            font-size: 13px;
+            color: #4b5563;
+            overflow: hidden;
+            text-overflow: ellipsis;
+            white-space: nowrap;
+        }
+
+        .header-center h1 {
+            font-size: 24px;
+            font-weight: 600;
+            margin-bottom: 5px;
+        }
+
+        .header-center p {
+            opacity: 0.9;
+            font-size: 14px;
+            margin-bottom: 15px;
+        }
+
+        .mode-switch {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .switch {
+            position: relative;
+            display: inline-block;
+            width: 120px;
+            height: 32px;
+        }
+
+        .switch input {
+            opacity: 0;
+            width: 0;
+            height: 0;
+        }
+
+        .slider {
+            position: absolute;
+            cursor: pointer;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: rgba(255, 255, 255, 0.2);
+            transition: .3s;
+            border-radius: 16px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 4px;
+            backdrop-filter: blur(10px);
+        }
+
+        .slider:before {
+            position: absolute;
+            content: "";
+            height: 24px;
+            width: 56px;
+            left: 4px;
+            bottom: 4px;
+            background: white;
+            transition: .3s;
+            border-radius: 12px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+        }
+
+        input:checked + .slider:before {
+            transform: translateX(56px);
+        }
+
+        .mode-label {
+            font-size: 11px;
+            font-weight: 600;
+            z-index: 1;
+            width: 56px;
+            text-align: center;
+            transition: color 0.3s;
+        }
+
+        .mode-label.offline {
+            color: #4f46e5;
+        }
+
+        .mode-label.online {
+            color: rgba(255, 255, 255, 0.7);
+        }
+
+        input:checked + .slider .mode-label.offline {
+            color: rgba(255, 255, 255, 0.7);
+        }
+
+        input:checked + .slider .mode-label.online {
+            color: #4f46e5;
+        }
+
+        .chat-messages {
+            flex: 1;
+            overflow-y: auto;
+            padding: 20px;
+            background: linear-gradient(to bottom, #f8fafc, #e2e8f0);
+        }
+
+        .message {
+            display: flex;
+            margin-bottom: 20px;
+            animation: fadeIn 0.3s ease-in;
+        }
+
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(10px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+
+        .message.user {
+            justify-content: flex-end;
+        }
+
+        .message.assistant {
+            justify-content: flex-start;
+            align-items: flex-start;
+        }
+
+        .message.assistant .message-wrapper {
+            display: flex;
+            align-items: flex-start;
+            max-width: 70%;
+            gap: 12px;
+        }
+
+        .assistant-avatar {
+            width: 40px;
+            height: 40px;
+            border-radius: 50%;
+            object-fit: cover;
+            border: 2px solid #3b82f6;
+            flex-shrink: 0;
+            margin-top: 2px;
+        }
+
+        .message-content {
+            padding: 15px 20px;
+            border-radius: 18px;
+            word-wrap: break-word;
+            line-height: 1.5;
+            flex: 1;
+        }
+
+        .message.user .message-content {
+            background: linear-gradient(135deg, #3b82f6, #1d4ed8);
+            color: white;
+            border-bottom-right-radius: 5px;
+            max-width: 70%;
+        }
+
+        .message.assistant .message-content {
+            background: white;
+            color: #374151;
+            border: 1px solid #e5e7eb;
+            border-bottom-left-radius: 5px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05);
+        }
+
+        .message.system .message-content {
+            background: #fef3c7;
+            color: #92400e;
+            border: 1px solid #fcd34d;
+            border-left: 4px solid #f59e0b;
+            font-family: monospace;
+            font-size: 14px;
+            white-space: pre-line;
+        }
+
+        .input-container {
+            padding: 20px;
+            background: white;
+            border-top: 1px solid #e5e7eb;
+            display: flex;
+            align-items: flex-end;
+            gap: 15px;
+        }
+
+        .input-group {
+            flex: 1;
+            display: flex;
+            gap: 10px;
+            align-items: flex-end;
+        }
+
+        .message-input {
+            flex: 1;
+            min-height: 50px;
+            max-height: 120px;
+            padding: 15px 20px;
+            border: 2px solid #e5e7eb;
+            border-radius: 25px;
+            resize: none;
+            font-family: inherit;
+            font-size: 16px;
+            outline: none;
+            transition: all 0.3s ease;
+            background: #f8fafc;
+        }
+
+        .message-input:focus {
+            border-color: #3b82f6;
+            background: white;
+            box-shadow: 0 0 0 3px rgba(59, 130, 246, 0.1);
+        }
+
+        .send-button {
+            width: 50px;
+            height: 50px;
+            border: none;
+            border-radius: 50%;
+            background: linear-gradient(135deg, #3b82f6, #1d4ed8);
+            color: white;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 18px;
+        }
+
+        .send-button:hover:not(:disabled) {
+            transform: scale(1.05);
+            box-shadow: 0 5px 15px rgba(59, 130, 246, 0.4);
+        }
+
+        .send-button:disabled {
+            opacity: 0.5;
+            cursor: not-allowed;
+            transform: none;
+        }
+
+        .typing-indicator {
+            display: flex;
+            align-items: center;
+            padding: 15px 20px;
+            background: white;
+            border-radius: 18px;
+            border-bottom-left-radius: 5px;
+            border: 1px solid #e5e7eb;
+            max-width: 70%;
+            margin-bottom: 20px;
+        }
+
+        .typing-dots {
+            display: flex;
+            gap: 4px;
+        }
+
+        .typing-dot {
+            width: 8px;
+            height: 8px;
+            border-radius: 50%;
+            background: #6b7280;
+            animation: typing 1.4s infinite ease-in-out;
+        }
+
+        .typing-dot:nth-child(2) { animation-delay: 0.2s; }
+        .typing-dot:nth-child(3) { animation-delay: 0.4s; }
+
+        @keyframes typing {
+            0%, 60%, 100% { transform: translateY(0); opacity: 0.3; }
+            30% { transform: translateY(-10px); opacity: 1; }
+        }
+
+        .error-message {
+            background: #fee2e2 !important;
+            color: #dc2626 !important;
+            border-color: #fecaca !important;
+        }
+
+        .status-indicator {
+            position: absolute;
+            top: 15px;
+            right: 20px;
+            width: 12px;
+            height: 12px;
+            border-radius: 50%;
+            background: #10b981;
+            box-shadow: 0 0 0 2px rgba(16, 185, 129, 0.3);
+        }
+
+        .status-indicator.disconnected {
+            background: #ef4444;
+            box-shadow: 0 0 0 2px rgba(239, 68, 68, 0.3);
+        }
+
+        @media (max-width: 768px) {
+            .chatbot-container {
+                height: 100vh;
+                border-radius: 0;
+                max-width: none;
+            }
+            
+            .message-content {
+                max-width: 85%;
+            }
+            
+            .input-container {
+                padding: 15px;
+            }
+            
+            .character-image {
+                width: 40px;
+                height: 40px;
+            }
+        }
+    </style>
 </head>
 <body>
     <div class="chatbot-container">
         <div class="header">
-            <div class="status-indicator" id="statusIndicator"></div>
-            <h1>AI Assistant</h1>
-            <p id="headerText">Loading...</p>
-            <div class="mode-switch">
-                <label class="switch">
-                    <input type="checkbox" id="modeToggle">
-                    <span class="slider">
-                        <span class="mode-label offline">Offline</span>
-                        <span class="mode-label online">Online</span>
-                    </span>
-                </label>
+            <div class="header-left">
+                <button class="new-chat-btn" id="newChatBtn">+ New Chat</button>
+            </div>
+            <div class="header-center">
+                <div class="status-indicator" id="statusIndicator"></div>
+                <h1>AI Assistant</h1>
+                <p id="headerText">Loading...</p>
+                <div class="mode-switch">
+                    <label class="switch">
+                        <input type="checkbox" id="modeToggle">
+                        <span class="slider">
+                            <span class="mode-label offline">Offline</span>
+                            <span class="mode-label online">Online</span>
+                        </span>
+                    </label>
+                </div>
+            </div>
+            <div class="header-right">
+                <button class="history-btn" id="historyBtn">📚 History</button>
             </div>
         </div>
         
-        <div class="chat-messages" id="chatMessages">
-            <!-- Welcome message will be added dynamically -->
-        </div>
-        
-        <div class="input-container">
-            <img src="image/char.png" alt="Character" class="character-image" id="characterImage">
-            <div class="input-group">
-                <textarea 
-                    id="messageInput" 
-                    class="message-input" 
-                    placeholder="Type your message here..."
-                    rows="1"
-                ></textarea>
-                <button id="sendButton" class="send-button">
-                    ➤
-                </button>
+        <div class="chat-container">
+            <div class="main-chat">
+                <div class="chat-messages" id="chatMessages">
+                    <!-- Welcome message will be added dynamically -->
+                </div>
+                
+                <div class="input-container">
+                    <div class="input-group">
+                        <textarea 
+                            id="messageInput" 
+                            class="message-input" 
+                            placeholder="Type your message here..."
+                            rows="1"
+                        ></textarea>
+                        <button id="sendButton" class="send-button">
+                            ➤
+                        </button>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="history-sidebar" id="historySidebar">
+                <div class="history-header">
+                    <span>Chat History</span>
+                    <button class="close-history" id="closeHistory">×</button>
+                </div>
+                <div class="history-list" id="historyList">
+                    <!-- History items will be added dynamically -->
+                </div>
             </div>
         </div>
     </div>
@@ -50,32 +568,116 @@
                 this.messageInput = document.getElementById('messageInput');
                 this.sendButton = document.getElementById('sendButton');
                 this.statusIndicator = document.getElementById('statusIndicator');
-                this.characterImage = document.getElementById('characterImage');
                 this.headerText = document.getElementById('headerText');
                 this.modeToggle = document.getElementById('modeToggle');
+                this.newChatBtn = document.getElementById('newChatBtn');
+                this.historyBtn = document.getElementById('historyBtn');
+                this.historySidebar = document.getElementById('historySidebar');
+                this.closeHistory = document.getElementById('closeHistory');
+                this.historyList = document.getElementById('historyList');
                 
                 this.ollamaUrl = 'http://localhost:11434';
-                this.geminiApiKey = 'AIzaSyCGxd6Amr7ofBhdIjE852B0mnBDyZ6jcKw'; // Kita berterima kasih kepada Satria atas API key ini.
+                this.geminiApiKey = 'YOUR_GEMINI_API_KEY';
                 this.ollamaModel = 'llama3.2:latest';
                 this.geminiModel = 'gemini-1.5-flash';
                 this.isTyping = false;
                 this.isOnlineMode = false;
                 this.userData = null;
+                this.currentChatId = this.generateChatId();
+                this.chatHistory = [];
+                this.currentMessages = [];
                 
                 this.initializeApp();
             }
             
+            generateChatId() {
+                return 'chat_' + Date.now() + '_' + Math.random().toString(36).substr(2, 9);
+            }
+            
             async initializeApp() {
                 await this.loadUserData();
+                await this.loadChatHistory();
                 this.initializeEventListeners();
                 this.updateUI();
                 this.addWelcomeMessage();
                 this.checkConnections();
             }
             
+            async loadChatHistory() {
+                try {
+                    // Load chaat dari local storage
+                    const localHistory = JSON.parse(localStorage.getItem('chatHistory') || '[]');
+                    if (localHistory.length > 0) {
+                        this.chatHistory = localHistory;
+                        console.log('Chat history loaded from localStorage:', this.chatHistory.length, 'chats');
+                    }
+
+                    // Kalau new session baru coba load dari json
+                    if (window.pywebview && window.pywebview.api && window.pywebview.api.read_chat_history) {
+                        try {
+                            const fileHistoryStr = await window.pywebview.api.read_chat_history();
+                            const fileHistory = JSON.parse(fileHistoryStr);
+                            if (fileHistory.length > 0) {
+                                this.chatHistory = fileHistory;
+                                console.log('Chat history loaded from file:', this.chatHistory.length, 'chats');
+                                localStorage.setItem('chatHistory', JSON.stringify(this.chatHistory));
+                            }
+                        } catch (error) {
+                            console.log('No existing chat history file, starting fresh');
+                        }
+                    } else {
+                        try {
+                            const response = await fetch('/database/chat_history.json');
+                            if (response.ok) {
+                                const fileHistory = await response.json();
+                                this.chatHistory = fileHistory;
+                                console.log('Chat history loaded from HTTP:', this.chatHistory.length, 'chats');
+                                localStorage.setItem('chatHistory', JSON.stringify(this.chatHistory));
+                            }
+                        } catch (error) {
+                            console.log('No chat history file found via HTTP, using localStorage/starting fresh');
+                        }
+                    }
+                } catch (error) {
+                    console.log('Error loading chat history:', error);
+                    this.chatHistory = [];
+                }
+            }
+            
+            async saveChatHistory() {
+                try {
+                    // Kita coba simpan di local storage dulu, semoga bisa ya
+                    localStorage.setItem('chatHistory', JSON.stringify(this.chatHistory));
+                    
+                    // History, save di chat_history.json
+                    if (window.pywebview && window.pywebview.api && window.pywebview.api.write_chat_history) {
+                        const result = await window.pywebview.api.write_chat_history(JSON.stringify(this.chatHistory, null, 2));
+                        if (result.success) {
+                            console.log('✅ Chat history saved to file successfully');
+                            // this.addMessage('system', `💾 Chat history saved (${this.chatHistory.length} chats)`);
+                        } else {
+                            console.error('❌ Failed to save to file:', result.message);
+                            // this.addMessage('system', '⚠️ Chat saved to browser storage only (file save failed)');
+                        }
+                    } else {
+                        console.log('PyWebView API not available, saved to localStorage only');
+                        // this.addMessage('system', '💾 Chat saved to browser storage');
+                    }
+                } catch (error) {
+                    console.error('Error saving chat history:', error);
+                    this.addMessage('system', '❌ Error saving chat history: ' + error.message);
+                }
+            }
+            
+            getCharacterImagePath() {
+                if (!this.userData || !this.userData.mbti) {
+                    return '../image/char/default_char.png';
+                }
+                return `../image/char/${this.userData.mbti.toLowerCase()}_char.png`;
+            }
+            
             async loadUserData() {
                 try {
-                    // Embedded harusnya bisa
                     const localData = localStorage.getItem('userData');
                     if (localData) {
                         this.userData = JSON.parse(localData);
@@ -83,20 +685,53 @@
                         return;
                     }
                     
-                    // Kita localhost kan
-                    const response = await fetch('/database/user_data.json');
-                    if (response.ok) {
-                        this.userData = await response.json();
-                        console.log('User data loaded from file:', this.userData);
-                        localStorage.setItem('userData', JSON.stringify(this.userData));
-                        return;
-                    } else {
-                        throw new Error(`HTTP ${response.status}: ${response.statusText}`);
-                    }
-                } catch (error) {
-                    console.error('Error loading user data:', error);
+                    // FOLDERRRRRRRRRRRRRRRRRRR JANGAN LUPA UNTUK KESEKIAN KALINYA
+                    const possiblePaths = [
+                        'database/user_data.json',
+                        './database/user_data.json',
+                        '../database/user_data.json',
+                        '../database/user_daata.json',
+                        '/database/user_data.json'
+                    ];
                     
-                    // Fallback kalau error
+                    console.log('Current location:', window.location.href);
+                    console.log('Expected structure: chatbot/ and database/ folders are siblings');
+                    console.log('Trying to load user data from multiple paths...');
+                    
+                    for (const path of possiblePaths) {
+                        try {
+                            console.log(`🔍 Attempting to fetch: ${path}`);
+                            const response = await fetch(path);
+                            console.log(`📡 Response for ${path}:`, {
+                                status: response.status,
+                                statusText: response.statusText,
+                                ok: response.ok,
+                                url: response.url
+                            });
+                            
+                            if (response.ok) {
+                                const textContent = await response.text();
+                                console.log(`📄 Raw content from ${path}:`, textContent);
+                                
+                                this.userData = JSON.parse(textContent);
+                                console.log(`✅ User data loaded successfully from: ${path}`, this.userData);
+                                
+                                localStorage.setItem('userData', JSON.stringify(this.userData));
+                                this.addMessage('system', `✅ User data loaded from: ${path}`);
+                                return;
+                            }
+                        } catch (pathError) {
+                            console.log(`❌ Error loading from ${path}:`, pathError);
+                            continue;
+                        }
+                    }
+                    
+                    throw new Error('Could not load from any path');
+                    
+                } catch (error) {
+                    console.error('❌ Final error loading user data:', error);
+                    
+                    // Placeholder kalau error, jaga-jaga
                     this.userData = {
                         username: "Sora",
                         userid: "123456789",
@@ -106,27 +741,32 @@
                         coins: 10
                     };
                     
-                    // Fallback kalau gabisa load json, biasanya gara gara CORS, ini di fix ama python harusnya
+                    // Test
                     localStorage.setItem('userData', JSON.stringify(this.userData));
                     
-                    let errorMsg = '💾 Using embedded user data. ';
-                    
-                    if (error.message.includes('fetch')) {
-                        errorMsg += 'To load from JSON file, please:\n';
-                        errorMsg += '1. Run a local server (e.g., "python -m http.server 8000")\n';
-                        errorMsg += '2. Or use Live Server extension in VS Code\n';
-                        errorMsg += '3. Access via http://localhost instead of file://';
-                    } else {
-                        errorMsg += `Error: ${error.message}`;
-                    }
+                    let errorMsg = '💾 Using embedded user data.\n\n';
+                    errorMsg += '📁 Your folder structure:\n';
+                    errorMsg += 'final/\n';
+                    errorMsg += '├── chatbot/ (your HTML & Python script)\n';
+                    errorMsg += '└── database/ (your JSON file)\n\n';
+                    errorMsg += '🔍 Tried these paths:\n';
+                    errorMsg += '• ../database/user_data.json (should work)\n';
+                    errorMsg += '• database/user_data.json\n';
+                    errorMsg += '• ./database/user_data.json\n';
+                    errorMsg += '• ../database/user_daata.json (typo check)\n';
+                    errorMsg += '• /database/user_data.json\n\n';
+                    errorMsg += '🔧 Check:\n';
+                    errorMsg += '1. File name is exactly "user_data.json" (not "user_daata.json")\n';
+                    errorMsg += '2. Browser console for detailed logs\n';
+                    errorMsg += '3. Try accessing http://localhost:8000/../database/user_data.json directly';
                     
                     this.addMessage('system', errorMsg);
                 }
             }
             
             async sendToGemini(message) {
-                if (this.geminiApiKey === 'YOUR_GEMINI_API_KEY') {
-                    throw new Error('Please set your Gemini API key');
+                if (this.geminiApiKey === 'AIzaSyCGxd6Amr7ofBhdIjE852B0mnBDyZ6jcKw') {
+                    throw new Error('Gemini key nya mas lupa poh?');
                 }
                 
                 const response = await fetch(`https://generativelanguage.googleapis.com/v1beta/models/${this.geminiModel}:generateContent?key=${this.geminiApiKey}`, {
@@ -161,20 +801,29 @@
                     throw new Error('No response from Gemini');
                 }
                 
-                // GEMINIIIIIIII
+                // Pura pura animasi padahal engga KOWOWAKOKOKOA
                 let displayedText = '';
                 const messageElement = this.addMessage('assistant', '');
                 
                 for (let i = 0; i < generatedText.length; i++) {
                     displayedText += generatedText[i];
-                    messageElement.querySelector('.message-content').textContent = displayedText;
+                    const contentElement = messageElement.querySelector('.message-content');
+                    if (contentElement) {
+                        contentElement.textContent = displayedText;
+                    }
                     this.scrollToBottom();
                     
-                    // Pura pura animasi padahal ga ada animasi
                     if (i % 3 === 0) {
                         await new Promise(resolve => setTimeout(resolve, 10));
                     }
                 }
+                
+                // Save hasil
+                this.currentMessages.push({
+                    sender: 'assistant',
+                    content: generatedText,
+                    timestamp: new Date().toISOString()
+                });
             }
             
             updateUI() {
@@ -182,18 +831,18 @@
                     this.headerText.textContent = `Halo, ${this.userData.username}! Ada yang bisa aku bantu hari ini?`;
                 }
                 
-                // Update status based on mode
+                // Update status online offline
                 if (this.isOnlineMode) {
                     this.statusIndicator.classList.remove('disconnected');
                 } else {
-                    // Placeholder, nanti di update sama Ollama sendiri
+                    // Nanti ke update manual ama Ollama
                 }
             }
             
             addWelcomeMessage() {
                 const welcomeMsg = this.isOnlineMode 
-                    ? `Halo, ${this.userData?.username || 'User'}! Aku Learnity. Kamu sekarang ada di mode online. Ada yang bisa aku bantu?`
-                    : `Halo, ${this.userData?.username || 'User'}! Aku Learnity. Kamu sekarang di mode offline. Ada yang bisa aku bantu?`;
+                    ? `Halo ${this.userData?.username || 'User'}! Saya adalah asisten AI yang terhubung dengan Gemini. Ada yang bisa saya bantu?`
+                    : `Halo ${this.userData?.username || 'User'}! Saya adalah asisten AI lokal yang menggunakan Llama 3.2. Ada yang bisa saya bantu?`;
                 
                 this.addMessage('assistant', welcomeMsg);
             }
@@ -217,22 +866,159 @@
                     this.handleModeSwitch();
                 });
                 
-                this.setupCharacterImageFallback();
+                this.newChatBtn.addEventListener('click', () => {
+                    this.startNewChat();
+                });
+                
+                this.historyBtn.addEventListener('click', () => {
+                    this.toggleHistorySidebar();
+                });
+                
+                this.closeHistory.addEventListener('click', () => {
+                    this.toggleHistorySidebar();
+                });
+
+                // Setiap 10 menit kalau ada message save otomatis, bisa diubah intervalnya aja
+                setInterval(() => {
+                    if (this.currentMessages.length > 0) {
+                        this.saveCurrentChatToHistory();
+                    }
+                }, 600000);
+            }
+            
+            toggleHistorySidebar() {
+                this.historySidebar.classList.toggle('open');
+                if (this.historySidebar.classList.contains('open')) {
+                    this.loadHistoryList();
+                }
+            }
+            
+            loadHistoryList() {
+                this.historyList.innerHTML = '';
+                
+                if (this.chatHistory.length === 0) {
+                    this.historyList.innerHTML = '<div style="text-align: center; color: #6b7280; padding: 20px;">No chat history yet</div>';
+                    return;
+                }
+                
+                // Sort history
+                const sortedHistory = [...this.chatHistory].sort((a, b) => new Date(b.timestamp) - new Date(a.timestamp));
+                
+                sortedHistory.forEach((chat, index) => {
+                    const historyItem = document.createElement('div');
+                    historyItem.className = 'history-item';
+                    
+                    const date = new Date(chat.timestamp).toLocaleDateString('id-ID', {
+                        day: '2-digit',
+                        month: 'short',
+                        hour: '2-digit',
+                        minute: '2-digit'
+                    });
+                    
+                    const firstUserMessage = chat.messages.find(msg => msg.sender === 'user');
+                    const preview = firstUserMessage ? firstUserMessage.content.substring(0, 50) + (firstUserMessage.content.length > 50 ? '...' : '') : 'New Chat';
+                    
+                    historyItem.innerHTML = `
+                        <div class="history-item-header">
+                            <span class="history-date">${date}</span>
+                            <span class="history-mode">${chat.mode}</span>
+                        </div>
+                        <div class="history-preview">${preview}</div>
+                    `;
+                    
+                    historyItem.addEventListener('click', () => {
+                        this.loadChatFromHistory(chat);
+                        this.toggleHistorySidebar();
+                    });
+                    
+                    this.historyList.appendChild(historyItem);
+                });
+            }
+            
+            loadChatFromHistory(chatData) {
+                if (this.currentMessages.length > 0) {
+                    this.saveCurrentChatToHistory();
+                }
+                
+                this.messagesContainer.innerHTML = '';
+                this.currentMessages = [];
+                
+                chatData.messages.forEach(msg => {
+                    this.addMessage(msg.sender, msg.content);
+                    // Duplikat
+                });
+                
+                this.currentMessages = [...chatData.messages];
+                
+                // Set mode
+                this.isOnlineMode = chatData.mode === 'online';
+                this.modeToggle.checked = this.isOnlineMode;
+                this.updateUI();
+                
+                this.currentChatId = chatData.id;
+                this.addMessage('system', `📜 Loaded chat from ${new Date(chatData.timestamp).toLocaleDateString()}`);
+            }
+            
+            startNewChat() {
+                // Kalau chat sebelumnya punya meesage, save
+                if (this.currentMessages.length > 0) {
+                    this.saveCurrentChatToHistory();
+                }
+                
+                // Buat ID chat baru
+                this.currentChatId = this.generateChatId();
+                
+                this.messagesContainer.innerHTML = '';
+                this.currentMessages = [];
+                
+                this.addWelcomeMessage();
+                
+                this.messageInput.focus();
+                
+                this.addMessage('system', '🆕 Started new chat');
+            }
+            
+            saveCurrentChatToHistory() {
+                const userAssistantMessages = this.currentMessages.filter(msg => msg.sender === 'user' || msg.sender === 'assistant');
+                if (userAssistantMessages.length === 0) return;
+                
+                const existingChatIndex = this.chatHistory.findIndex(chat => chat.id === this.currentChatId);
+                
+                const chatData = {
+                    id: this.currentChatId,
+                    timestamp: new Date().toISOString(),
+                    mode: this.isOnlineMode ? 'online' : 'offline',
+                    userId: this.userData?.userid || 'unknown',
+                    messages: [...this.currentMessages] // Buat copy
+                };
+                
+                if (existingChatIndex >= 0) {
+                    this.chatHistory[existingChatIndex] = chatData;
+                    console.log('Updated existing chat in history');
+                } else {
+                    this.chatHistory.unshift(chatData);
+                    console.log('Added new chat to history');
+                }
+                
+                // Chat limit. Biar cuma bisa 50 message, kalau kebanyakan meledak nanti
+                if (this.chatHistory.length > 50) {
+                    this.chatHistory = this.chatHistory.slice(0, 50);
+                }                
+                this.saveChatHistory();
             }
             
             handleModeSwitch() {
-                // Clear previous messages except system messages
-                const messages = this.messagesContainer.querySelectorAll('.message:not(.message.system)');
-                messages.forEach(msg => msg.remove());
+                if (this.currentMessages.length > 0) {
+                    this.saveCurrentChatToHistory();
+                }
                 
-                this.updateUI();
-                this.addWelcomeMessage();
+                this.startNewChat();
                 
                 if (this.isOnlineMode) {
-                    this.addMessage('system', '🌐 Telah mengganti ke mode online..');
+                    this.addMessage('system', '🌐 Switched to Online mode (Gemini API)');
                     this.statusIndicator.classList.remove('disconnected');
                 } else {
-                    this.addMessage('system', '💻 Telah mengganti ke mode offline..');
+                    this.addMessage('system', '💻 Switched to Offline mode (Local Ollama)');
                     this.checkOllamaConnection();
                 }
             }
@@ -244,23 +1030,8 @@
             }
             
             setupCharacterImageFallback() {
-                this.characterImage.addEventListener('error', () => {
-                    // Fallback foto karakter
-                    const canvas = document.createElement('canvas');
-                    canvas.width = 50;
-                    canvas.height = 50;
-                    const ctx = canvas.getContext('2d');
-                    
-                    // Avatar
-                    ctx.fillStyle = '#3b82f6';
-                    ctx.fillRect(0, 0, 50, 50);
-                    ctx.fillStyle = 'white';
-                    ctx.font = '24px Arial';
-                    ctx.textAlign = 'center';
-                    ctx.fillText('AI', 25, 32);
-                    
-                    this.characterImage.src = canvas.toDataURL();
-                });
+                // TEST. Ga butuh lagi
+                console.log('Character image setup handled in addMessage method');
             }
             
             autoResizeTextarea() {
@@ -279,6 +1050,7 @@
                     });
                     if (response.ok) {
                         this.statusIndicator.classList.remove('disconnected');
+                        this.addMessage('system', '✅ Connected to Ollama successfully!');
                     } else {
                         throw new Error(`HTTP ${response.status}: ${response.statusText}`);
                     }
@@ -286,14 +1058,14 @@
                     this.statusIndicator.classList.add('disconnected');
                     console.error('Ollama connection error:', error);
                     
-                    let errorMessage = '❌ Gabisa connect ke Ollama nih. ';
+                    let errorMessage = '❌ Could not connect to Ollama. ';
                     
                     if (error.name === 'TypeError' && error.message.includes('fetch')) {
-                        errorMessage += 'Diantara belum install, atau biasanya karena CORS. Kalau Ollama sudah terinstall, cobain:\n\n';
-                        errorMessage += '1. Matiin dulu ollama serve yang sekarang kalau lagi running.\n';
-                        errorMessage += '2. Setup environment variable nya: OLLAMA_ORIGINS=* \n';
-                        errorMessage += '3. Baru mulai lagi Ollama nya: ollama serve\n\n';
-                        errorMessage += 'Atau bisa juga tinggal: OLLAMA_ORIGINS=* ollama serve';
+                        errorMessage += 'This is likely a CORS issue. Please start Ollama with CORS enabled:\n\n';
+                        errorMessage += '1. Stop Ollama if running\n';
+                        errorMessage += '2. Set environment variable: OLLAMA_ORIGINS=* \n';
+                        errorMessage += '3. Start Ollama: ollama serve\n\n';
+                        errorMessage += 'Or try: OLLAMA_ORIGINS=* ollama serve';
                     } else {
                         errorMessage += `Error: ${error.message}\n\n`;
                         errorMessage += 'Please check:\n';
@@ -311,6 +1083,12 @@
                 if (!message || this.isTyping) return;
                 
                 this.addMessage('user', message);
+                this.currentMessages.push({
+                    sender: 'user',
+                    content: message,
+                    timestamp: new Date().toISOString()
+                });
+                
                 this.messageInput.value = '';
                 this.autoResizeTextarea();
                 this.setTyping(true);
@@ -326,9 +1104,16 @@
                     const errorMsg = this.isOnlineMode 
                         ? 'Sorry, I encountered an error while connecting to Gemini. Please check your API key and internet connection.'
                         : 'Sorry, I encountered an error while processing your request. Please make sure Ollama is running and the llama3.2:latest model is available.';
+                    
                     this.addMessage('assistant', errorMsg, true);
+                    this.currentMessages.push({
+                        sender: 'assistant',
+                        content: errorMsg,
+                        timestamp: new Date().toISOString()
+                    });
                 } finally {
                     this.setTyping(false);
+                    this.saveCurrentChatToHistory();
                 }
             }
             
@@ -381,22 +1166,69 @@
                         }
                     }
                 }
+                
+                if (assistantMessage) {
+                    this.currentMessages.push({
+                        sender: 'assistant',
+                        content: assistantMessage,
+                        timestamp: new Date().toISOString()
+                    });
+                }
             }
             
             addMessage(sender, content, isError = false) {
                 const messageDiv = document.createElement('div');
                 messageDiv.className = `message ${sender}`;
                 
-                const contentDiv = document.createElement('div');
-                contentDiv.className = 'message-content';
-                if (isError) {
-                    contentDiv.classList.add('error-message');
+                if (sender === 'assistant') {
+                    const wrapperDiv = document.createElement('div');
+                    wrapperDiv.className = 'message-wrapper';
+                    
+                    // Avatar foto
+                    const avatarImg = document.createElement('img');
+                    avatarImg.className = 'assistant-avatar';
+                    avatarImg.src = this.getCharacterImagePath();
+                    avatarImg.alt = 'AI Assistant';
+                    
+                    // Handler error avatar, karakter
+                    avatarImg.addEventListener('error', () => {
+                        const canvas = document.createElement('canvas');
+                        canvas.width = 40;
+                        canvas.height = 40;
+                        const ctx = canvas.getContext('2d');
+                        
+                        ctx.fillStyle = '#3b82f6';
+                        ctx.fillRect(0, 0, 40, 40);
+                        ctx.fillStyle = 'white';
+                        ctx.font = '16px Arial';
+                        ctx.textAlign = 'center';
+                        ctx.fillText('AI', 20, 26);
+                        
+                        avatarImg.src = canvas.toDataURL();
+                    });
+                    
+                    const contentDiv = document.createElement('div');
+                    contentDiv.className = 'message-content';
+                    if (isError) {
+                        contentDiv.classList.add('error-message');
+                    }
+                    contentDiv.textContent = content;
+                    
+                    wrapperDiv.appendChild(avatarImg);
+                    wrapperDiv.appendChild(contentDiv);
+                    messageDiv.appendChild(wrapperDiv);
+                } else {
+                    // Biar message atau chat dari user ga bisa punya avatar
+                    const contentDiv = document.createElement('div');
+                    contentDiv.className = 'message-content';
+                    if (isError) {
+                        contentDiv.classList.add('error-message');
+                    }
+                    contentDiv.textContent = content;
+                    messageDiv.appendChild(contentDiv);
                 }
-                contentDiv.textContent = content;
                 
-                messageDiv.appendChild(contentDiv);
                 this.messagesContainer.appendChild(messageDiv);
-                
                 this.scrollToBottom();
                 return messageDiv;
             }
@@ -405,7 +1237,6 @@
                 this.isTyping = typing;
                 this.sendButton.disabled = typing;
                 
-                // Indicator
                 const existingIndicator = this.messagesContainer.querySelector('.typing-indicator');
                 if (existingIndicator) {
                     existingIndicator.remove();
@@ -431,7 +1262,7 @@
             }
         }
         
-        // DOM Kah
+        // DOM Inisialisasi
         document.addEventListener('DOMContentLoaded', () => {
             new OllamaChatbot();
         });
