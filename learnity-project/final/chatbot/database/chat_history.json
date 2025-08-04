@@ -1,7 +1,181 @@
 [
   {
+    "id": "chat_1754154880135_hsqn4witn",
+    "timestamp": "2025-08-02T17:14:47.428Z",
+    "mode": "offline",
+    "userId": "123456789",
+    "messages": [
+      {
+        "sender": "user",
+        "content": "s",
+        "timestamp": "2025-08-02T17:14:45.094Z"
+      },
+      {
+        "sender": "assistant",
+        "content": "Sorry, I encountered an error while processing your request. Please make sure Ollama is running and the llama3.2:latest model is available.",
+        "timestamp": "2025-08-02T17:14:47.428Z"
+      }
+    ]
+  },
+  {
+    "id": "chat_1754153151398_0vhtke87l",
+    "timestamp": "2025-08-02T17:09:04.627Z",
+    "mode": "online",
+    "userId": "123456789",
+    "messages": [
+      {
+        "sender": "user",
+        "content": "p",
+        "timestamp": "2025-08-02T16:45:54.071Z"
+      },
+      {
+        "sender": "assistant",
+        "content": "Sorry, I encountered an error while processing your request. Please make sure Ollama is running and the llama3.2:latest model is available.",
+        "timestamp": "2025-08-02T16:45:56.406Z"
+      }
+    ]
+  },
+  {
+    "id": "chat_1754153071907_0pegrqecv",
+    "timestamp": "2025-08-02T16:44:51.068Z",
+    "mode": "online",
+    "userId": "123456789",
+    "messages": [
+      {
+        "sender": "user",
+        "content": "huftt",
+        "timestamp": "2025-08-02T16:44:37.138Z"
+      },
+      {
+        "sender": "assistant",
+        "content": "Sorry, I encountered an error while processing your request. Please make sure Ollama is running and the llama3.2:latest model is available.",
+        "timestamp": "2025-08-02T16:44:39.494Z"
+      }
+    ]
+  },
+  {
+    "id": "chat_1754153012640_zk6cxgms2",
+    "timestamp": "2025-08-02T16:43:41.821Z",
+    "mode": "offline",
+    "userId": "123456789",
+    "messages": [
+      {
+        "sender": "user",
+        "content": "pp",
+        "timestamp": "2025-08-02T16:43:39.458Z"
+      },
+      {
+        "sender": "assistant",
+        "content": "Sorry, I encountered an error while processing your request. Please make sure Ollama is running and the llama3.2:latest model is available.",
+        "timestamp": "2025-08-02T16:43:41.821Z"
+      }
+    ]
+  },
+  {
+    "id": "chat_1754152970302_wj68s4ffy",
+    "timestamp": "2025-08-02T16:43:06.383Z",
+    "mode": "offline",
+    "userId": "123456789",
+    "messages": [
+      {
+        "sender": "user",
+        "content": "p",
+        "timestamp": "2025-08-02T16:42:52.850Z"
+      },
+      {
+        "sender": "assistant",
+        "content": "Sorry, I encountered an error while connecting to Gemini. Please check your API key and internet connection.",
+        "timestamp": "2025-08-02T16:42:54.104Z"
+      },
+      {
+        "sender": "user",
+        "content": "sasdasdasd",
+        "timestamp": "2025-08-02T16:42:56.854Z"
+      },
+      {
+        "sender": "assistant",
+        "content": "Sorry, I encountered an error while connecting to Gemini. Please check your API key and internet connection.",
+        "timestamp": "2025-08-02T16:42:57.087Z"
+      },
+      {
+        "sender": "user",
+        "content": "fuck bitch",
+        "timestamp": "2025-08-02T16:43:01.607Z"
+      },
+      {
+        "sender": "assistant",
+        "content": "Sorry, I encountered an error while connecting to Gemini. Please check your API key and internet connection.",
+        "timestamp": "2025-08-02T16:43:01.848Z"
+      }
+    ]
+  },
+  {
+    "id": "chat_1754152614222_98n370ffz",
+    "timestamp": "2025-08-02T16:38:52.135Z",
+    "mode": "offline",
+    "userId": "123456789",
+    "messages": [
+      {
+        "sender": "user",
+        "content": "woii",
+        "timestamp": "2025-08-02T16:36:59.127Z"
+      },
+      {
+        "sender": "assistant",
+        "content": "Sorry, I encountered an error while connecting to Gemini. Please check your API key and internet connection.",
+        "timestamp": "2025-08-02T16:37:00.469Z"
+      },
+      {
+        "sender": "user",
+        "content": "p",
+        "timestamp": "2025-08-02T16:38:49.785Z"
+      },
+      {
+        "sender": "assistant",
+        "content": "Sorry, I encountered an error while processing your request. Please make sure Ollama is running and the llama3.2:latest model is available.",
+        "timestamp": "2025-08-02T16:38:52.135Z"
+      }
+    ]
+  },
+  {
+    "id": "chat_1754137938851_ox3ndfgrm",
+    "timestamp": "2025-08-02T16:30:43.709Z",
+    "mode": "online",
+    "userId": "123456789",
+    "messages": [
+      {
+        "sender": "user",
+        "content": "p",
+        "timestamp": "2025-08-02T12:32:23.246Z"
+      },
+      {
+        "sender": "assistant",
+        "content": "Sorry, I encountered an error while connecting to Gemini. Please check your API key and internet connection.",
+        "timestamp": "2025-08-02T12:32:23.647Z"
+      }
+    ]
+  },
+  {
+    "id": "chat_1754137811271_6fh3makxt",
+    "timestamp": "2025-08-02T12:32:16.745Z",
+    "mode": "offline",
+    "userId": "123456789",
+    "messages": [
+      {
+        "sender": "user",
+        "content": "p",
+        "timestamp": "2025-08-02T12:30:14.197Z"
+      },
+      {
+        "sender": "assistant",
+        "content": "Sorry, I encountered an error while connecting to Gemini. Please check your API key and internet connection.",
+        "timestamp": "2025-08-02T12:30:15.546Z"
+      }
+    ]
+  },
+  {
     "id": "chat_1754133038909_l206iainx",
-    "timestamp": "2025-08-02T11:57:59.724Z",
+    "timestamp": "2025-08-02T16:38:41.311Z",
     "mode": "offline",
     "userId": "123456789",
     "messages": [
@@ -29,7 +203,7 @@
   },
   {
     "id": "chat_1754132924164_194sn6vo2",
-    "timestamp": "2025-08-02T11:10:38.908Z",
+    "timestamp": "2025-08-02T16:38:44.987Z",
     "mode": "offline",
     "userId": "123456789",
     "messages": [
