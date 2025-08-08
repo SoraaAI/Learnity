@@ -183,10 +183,6 @@ Anda telah membuat aplikasi Streamlit yang berfungsi sebagai antarmuka untuk men
 
 ---
 
-Ini adalah panduan untuk menggunakan aplikasi Streamlit yang Anda buat, yang berfungsi sebagai perencana "quest" pribadi. Aplikasi ini memungkinkan Anda membuat rencana tugas, melacak kemajuan, dan bahkan berinteraksi dengan asisten AI.
-
----
-
 ### 🚀 Planning Quest
 
 #### 1. Dashboard Utama
@@ -221,10 +217,6 @@ Di tab **`➕ Create Plan`**, Anda bisa membuat rencana baru dari awal.
     * **Priority Level**: Tetapkan prioritas (**low**, **medium**, atau **high**).
     * **Plan Deadline**: Tentukan tanggal batas waktu untuk keseluruhan rencana.
 * **Simpan Rencana**: Klik tombol **`🎯 Create Plan`** untuk menyimpan rencana baru Anda.
-
----
-
-Ini adalah panduan komprehensif untuk menggunakan aplikasi Streamlit "Penerjemah Audio" yang Anda buat. Aplikasi ini mengubah ucapan dari file audio menjadi teks, menerjemahkannya, dan bahkan mengubah teks terjemahan menjadi audio yang dapat didengarkan.
 
 ---
 
