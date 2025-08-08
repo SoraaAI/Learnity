@@ -150,10 +150,6 @@ Anda dapat membeli karakter baru jika koin Anda mencukupi, atau mengganti karakt
 * **Data Pengguna**: Semua data, termasuk koin dan karakter yang dimiliki, disimpan dalam file `database/user_data.json`. Perubahan apa pun yang Anda buat dalam aplikasi akan memperbarui file ini secara langsung.
 * **Logout**: Untuk keluar dari akun Anda, cukup klik tombol **`Logout`** di sidebar.
 
----
-
-Anda telah membuat aplikasi Streamlit yang berfungsi sebagai antarmuka untuk menganalisis gambar menggunakan model Gemini. Berikut adalah panduan langkah demi langkah tentang cara menggunakan aplikasi tersebut.
-
 -----
 
 ### 📸 Analisis Foto
