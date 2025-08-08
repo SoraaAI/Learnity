@@ -32,6 +32,18 @@ st.markdown(
     unsafe_allow_html=True,
 )
 
+st.markdown(
+    """
+    <style>
+    div.stButton > button:hover {
+        transform: translateY(-2px);
+        box-shadow: 0 8px 25px rgba(102, 126, 234, 0.4);
+    }
+    </style>
+    """,
+    unsafe_allow_html=True
+)
+
 st.markdown("""
 <style>
     .main-header {
@@ -138,10 +150,11 @@ def display_user_info(user_data):
     """Display user information in a styled card"""
     st.markdown(f"""
     <div class="user-info-card">
-        <p><strong>Highest Score:</strong> {user_data['highest_score']}</p>
-        <p><strong>Coins:</strong> {user_data['coins']}</p>
-        <p><strong>MBTI Type:</strong> {user_data['mbti']}</p>
-        <p><strong>Role:</strong> {user_data['user_role'].title()}</p>
+        <p><strong>Halo,</strong> {user_data['username']}! Nih, data kamu saat ini:<br></p>
+        <p><strong> - Highest Score:</strong> {user_data['highest_score']}</p>
+        <p><strong> - Coins:</strong> {user_data['coins']}</p>
+        <p><strong> - MBTI Type:</strong> {user_data['mbti_display']}</p>
+        <p><strong> - Role:</strong> {user_data['user_role'].title()}</p>
     </div>
     """, unsafe_allow_html=True)
 
@@ -178,12 +191,14 @@ def main():
                             st.error("Invalid credentials. Please try again.")
                     else:
                         st.warning("Please fill in all fields.")
+                if st.button("🚀 Buat akun", use_container_width=True):
+                    pass
         else:
             st.success(f"✅ Logged in as: **{st.session_state.user_data['username']}**")
             with st.sidebar.expander("Data kamu", expanded=True):
                 st.markdown(f"### Welcome, {st.session_state.user_data['username']}!")
                 # st.markdown(f"Highest Score: {st.session_state.user_data['highest_score']}")
-                st.markdown(f"MBTI Type: {st.session_state.user_data['mbti']}")
+                st.markdown(f"MBTI Type: {st.session_state.user_data['mbti_display']}")
                 st.markdown(f"Coins: {st.session_state.user_data['coins']}")
                 mbti = st.session_state.user_data['mbti'].lower()
                 mbti_image_path = f"image/char/{mbti}_char.png"
@@ -191,6 +206,8 @@ def main():
                     st.image(mbti_image_path, use_container_width=True)
                 else:
                     st.sidebar.warning(f"⚠️ Gambar karakter untuk MBTI '{mbti.upper()}' tidak ditemukan di {mbti_image_path}.")
+            if st.button("🧾 Buat akun baru", use_container_width=True):
+                pass
             if st.button("🚪 Logout", use_container_width=True):
                 st.session_state.logged_in = False
                 st.session_state.user_data = None
