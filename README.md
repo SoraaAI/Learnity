@@ -17,15 +17,11 @@ Halo! Selamat datang di Learnity, aplikasi belajar yang siap menemani kamu. Di s
 * **Ringkasan materi** — Cocok kalau ingin memahami inti dari materi tanpa membaca panjang lebar.
 * **Tips dan motivasi belajar** — Memberi semangat dan strategi belajar yang efektif.
 
----
-
 ## ⚙️ Pengaturan Dasar di Sidebar
 
 * **Offline/Online AI** — Pilih mode penggunaan AI: offline untuk hemat kuota atau online untuk akses kemampuan AI penuh.
 * **Reset Memory** — Menghapus riwayat percakapan supaya AI memulai pembicaraan dari awal tanpa pengaruh chat sebelumnya.
 * **Chat History** — Menampilkan daftar percakapan sebelumnya agar kamu bisa meninjau atau melanjutkan obrolan.
-
----
 
 ## 🌐 Konfigurasi Server
 
