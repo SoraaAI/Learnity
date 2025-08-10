@@ -1,4 +1,4 @@
-# Learnity: Tak Peduli Dimana, Ilmu Mengejarmu, Masa Depan Menunggumu
+# Learnity: Tak Peduli Dimana, Ilmu Mengejarmu, Masa Depan Menunggumu.
 
 ---
 
