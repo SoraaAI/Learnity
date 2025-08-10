@@ -4,17 +4,28 @@
 
 ## 📖 Panduan Penggunaan Aplikasi Learnity
 
-Panduan ini membantu Anda memahami fitur-fitur yang tersedia pada aplikasi **Learnity**, mulai dari pengaturan dasar, pengelolaan data, hingga penggunaan fitur canggih seperti AI, voice-to-text, dan penerjemah audio.
+Panduan ini membantu Anda memahami fitur-fitur yang tersedia pada aplikasi **Learnity**, mulai dari fungsi chatbot, pengaturan dasar, pengelolaan data, hingga penggunaan fitur canggih seperti AI, voice-to-text, dan penerjemah audio.
+
+---
+
+## 💬 Fungsi Chatbot Learnity
+
+**Fungsi:** Chatbot Learnity dirancang untuk membantu menjawab pertanyaan, memberikan penjelasan materi, memberi saran belajar, dan mendukung pembelajaran secara interaktif. Chatbot dapat digunakan untuk:
+
+* Tanya jawab seputar pelajaran.
+* Mendapatkan penjelasan konsep sulit.
+* Membuat ringkasan atau penjelasan singkat.
+* Memberi motivasi dan tips belajar.
 
 ---
 
 ## ⚙️ Pengaturan Dasar di Sidebar (Fitur Chatbot)
 
-**Fungsi:** Sidebar adalah panel pengaturan utama untuk mengelola interaksi chatbot Learnity. Semua pengaturan ini memengaruhi cara chatbot bekerja dan berinteraksi dengan pengguna.
+**Fungsi:** Sidebar adalah panel pengaturan utama untuk mengelola cara chatbot bekerja dan berinteraksi dengan pengguna.
 
-* **Offline/Online AI** — Pilih penggunaan AI **offline** atau **online**. Mode offline cocok untuk menjaga privasi dan menghemat koneksi internet, sementara mode online memungkinkan akses ke kemampuan AI yang lebih luas.
-* **Reset Memory** — Menghapus riwayat percakapan agar AI memulai dari awal, berguna jika topik pembicaraan sudah berubah atau ingin menghilangkan konteks lama.
-* **Chat History** — Menampilkan daftar riwayat percakapan yang pernah dilakukan dan memuat ulang percakapan tersebut untuk dilanjutkan.
+* **Offline/Online AI** — Pilih penggunaan AI **offline** atau **online**. Mode offline cocok untuk menjaga privasi dan menghemat koneksi internet, sedangkan mode online memungkinkan akses ke kemampuan AI yang lebih luas.
+* **Reset Memory** — Menghapus riwayat percakapan agar AI memulai dari awal.
+* **Chat History** — Menampilkan daftar percakapan yang pernah dilakukan dan memuat ulang percakapan tersebut.
 
 ---
 
@@ -49,7 +60,7 @@ Panduan ini membantu Anda memahami fitur-fitur yang tersedia pada aplikasi **Lea
 
 ### 🧑‍🎓 Dashboard Siswa
 
-1. **Absensi** — Mencatat kehadiran harian dengan sekali klik.
+1. **Absensi** — Mencatat kehadiran harian.
 2. **Tugas** — Melihat daftar tugas, mengumpulkan jawaban, dan mengecek status pengumpulan.
 
 ### 👩‍🏫 Dashboard Guru
