@@ -12,7 +12,7 @@ Panduan ini membantu Anda memahami fitur-fitur yang tersedia pada aplikasi **Lea
 
 **Fungsi:** Sidebar adalah panel pengaturan utama untuk mengelola interaksi chatbot Learnity. Semua pengaturan ini memengaruhi cara chatbot bekerja dan berinteraksi dengan pengguna.
 
-* **Offline/Online AI** — Pilih penggunaan AI **offline** (tanpa internet, via Ollama) atau **online** (via Gemini). Mode offline cocok untuk menjaga privasi dan menghemat koneksi internet, sementara mode online memungkinkan akses ke kemampuan AI yang lebih luas.
+* **Offline/Online AI** — Pilih penggunaan AI **offline** atau **online**. Mode offline cocok untuk menjaga privasi dan menghemat koneksi internet, sementara mode online memungkinkan akses ke kemampuan AI yang lebih luas.
 * **Reset Memory** — Menghapus riwayat percakapan agar AI memulai dari awal, berguna jika topik pembicaraan sudah berubah atau ingin menghilangkan konteks lama.
 * **Chat History** — Menampilkan daftar riwayat percakapan yang pernah dilakukan dan memuat ulang percakapan tersebut untuk dilanjutkan.
 
@@ -75,7 +75,7 @@ Panduan ini membantu Anda memahami fitur-fitur yang tersedia pada aplikasi **Lea
 
 ## 📸 Analisis Foto
 
-**Fungsi:** Menggunakan AI Gemini untuk memahami isi gambar.
+**Fungsi:** Menggunakan AI untuk memahami isi gambar.
 
 1. **Unggah Gambar** — Format JPG/JPEG/PNG.
 2. **Berikan Prompt** — Ajukan pertanyaan atau instruksi untuk gambar tersebut.
