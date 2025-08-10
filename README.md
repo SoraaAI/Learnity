@@ -36,8 +36,32 @@ Panduan ini membantu Kamu memahami fitur-fitur yang tersedia pada aplikasi **Lea
 
 ## 🎙️ Voice to Text
 
-* **Fungsi:** Ubah suara menjadi teks
-* **Manfaat:** Mempercepat input tanpa mengetik
+**Fungsi:** Mengubah ucapan menjadi teks secara real-time menggunakan fitur perekaman suara langsung di browser. Cocok untuk menghemat waktu mengetik atau saat ingin menginput teks panjang dengan cepat.
+
+### Cara Menggunakan
+
+1. Buka sidebar dan cari menu **Voice to Text**.
+2. Tekan tombol **🎤 Start Recording** untuk mulai merekam suara.
+3. Bicara dengan jelas, usahakan di tempat yang minim kebisingan.
+4. Teks hasil transkrip akan muncul di kotak teks di bawah tombol.
+5. Jika selesai, tekan **⏹️ Stop Recording**.
+6. Tekan **📋 Copy Text** untuk menyalin hasil transkrip.
+
+### Fitur
+
+* **Real-time transcription** — Teks muncul langsung saat berbicara.
+* **Auto-scroll** — Kotak teks akan otomatis bergeser ke bawah jika teks bertambah.
+* **Copy to clipboard** — Salin teks dengan sekali klik.
+* **Bahasa Indonesia support** — Mendukung deteksi ucapan Bahasa Indonesia.
+
+### Tips Penggunaan
+
+💡 **Tips:**
+
+* Fitur hanya berjalan jika perangkat terhubung ke internet.
+* Gunakan di tempat yang sepi untuk hasil yang lebih akurat.
+* Tidak perlu khawatir jika teks panjang, kotak teks dapat discroll.
+* Saat ini, fitur bekerja dengan cara menyalin hasil teks lalu menempelkannya di input chat atau kolom lain.
 
 ---
 
@@ -122,6 +146,6 @@ Setiap 5 soal, dapat crate berisi efek acak:
 * **Gestur:** Unggah/unduh file dengan gerakan tangan
 * **Manual:** Upload/download dengan tombol
 
-------
+---
 
 Panduan ini mencakup seluruh fitur Learnity agar dapat dimanfaatkan maksimal untuk pembelajaran interaktif.
