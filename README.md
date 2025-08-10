@@ -17,15 +17,11 @@ Panduan ini membantu Kamu memahami fitur-fitur yang tersedia pada aplikasi **Lea
 * Ringkasan materi
 * Tips dan motivasi belajar
 
----
-
 ## ⚙️ Pengaturan Dasar di Sidebar
 
 * **Offline/Online AI** — Pilih mode penggunaan
 * **Reset Memory** — Hapus riwayat percakapan
 * **Chat History** — Akses percakapan sebelumnya
-
----
 
 ## 🌐 Konfigurasi Server
 
