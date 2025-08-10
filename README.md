@@ -4,7 +4,7 @@
 
 ## 📖 Panduan Penggunaan Aplikasi Learnity
 
-Panduan ini membantu Anda memahami fitur-fitur yang tersedia pada aplikasi **Learnity**, mulai dari fungsi chatbot, pengaturan dasar, pengelolaan data, hingga penggunaan fitur canggih seperti AI, voice-to-text, dan penerjemah audio.
+Panduan ini membantu Kamu memahami fitur-fitur yang tersedia pada aplikasi **Learnity**, mulai dari fungsi chatbot, pengaturan dasar, pengelolaan data, hingga penggunaan fitur canggih seperti AI, voice-to-text, dan penerjemah audio.
 
 ---
 
@@ -31,11 +31,11 @@ Panduan ini membantu Anda memahami fitur-fitur yang tersedia pada aplikasi **Lea
 
 ## 🌐 Konfigurasi Server
 
-**Fungsi:** Mengubah perangkat Anda menjadi server agar Learnity dapat diakses oleh perangkat lain melalui jaringan lokal.
+**Fungsi:** Mengubah perangkat Kamu menjadi server agar Learnity dapat diakses oleh perangkat lain melalui jaringan lokal.
 
 ### HTTP Server Settings
 
-* **Fungsi** — Memungkinkan Anda membuka Learnity di perangkat lain (misalnya ponsel) menggunakan browser.
+* **Fungsi** — Memungkinkan Kamu membuka Learnity di perangkat lain (misalnya ponsel) menggunakan browser.
 * **Keunggulan** — Ideal jika perangkat utama adalah laptop/PC, tetapi ingin mengakses aplikasi dari ponsel di jaringan Wi-Fi yang sama.
 * **Penggunaan** — Aktifkan fitur server, tentukan **host** dan **port**, lalu gunakan alamat tersebut pada perangkat lain.
 
@@ -43,7 +43,7 @@ Panduan ini membantu Anda memahami fitur-fitur yang tersedia pada aplikasi **Lea
 
 ## 🎙️ Voice to Text
 
-**Fungsi:** Mengubah suara menjadi teks sehingga Anda dapat berinteraksi dengan AI atau membuat catatan hanya dengan berbicara.
+**Fungsi:** Mengubah suara menjadi teks sehingga Kamu dapat berinteraksi dengan AI atau membuat catatan hanya dengan berbicara.
 
 * **Penggunaan** — Aktifkan mode voice-to-text di sidebar, izinkan akses mikrofon, lalu mulai berbicara. Teks akan muncul secara otomatis.
 * **Manfaat** — Mempercepat input tanpa mengetik, berguna saat tangan sedang sibuk atau ingin menghemat waktu.
@@ -98,7 +98,7 @@ Panduan ini membantu Anda memahami fitur-fitur yang tersedia pada aplikasi **Lea
 
 **Fungsi:** Membantu perencanaan aktivitas dengan sistem gamifikasi.
 
-* **📋 My Plans** — Mengelola daftar rencana dan menandai quest yang selesai untuk mendapatkan koin.
+* **📋 My Plans** — Mengelola daftar rencana dan menKamui quest yang selesai untuk mendapatkan koin.
 * **🤖 AI Assistant** — Memberi saran atau membantu membuat rencana melalui AI.
 * **➕ Create Plan** — Membuat rencana baru dengan detail seperti judul, deskripsi, prioritas, dan deadline.
 
@@ -140,4 +140,4 @@ Panduan ini membantu Anda memahami fitur-fitur yang tersedia pada aplikasi **Lea
 
 ---
 
-Panduan ini mencakup seluruh fitur Learnity beserta penjelasannya, sehingga Anda dapat memanfaatkannya secara maksimal untuk mendukung pembelajaran interaktif.
+Panduan ini mencakup seluruh fitur Learnity beserta penjelasannya, sehingga Kamu dapat memanfaatkannya secara maksimal untuk mendukung pembelajaran interaktif.
