@@ -40,7 +40,7 @@ Panduan ini membantu Kamu memahami fitur-fitur yang tersedia pada aplikasi **Lea
 
 ### Cara Menggunakan
 
-1. Buka sidebar dan cari menu **Voice to Text**.
+1. Buka fitur chatbot dan cari sidebar. Di sidebar, gulir kebawah sampai menemukan menu **Voice to Text**.
 2. Tekan tombol **🎤 Start Recording** untuk mulai merekam suara.
 3. Bicara dengan jelas, usahakan di tempat yang minim kebisingan.
 4. Teks hasil transkrip akan muncul di kotak teks di bawah tombol.
