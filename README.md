@@ -1,261 +1,132 @@
-Learnity: Tak Peduli Dimana, Ilmu Mengejarmu, Masa Depan Menunggumu.
+# Learnity: Tak Peduli Dimana, Ilmu Mengejarmu, Masa Depan Menunggumu
 
 ---
 
-## Panduan Menggunakan Fitur Chatbot Learnity
+## 📖 Panduan Penggunaan Aplikasi Learnity
 
-### Pengaturan Dasar di Sidebar
-
-Di sisi kanan (sidebar), terdapat beberapa pilihan pengaturan untuk menyesuaikan pengalaman Anda:
-
-* **Offline/Online AI**: Anda dapat mengatur apakah ingin menggunakan AI secara **offline** atau **online**. Ini memberikan fleksibilitas dalam penggunaan, terutama jika Anda tidak selalu terhubung ke internet.
-* **Reset Memory**: Tombol ini berfungsi untuk **memulai percakapan baru** dengan AI Learnity. Semua riwayat chat sebelumnya akan dihapus dari memori untuk sesi baru.
-* **Chat History**: Fitur ini memungkinkan Anda untuk **melihat riwayat percakapan** yang pernah Anda lakukan. Anda bisa memilih indeks riwayat mana yang ingin Anda lanjutkan.
+Panduan ini membantu Anda memahami fitur-fitur yang tersedia pada aplikasi **Learnity**, mulai dari pengaturan dasar, pengelolaan data, hingga penggunaan fitur canggih seperti AI, voice-to-text, dan penerjemah audio.
 
 ---
 
-### Konfigurasi Server
+## ⚙️ Pengaturan Dasar di Sidebar (Fitur Chatbot)
 
-* **HTTP Server Settings**: Pengaturan ini sangat berguna jika Anda ingin menjadikan perangkat Anda sebagai server.
-    * **Fungsi dan Tujuan**: Mengatur perangkat Anda agar perangkat lain dapat mengakses Learnity melalui jaringan yang sama.
-    * **Keunggulan**: Meskipun Learnity tidak dapat berjalan secara langsung di perangkat seluler seperti Android, Anda bisa menjalankannya di laptop atau komputer. Lalu, dengan mengaktifkan fitur ini, Anda bisa mengakses Learnity dari ponsel Anda melalui tautan localhost yang sama, selama kedua perangkat terhubung ke jaringan yang sama (misalnya, Wi-Fi yang sama).
+**Fungsi:** Sidebar adalah panel pengaturan utama untuk mengelola interaksi chatbot Learnity. Semua pengaturan ini memengaruhi cara chatbot bekerja dan berinteraksi dengan pengguna.
 
----
-
-### Fitur Voice to Text
-
-* **Fungsi**: Fitur ini memungkinkan Anda mengubah ucapan Anda menjadi teks.
-* **Cara Menggunakan**: Cukup tekan tombol **konfigurasi 'Voice to Text'** di sidebar. Deskripsi lengkap mengenai cara penggunaannya sudah tersedia di tab yang sama.
-
-Dengan panduan ini, Anda bisa menggunakan fitur Chatbot di Learnity dengan lebih mudah dan maksimal.
+* **Offline/Online AI** — Pilih penggunaan AI **offline** (tanpa internet, via Ollama) atau **online** (via Gemini). Mode offline cocok untuk menjaga privasi dan menghemat koneksi internet, sementara mode online memungkinkan akses ke kemampuan AI yang lebih luas.
+* **Reset Memory** — Menghapus riwayat percakapan agar AI memulai dari awal, berguna jika topik pembicaraan sudah berubah atau ingin menghilangkan konteks lama.
+* **Chat History** — Menampilkan daftar riwayat percakapan yang pernah dilakukan dan memuat ulang percakapan tersebut untuk dilanjutkan.
 
 ---
 
-### Mengelola Absensi Dan Tugas Sekolah Secara Sederhana.
+## 🌐 Konfigurasi Server
 
-1.  **Buka Sidebar**: Sidebar dapat dibuka dengan mengklik tombol `>` di sudut kiri atas layar.
-2.  **Konfigurasi Server Flask**: Di bagian "⚙️ **Flask Configuration**", Anda bisa menyesuaikan pengaturan server seperti **Host**, **Port**, dan **Max File Size**.
-3.  **Mulai Server Flask**: Klik tombol **"🚀 Start Flask"**. Sebuah pesan sukses akan muncul, dan status server akan berubah menjadi `🟢 Running`.
+**Fungsi:** Mengubah perangkat Anda menjadi server agar Learnity dapat diakses oleh perangkat lain melalui jaringan lokal.
+
+### HTTP Server Settings
+
+* **Fungsi** — Memungkinkan Anda membuka Learnity di perangkat lain (misalnya ponsel) menggunakan browser.
+* **Keunggulan** — Ideal jika perangkat utama adalah laptop/PC, tetapi ingin mengakses aplikasi dari ponsel di jaringan Wi-Fi yang sama.
+* **Penggunaan** — Aktifkan fitur server, tentukan **host** dan **port**, lalu gunakan alamat tersebut pada perangkat lain.
+
+---
+
+## 🎙️ Voice to Text
+
+**Fungsi:** Mengubah suara menjadi teks sehingga Anda dapat berinteraksi dengan AI atau membuat catatan hanya dengan berbicara.
+
+* **Penggunaan** — Aktifkan mode voice-to-text di sidebar, izinkan akses mikrofon, lalu mulai berbicara. Teks akan muncul secara otomatis.
+* **Manfaat** — Mempercepat input tanpa mengetik, berguna saat tangan sedang sibuk atau ingin menghemat waktu.
 
 ---
 
-### 🔐 Login
+## 📅 Absensi & 📚 Tugas Sekolah
 
-Setelah server Flask berjalan, Anda bisa masuk ke dalam sistem.
+### 🔓 Login
 
-1.  **Isi Formulir Login**: Di bagian "🔐 **Login**" pada sidebar, masukkan **Username atau User ID** dan **Password** Anda.
-    * **Contoh Akun Siswa**:
-        * **Username**: `Sora`
-        * **User ID**: `123456789`
-        * **Password**: `123456`
-    * **Contoh Akun Guru**:
-        * **Username**: `Rika`
-        * **User ID**: `987654321`
-        * **Password**: `password`
-2.  **Klik `Login`**: Setelah berhasil, dashboard akan muncul sesuai dengan peran pengguna (siswa atau guru).
-3.  **Logout**: Jika Anda ingin keluar, klik tombol **"Logout"** di sidebar.
-
----
+* **Fungsi** — Mengamankan akses dan mempersonalisasi fitur sesuai peran (siswa/guru).
+* **Contoh Akun Siswa** — Username: `Sora`, ID: `123456789`, Password: `123456`
+* **Contoh Akun Guru** — Username: `Rika`, ID: `987654321`, Password: `password`
 
 ### 🧑‍🎓 Dashboard Siswa
 
-Sebagai siswa, Anda akan memiliki dua tab utama:
-
-#### 1. 📝 Tab "Absensi"
-
-* **Absen Hari Ini**: Untuk mencatat kehadiran, klik tombol **"✅ Absen Sekarang"**. Anda hanya dapat absen satu kali sehari.
-* **Riwayat Absensi**: Di sampingnya, Anda dapat melihat daftar riwayat absensi Anda.
-
-#### 2. 📋 Tab "Tugas"
-
-* **Daftar Tugas**: Semua tugas yang diberikan oleh guru akan ditampilkan di sini.
-* **Mengumpulkan Tugas**:
-    1.  Klik pada tugas untuk membukanya.
-    2.  Isi kotak teks **"Jawaban Tugas:"**.
-    3.  (Opsional) Unggah file dengan tombol **"Upload File"**.
-    4.  Klik tombol **"Kumpulkan Tugas"** untuk mengirimkan jawaban Anda.
-* **Status Tugas**: Anda akan melihat status `✅ Sudah dikumpulkan` atau `⏳ Belum dikumpulkan` pada setiap tugas.
-
----
+1. **Absensi** — Mencatat kehadiran harian dengan sekali klik.
+2. **Tugas** — Melihat daftar tugas, mengumpulkan jawaban, dan mengecek status pengumpulan.
 
 ### 👩‍🏫 Dashboard Guru
 
-Sebagai guru, Anda akan memiliki tiga tab utama untuk mengelola kelas Anda.
-
-#### 1. 👥 Tab "Data Absensi"
-
-* **Data Absensi Siswa**: Anda bisa melihat semua data absensi siswa.
-* **Filter Tanggal**: Gunakan `Filter Tanggal` untuk melihat absensi pada tanggal tertentu.
-* **Statistik Absensi**: Lihat ringkasan data absensi seperti total absensi, jumlah siswa aktif, dan absensi hari ini.
-
-#### 2. 📝 Tab "Kelola Tugas"
-
-* **Tambah Tugas Baru**:
-    1.  Buka bagian **"➕ Tambah Tugas Baru"**.
-    2.  Isi **Judul Tugas**, **Deskripsi**, dan **Deadline**.
-    3.  Klik **"Tambah Tugas"** untuk membuat tugas baru.
-* **Daftar Tugas**: Semua tugas yang telah Anda buat akan muncul di bagian ini. Anda bisa melihat deskripsi, deadline, dan jumlah siswa yang sudah mengumpulkan.
-
-#### 3. 📊 Tab "Submission"
-
-* **Submission Tugas**: Anda bisa melihat semua jawaban yang telah dikumpulkan siswa untuk setiap tugas.
-* **Detail Submission**: Setiap submission akan menampilkan nama siswa, waktu pengumpulan, jawaban teks, dan nama file yang dilampirkan (jika ada).
+1. **Data Absensi** — Memantau kehadiran siswa, memfilter tanggal, dan melihat statistik.
+2. **Kelola Tugas** — Membuat, mengedit, dan menghapus tugas.
+3. **Submission** — Meninjau jawaban siswa dalam bentuk teks atau file.
 
 ---
 
-### 🎭Beli Karakter
+## 🛒 Beli Karakter
 
-Aplikasi ini menggunakan sistem koin untuk membeli karakter baru. Setiap karakter memiliki harga yang berbeda. Karakter yang sudah dibeli dapat Anda gunakan sebagai karakter aktif.
+**Fungsi:** Memberi motivasi belajar dengan sistem hadiah berupa karakter yang dapat dibeli menggunakan koin.
 
-#### 1. Masuk ke Aplikasi
+1. **Masuk** — Gunakan akun yang terdaftar.
+2. **Profil Pengguna** — Menampilkan informasi akun dan koin.
+3. **Membeli Karakter** — Menggunakan koin untuk membeli karakter baru.
+4. **Menggunakan Karakter** — Mengatur karakter aktif sesuai preferensi.
 
-Halaman utama aplikasi adalah halaman login. Untuk memulai, Anda harus masuk dengan salah satu akun yang ada di database.
-
-* **Masukkan kredensial**: Gunakan `Username` atau `User ID` dan `Password` yang valid dari file `database/user_data.json`.
-    * **Contoh Akun**: `Sora` dengan `password` `123456`.
-* **Klik `Login`**: Setelah berhasil, Anda akan diarahkan ke halaman utama toko karakter.
-
-#### 2. Menjelajahi Dashboard & Profil Pengguna
-
-Di halaman utama, Anda akan melihat dua bagian utama: toko karakter dan profil pengguna.
-
-* **Profil Pengguna (Sidebar)**: Di sisi kiri, Anda akan menemukan sidebar yang menampilkan informasi akun Anda.
-    * **Username**: Nama pengguna Anda.
-    * **User ID**: ID unik Anda.
-    * **Role**: Peran Anda dalam sistem (siswa atau guru).
-    * **Coins**: Jumlah koin yang Anda miliki saat ini.
-    * **Current Character**: Karakter yang sedang Anda gunakan.
-* **Toko Karakter**: Bagian utama di sisi kanan menampilkan semua karakter yang tersedia untuk dibeli.
-    * Setiap karakter ditampilkan dengan nama, gambar (jika tersedia), dan harga dalam koin.
-    * Anda dapat melihat karakter mana yang sudah Anda miliki atau sedang Anda gunakan.
-
-#### 3. Membeli & Menggunakan Karakter
-
-Anda dapat membeli karakter baru jika koin Anda mencukupi, atau mengganti karakter yang sedang Anda gunakan dengan yang sudah Anda miliki.
-
-* **Membeli Karakter**:
-    1.  Cari karakter yang Anda suka di toko.
-    2.  Jika Anda memiliki cukup koin, tombol **`Buy [Nama Karakter]`** akan muncul.
-    3.  Klik tombol tersebut untuk membeli karakter. Koin Anda akan berkurang dan karakter akan ditambahkan ke koleksi Anda.
-* **Menggunakan Karakter**:
-    1.  Jika Anda sudah memiliki karakter, tombol **`Use [Nama Karakter]`** akan muncul.
-    2.  Klik tombol ini untuk menjadikan karakter tersebut sebagai karakter aktif Anda.
-    3.  Setelah karakter berhasil diganti, status **`✅ Currently Using`** akan muncul di bawah gambar karakter tersebut.
+> **Catatan:** Gambar karakter harus tersedia di folder `image/char` agar dapat ditampilkan.
 
 ---
 
-### 📝 Catatan Penting
+## 📸 Analisis Foto
 
-* **Gambar Karakter**: Gambar karakter diambil dari folder `image/char`. Pastikan file gambar seperti `ISFJ_char.png` dan lainnya tersedia di folder tersebut untuk ditampilkan. Jika tidak, akan muncul placeholder.
-* **Data Pengguna**: Semua data, termasuk koin dan karakter yang dimiliki, disimpan dalam file `database/user_data.json`. Perubahan apa pun yang Anda buat dalam aplikasi akan memperbarui file ini secara langsung.
-* **Logout**: Untuk keluar dari akun Anda, cukup klik tombol **`Logout`** di sidebar.
+**Fungsi:** Menggunakan AI Gemini untuk memahami isi gambar.
 
------
-
-### 📸 Analisis Foto
-
-1.  **Unggah Gambar**:
-
-      * Klik tombol **"Pilih sebuah gambar..."**.
-      * Pilih file gambar dari komputer Anda dengan format **JPG**, **JPEG**, atau **PNG**.
-      * Gambar yang Anda unggah akan langsung ditampilkan di bawah tombol.
-
-2.  **Berikan Prompt**:
-
-      * Di kotak teks **"Berikan prompt atau pertanyaan Anda tentang gambar ini:"**, tuliskan pertanyaan atau perintah yang Anda inginkan.
-      * **Contoh prompt**:
-          * "Jelaskan apa yang terjadi dalam gambar ini."
-          * "Apa saja objek yang terlihat di foto ini?"
-          * "Apakah gambar ini menunjukkan pemandangan siang atau malam?"
-          * "Berikan deskripsi kreatif untuk gambar ini."
-
------
-
-#### 3\. Menganalisis Gambar
-
-1.  **Klik Tombol**: Klik tombol **"Analisis Gambar"** untuk mengirimkan gambar dan prompt Anda ke model Gemini.
-2.  **Proses Analisis**: Aplikasi akan menampilkan status **"Sedang menganalisis gambar dengan Gemini..."** saat menunggu respons.
-3.  **Lihat Hasil**: Setelah proses selesai, hasilnya akan ditampilkan di bagian **"Hasil Analisis Gemini"**. Anda akan melihat teks yang berisi jawaban atau deskripsi dari AI Gemini berdasarkan prompt yang Anda berikan.
+1. **Unggah Gambar** — Format JPG/JPEG/PNG.
+2. **Berikan Prompt** — Ajukan pertanyaan atau instruksi untuk gambar tersebut.
+3. **Analisis** — AI akan memberikan deskripsi atau jawaban berdasarkan isi gambar.
 
 ---
 
-### 🚀 Planning Quest
+## 🗺️ Planning Quest
 
-#### 1. Dashboard Utama
-* **`📋 My Plans`**: Di sini Anda bisa melihat, mengedit, dan menghapus semua rencana quest yang telah Anda buat. Anda juga dapat menandai item quest sebagai selesai untuk mendapatkan koin.
-* **`🤖 AI Assistant`**: Tab ini adalah antarmuka untuk berinteraksi dengan asisten AI.
-* **`➕ Create Plan`**: Gunakan tab ini untuk membuat rencana quest baru dengan detail yang spesifik.
+**Fungsi:** Membantu perencanaan aktivitas dengan sistem gamifikasi.
 
-#### 2. Mengelola Rencana Quest
-Di tab **`📋 My Plans`**, Anda dapat melihat daftar rencana yang sudah dibuat.
-* **Lihat Detail**: Setiap rencana dapat diperluas untuk melihat deskripsi, tanggal dibuat, tenggat waktu, dan item-item quest di dalamnya.
-* **Selesaikan Quest**: Untuk setiap item quest, ada tombol **`Complete`**. Setelah Anda menyelesaikannya, klik tombol ini untuk menandainya sebagai selesai dan secara otomatis mendapatkan **koin** sebagai hadiah.
-    * **Prioritas Rendah**: 🪙 +2 koin
-    * **Prioritas Sedang**: 🪙 +5 koin
-    * **Prioritas Tinggi**: 🪙 +8 koin
-* **Hapus Rencana**: Jika Anda ingin menghapus seluruh rencana, gunakan tombol **`🗑️ Delete Plan`**.
+* **📋 My Plans** — Mengelola daftar rencana dan menandai quest yang selesai untuk mendapatkan koin.
+* **🤖 AI Assistant** — Memberi saran atau membantu membuat rencana melalui AI.
+* **➕ Create Plan** — Membuat rencana baru dengan detail seperti judul, deskripsi, prioritas, dan deadline.
 
-#### 3. Berinteraksi dengan AI Assistant
-Di tab **`🤖 AI Assistant`**, Anda dapat mengobrol dengan asisten AI.
+**Reward Koin:**
 
-* **Pilih Mode AI**: Di sidebar, Anda dapat memilih antara dua mode:
-    * **Offline**: Menggunakan model AI lokal (Ollama) yang berjalan di komputer Anda. Ini tidak memerlukan koneksi internet, tetapi Anda harus sudah menginstal dan menjalankan Ollama.
-    * **Online**: Menggunakan model AI Gemini dari Google. Ini memerlukan koneksi internet dan kunci API Gemini yang valid.
-* **Mulai Obrolan**: Tuliskan pertanyaan atau prompt Anda di kotak chat dan tekan Enter. Asisten AI akan merespons pertanyaan Anda.
-
-#### 4. Membuat Rencana Quest Baru
-Di tab **`➕ Create Plan`**, Anda bisa membuat rencana baru dari awal.
-
-* **Tambahkan Item Quest**: Anda dapat menambahkan beberapa item quest ke dalam satu rencana. Setiap item quest memiliki judul dan tenggat waktunya sendiri.
-* **Isi Detail Rencana**:
-    * **Plan Title**: Beri nama rencana Anda (contoh: "Belajar Bahasa Inggris").
-    * **Plan Description**: Deskripsikan tujuan besar dari rencana Anda.
-    * **Priority Level**: Tetapkan prioritas (**low**, **medium**, atau **high**).
-    * **Plan Deadline**: Tentukan tanggal batas waktu untuk keseluruhan rencana.
-* **Simpan Rencana**: Klik tombol **`🎯 Create Plan`** untuk menyimpan rencana baru Anda.
+* Prioritas rendah — 🪙 +2 koin
+* Prioritas sedang — 🪙 +5 koin
+* Prioritas tinggi — 🪙 +8 koin
 
 ---
 
-### 🎙️ Penerjemah Audio
+## 🌍 Penerjemah Audio
 
-Learnity memproses file audio Anda melalui tiga langkah utama: pengenalan ucapan, terjemahan, dan sintesis ucapan.
+**Fungsi:** Mengubah ucapan dalam audio menjadi teks, menerjemahkannya, dan menghasilkan kembali dalam bentuk audio.
 
-#### 1. Pengaturan Awal (Sidebar)
-Sebelum memulai, gunakan sidebar di sisi kiri untuk mengatur preferensi Anda:
-1.  **Pilih Bahasa Sumber**: Di bagian "**Dari Bahasa:**", pilih bahasa yang diucapkan dalam file audio yang akan Anda unggah.
-2.  **Pilih Bahasa Target**: Di bagian "**Ke Bahasa:**", pilih bahasa yang Anda inginkan untuk terjemahan.
-3.  **Pengaturan Audio (Opsional)**: Anda dapat mencentang kotak **"Putar TTS dengan Lambat"** jika Anda ingin audio terjemahan dimainkan dengan tempo yang lebih lambat.
-
----
-
-#### 2. Unggah dan Konversi Audio
-Di bagian utama aplikasi, Anda memiliki dua opsi untuk menginput audio.
-1.  **Opsi 1: Rekam Audio**
-    * Aplikasi ini memberikan instruksi untuk merekam audio menggunakan fitur bawaan browser atau perangkat Anda.
-    * Setelah merekam, simpan file audio tersebut ke komputer Anda.
-    * Lanjutkan ke **Opsi 2** untuk mengunggah file yang telah Anda rekam.
-2.  **Opsi 2: Unggah File Audio**
-    * Klik tombol "**📁 Unggah file audio**" untuk memilih file audio (format **.wav** direkomendasikan) dari komputer Anda.
-    * Setelah mengunggah, Anda akan melihat pemutar audio.
-    * Klik tombol **"🔄 Konversi Ucapan ke Teks"**. Aplikasi akan memproses audio Anda dan mengekstrak teks.
-    * Tunggu hingga pesan **"✅ Teks berhasil diekstrak!"** muncul. Jika ada masalah, Anda akan melihat pesan kesalahan yang menunjukkan penyebabnya.
+1. **Pilih Bahasa** — Atur bahasa sumber dan target.
+2. **Unggah/Rekam Audio** — Format `.wav` direkomendasikan.
+3. **Konversi ke Teks** — AI mengenali ucapan menjadi teks.
+4. **Terjemahkan** — Edit teks jika perlu, lalu terjemahkan.
+5. **Buat Audio Terjemahan** — Mendengarkan hasil terjemahan dalam bentuk audio.
 
 ---
 
-#### 3. Terjemahkan Teks
-Setelah audio berhasil dikonversi menjadi teks, Anda akan pindah ke langkah berikutnya.
-1.  **Tinjau dan Edit Teks Asli**: Di bagian **"Teks yang Diekstrak"**, Anda dapat melihat teks yang dihasilkan. Jika ada kesalahan, Anda bisa mengeditnya langsung di kotak teks yang tersedia.
-2.  **Terjemahkan**: Setelah teks asli sesuai, klik tombol **"🔄 Terjemahkan Teks"**. Aplikasi akan menggunakan Google Translate untuk menerjemahkan teks tersebut ke bahasa target yang Anda pilih.
-3.  **Lihat Hasil Terjemahan**: Teks terjemahan akan muncul di bagian **"Terjemahan"**.
+## ✋ Upload File: Manual & Gesture Tracking
+
+### Mode Gestur
+
+* **Fungsi** — Mengunggah/unduh file dengan gerakan tangan melalui webcam.
+* **Kontrol** — 1 jari untuk unggah, 3 jari untuk unduh.
+
+### Mode Manual
+
+* Unggah file menggunakan tombol **Upload**.
+* Unduh file dengan tombol **Download Files**.
+
+### Server Opsional
+
+* **Fungsi** — Menjalankan server HTTP untuk mengelola file melalui browser di jaringan lokal.
 
 ---
 
-#### 4. Buat dan Unduh Audio Terjemahan (Opsional)
-Jika Anda ingin mendengarkan terjemahan dalam bentuk audio:
-1.  **Buat Ucapan**: Klik tombol **"🗣️ Buat Ucapan"**. Aplikasi akan mensintesis ucapan dari teks terjemahan.
-2.  **Dengarkan dan Unduh**: Sebuah pemutar audio akan muncul, memungkinkan Anda untuk mendengarkan hasil terjemahan. Anda juga dapat menggunakan tombol **"📥 Unduh Audio Terjemahan"** untuk menyimpan file MP3 tersebut ke komputer Anda.
-
----
-
-#### 5. Ringkasan dan Reset
-Di bagian bawah aplikasi, ada bagian "**Ringkasan Hasil**" yang menampilkan teks asli dan terjemahan secara berdampingan. Jika Anda ingin memulai dari awal, klik tombol **"🗑️ Hapus Semua Hasil"** untuk mereset seluruh aplikasi.
+Panduan ini mencakup seluruh fitur Learnity beserta penjelasannya, sehingga Anda dapat memanfaatkannya secara maksimal untuk mendukung pembelajaran interaktif.
