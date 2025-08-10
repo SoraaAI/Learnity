@@ -19,7 +19,7 @@ Halo! Selamat datang di Learnity, aplikasi belajar yang siap menemani kamu. Di s
 
 ## ⚙️ Pengaturan Dasar di Sidebar
 
-* **Offline/Online AI** — Pilih mode penggunaan AI: offline untuk hemat kuota atau online untuk akses kemampuan AI penuh.
+* **Offline/Online AI** — Pilih mode penggunaan AI: offline agar AI dapat diakses tanpa jaringan internet atau online untuk akses kemampuan AI penuh.
 * **Reset Memory** — Menghapus riwayat percakapan supaya AI memulai pembicaraan dari awal tanpa pengaruh chat sebelumnya.
 * **Chat History** — Menampilkan daftar percakapan sebelumnya agar kamu bisa meninjau atau melanjutkan obrolan.
 
