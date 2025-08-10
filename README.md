@@ -1,143 +1,127 @@
-# Learnity: Tak Peduli Dimana, Ilmu Mengejarmu, Masa Depan Menunggumu.
+# Learnity: Tak Peduli Dimana, Ilmu Mengejarmu, Masa Depan Menunggumu
 
 ---
 
 ## 📖 Panduan Penggunaan Aplikasi Learnity
 
-Panduan ini membantu Kamu memahami fitur-fitur yang tersedia pada aplikasi **Learnity**, mulai dari fungsi chatbot, pengaturan dasar, pengelolaan data, hingga penggunaan fitur canggih seperti AI, voice-to-text, dan penerjemah audio.
+Panduan ini membantu Kamu memahami fitur-fitur yang tersedia pada aplikasi **Learnity**, mulai dari fungsi chatbot, pengaturan dasar, pengelolaan data, hingga fitur canggih seperti AI, voice-to-text, penerjemah audio, serta game edukasi interaktif.
 
 ---
 
 ## 💬 Fungsi Chatbot Learnity
 
-**Fungsi:** Chatbot Learnity dirancang untuk membantu menjawab pertanyaan, memberikan penjelasan materi, memberi saran belajar, dan mendukung pembelajaran secara interaktif. Chatbot dapat digunakan untuk:
+**Fungsi:** Membantu menjawab pertanyaan, memberikan penjelasan materi, memberi saran belajar, dan mendukung pembelajaran interaktif.
 
-* Tanya jawab seputar pelajaran.
-* Mendapatkan penjelasan konsep sulit.
-* Membuat ringkasan atau penjelasan singkat.
-* Memberi motivasi dan tips belajar.
+* Tanya jawab seputar pelajaran
+* Penjelasan konsep sulit
+* Ringkasan materi
+* Tips dan motivasi belajar
 
 ---
 
-## ⚙️ Pengaturan Dasar di Sidebar (Fitur Chatbot)
+## ⚙️ Pengaturan Dasar di Sidebar
 
-**Fungsi:** Sidebar adalah panel pengaturan utama untuk mengelola cara chatbot bekerja dan berinteraksi dengan pengguna.
-
-* **Offline/Online AI** — Pilih penggunaan AI **offline** atau **online**. Mode offline cocok untuk menjaga privasi dan menghemat koneksi internet, sedangkan mode online memungkinkan akses ke kemampuan AI yang lebih luas.
-* **Reset Memory** — Menghapus riwayat percakapan agar AI memulai dari awal.
-* **Chat History** — Menampilkan daftar percakapan yang pernah dilakukan dan memuat ulang percakapan tersebut.
+* **Offline/Online AI** — Pilih mode penggunaan
+* **Reset Memory** — Hapus riwayat percakapan
+* **Chat History** — Akses percakapan sebelumnya
 
 ---
 
 ## 🌐 Konfigurasi Server
 
-**Fungsi:** Mengubah perangkat Kamu menjadi server agar Learnity dapat diakses oleh perangkat lain melalui jaringan lokal.
-
-### HTTP Server Settings
-
-* **Fungsi** — Memungkinkan Kamu membuka Learnity di perangkat lain (misalnya ponsel) menggunakan browser.
-* **Keunggulan** — Ideal jika perangkat utama adalah laptop/PC, tetapi ingin mengakses aplikasi dari ponsel di jaringan Wi-Fi yang sama.
-* **Penggunaan** — Aktifkan fitur server, tentukan **host** dan **port**, lalu gunakan alamat tersebut pada perangkat lain.
+* **Fungsi:** Mengakses Learnity dari perangkat lain di jaringan lokal
+* **Penggunaan:** Atur host dan port lalu akses dari perangkat lain
 
 ---
 
 ## 🎙️ Voice to Text
 
-**Fungsi:** Mengubah suara menjadi teks sehingga Kamu dapat berinteraksi dengan AI atau membuat catatan hanya dengan berbicara.
-
-* **Penggunaan** — Aktifkan mode voice-to-text di sidebar, izinkan akses mikrofon, lalu mulai berbicara. Teks akan muncul secara otomatis.
-* **Manfaat** — Mempercepat input tanpa mengetik, berguna saat tangan sedang sibuk atau ingin menghemat waktu.
+* **Fungsi:** Ubah suara menjadi teks
+* **Manfaat:** Mempercepat input tanpa mengetik
 
 ---
 
 ## 📅 Absensi & 📚 Tugas Sekolah
 
-### 🔓 Login
-
-* **Fungsi** — Mengamankan akses dan mempersonalisasi fitur sesuai peran (siswa/guru).
-* **Contoh Akun Siswa** — Username: `Sora`, ID: `123456789`, Password: `123456`
-* **Contoh Akun Guru** — Username: `Rika`, ID: `987654321`, Password: `password`
+**Login:** Mengamankan akses sesuai peran (siswa/guru)
 
 ### 🧑‍🎓 Dashboard Siswa
 
-1. **Absensi** — Mencatat kehadiran harian.
-2. **Tugas** — Melihat daftar tugas, mengumpulkan jawaban, dan mengecek status pengumpulan.
+* Absensi
+* Tugas sekolah
 
 ### 👩‍🏫 Dashboard Guru
 
-1. **Data Absensi** — Memantau kehadiran siswa, memfilter tanggal, dan melihat statistik.
-2. **Kelola Tugas** — Membuat, mengedit, dan menghapus tugas.
-3. **Submission** — Meninjau jawaban siswa dalam bentuk teks atau file.
+* Data absensi
+* Kelola tugas
+* Tinjau submission
 
 ---
 
 ## 🛒 Beli Karakter
 
-**Fungsi:** Memberi motivasi belajar dengan sistem hadiah berupa karakter yang dapat dibeli menggunakan koin.
+* Membeli karakter dengan koin
+* Mengatur karakter aktif
 
-1. **Masuk** — Gunakan akun yang terdaftar.
-2. **Profil Pengguna** — Menampilkan informasi akun dan koin.
-3. **Membeli Karakter** — Menggunakan koin untuk membeli karakter baru.
-4. **Menggunakan Karakter** — Mengatur karakter aktif sesuai preferensi.
+---
 
-> **Catatan:** Gambar karakter harus tersedia di folder `image/char` agar dapat ditampilkan.
+## 🎯 Game Quiz & Crate System
+
+**Fungsi:** Kuis interaktif dengan poin, nyawa, koin, dan crate berisi efek acak.
+
+### Mode Pengguna
+
+* **Siswa:** Bermain kuis dan mendapat poin/koin
+* **Guru:** Bermain + kelola soal
+
+### Aturan Dasar
+
+* **Nyawa:** Easy 💚 5 | Medium 💛 3 | Hard ❤️ 1
+* **Poin & Koin:** Didapat dari jawaban benar
+* **Target:** Jawab pertanyaan sampai jumlah target tanpa habis nyawa
+
+### Crate System
+
+Setiap 5 soal, dapat crate berisi efek acak:
+
+* **Buff:** 💚 Heart Boost, 🪙 Coin Boost, ⭐ Score Boost, 🍀 Lucky Charm, 💰 Coin Rain, 🛡️ Break, 🕐 Time Warp
+* **Debuff:** 💔 Heart Loss, 💸 Coin Loss, 💀 Disaster!, 🌀 Confusion
+* **Neutral:** ⚡ Double Trouble
+
+### Mode Guru
+
+* Tambah, edit, hapus soal
+* Buat kategori/mata pelajaran
+* Soal disimpan di `quiz_data.json`
 
 ---
 
 ## 📸 Analisis Foto
 
-**Fungsi:** Menggunakan AI untuk memahami isi gambar.
-
-1. **Unggah Gambar** — Format JPG/JPEG/PNG.
-2. **Berikan Prompt** — Ajukan pertanyaan atau instruksi untuk gambar tersebut.
-3. **Analisis** — AI akan memberikan deskripsi atau jawaban berdasarkan isi gambar.
+* Unggah gambar dan beri prompt
+* AI akan mendeskripsikan/menjawab berdasarkan gambar
 
 ---
 
 ## 🗺️ Planning Quest
 
-**Fungsi:** Membantu perencanaan aktivitas dengan sistem gamifikasi.
-
-* **📋 My Plans** — Mengelola daftar rencana dan menKamui quest yang selesai untuk mendapatkan koin.
-* **🤖 AI Assistant** — Memberi saran atau membantu membuat rencana melalui AI.
-* **➕ Create Plan** — Membuat rencana baru dengan detail seperti judul, deskripsi, prioritas, dan deadline.
-
-**Reward Koin:**
-
-* Prioritas rendah — 🪙 +2 koin
-* Prioritas sedang — 🪙 +5 koin
-* Prioritas tinggi — 🪙 +8 koin
+* Mengelola rencana seperti quest game
+* Reward koin sesuai prioritas
 
 ---
 
 ## 🌍 Penerjemah Audio
 
-**Fungsi:** Mengubah ucapan dalam audio menjadi teks, menerjemahkannya, dan menghasilkan kembali dalam bentuk audio.
-
-1. **Pilih Bahasa** — Atur bahasa sumber dan target.
-2. **Unggah/Rekam Audio** — Format `.wav` direkomendasikan.
-3. **Konversi ke Teks** — AI mengenali ucapan menjadi teks.
-4. **Terjemahkan** — Edit teks jika perlu, lalu terjemahkan.
-5. **Buat Audio Terjemahan** — Mendengarkan hasil terjemahan dalam bentuk audio.
+* Konversi ucapan di audio menjadi teks
+* Terjemahkan dan hasilkan kembali dalam audio
 
 ---
 
 ## ✋ Upload File: Manual & Gesture Tracking
 
-### Mode Gestur
+* **Gestur:** Unggah/unduh file dengan gerakan tangan
+* **Manual:** Upload/download dengan tombol
 
-* **Fungsi** — Mengunggah/unduh file dengan gerakan tangan melalui webcam.
-* **Kontrol** — 1 jari untuk unggah, 3 jari untuk unduh.
+------
 
-### Mode Manual
-
-* Unggah file menggunakan tombol **Upload**.
-* Unduh file dengan tombol **Download Files**.
-
-### Server Opsional
-
-* **Fungsi** — Menjalankan server HTTP untuk mengelola file melalui browser di jaringan lokal.
-
----
-
-Panduan ini mencakup seluruh fitur Learnity beserta penjelasannya, sehingga Kamu dapat memanfaatkannya secara maksimal untuk mendukung pembelajaran interaktif.
+Panduan ini mencakup seluruh fitur Learnity agar dapat dimanfaatkan maksimal untuk pembelajaran interaktif.
