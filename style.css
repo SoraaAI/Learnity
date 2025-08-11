@@ -1,0 +1,83 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+}
+
+.svg {
+    width: clamp(5px, 10vw, 40px);
+}
+
+.header-logo {
+    margin-left: 20px;
+    margin-top: 20px;
+}
+
+.container {
+    margin-top: 100px;
+    display: flex;
+    justify-content: center;
+}
+
+.container-header h2 {
+    position: absolute;
+    text-align: center;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 30px;
+}
+
+.container-header {
+    background-color: #dcedff;
+    width: 70vw;
+    height: 20vw;
+    border-radius: 30px;
+    position: relative;
+}
+
+.parent-cards {
+    display: flex;
+    justify-content: center;
+}
+
+.cards {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 50px;
+    margin-top: 10px;
+}
+
+.card{
+    width: 30vw;
+    /* border: 1px solid red; */
+}
+
+/* .content {
+    display: flex;
+    justify-content: center;
+} */
+
+.content-judul {
+    text-align: center;
+    color: #818181;
+    font-family: 'Inter', sans-serif;
+    /* font-size: 1.6rem; */
+    font-size: clamp(0.5rem, 6vw, 1.6rem);
+}
+
+span {
+    background-image: linear-gradient(to right, #B3D9FF, #A3A1D8);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.container-karakter {
+    margin-right: -50px;
+    margin-top: -133px;
+    display: flex;
+    /* border: 1px solid red; */
+}
+
+.container-karakter img {
+    width: 30vw;
+}
