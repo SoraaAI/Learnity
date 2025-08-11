@@ -156,4 +156,4 @@ Panduan ini mencakup seluruh fitur Learnity agar dapat dimanfaatkan maksimal unt
 2.	Penerjemah suara real-time: Learnity juga sedang mengembangkan fitur penerjemah suara agar bisa digunakan langsung secara real-time.
 3.	Pembuatan kuis otomatis: Learnity sejauh ini hanya mendukung pembuatan kuis manual, sedang dikembangkan agar dapat memungkinkan guru membuat kuis otomatis dengan bantuan AI.
 
-Untuk sejauh ini, meski belum sepenuhnya terpenuhi, versi awal dari Learnity bisa kamu download dengan menekan link ini yaa!: https://raw.githubusercontent.com/SoraaAI/Learnity/master/Learnity.zip
+Untuk sejauh ini, meski belum sepenuhnya terpenuhi, versi awal dari Learnity bisa kamu download dengan menekan link ini yaa!: https://raw.githubusercontent.com/SoraaAI/Learnity/master/Download%20Learnity.exe
