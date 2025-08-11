@@ -1,4 +1,4 @@
-# Learnity: Tak Peduli Dimana, Ilmu Mengejarmu, Masa Depan Menunggumu.
+  # Learnity: Tak Peduli Dimana, Ilmu Mengejarmu, Masa Depan Menunggumu.
 
 ---
 
@@ -6,9 +6,13 @@
 
 Halo! Selamat datang di Learnity, aplikasi belajar yang siap menemani kamu. Di sini, belajar itu nggak ribet dan bisa sambil seru-seruan. Panduan ini akan ngebantu kamu memahami semua fitur yang ada, dari chatbot pintar, voice-to-text, sampai game kuis yang bikin nagih.
 
+Learnity dirancang dengan fleksibilitas, memungkinkan pengguna untuk tetap belajar dan berinteraksi bahkan tanpa koneksi internet. Beberapa fitur utama, seperti chatbot, interaksi dengan karakter virtual, dan perencanaan belajar, dapat digunakan secara penuh dalam mode offline.
+
+Namun, sayangnya, untuk fitur yang memerlukan pemrosesan data lebih kompleks dan akses ke basis data yang lebih besar, koneksi internet diperlukan. Fitur-fitur ini meliputi analisis gambar, fitur voice-to-text dan text-to-voice, serta penerjemahan suara real-time. Dengan adanya koneksi, kamu baru bisa memanfaatkan kemampuan penuh AI untuk mendapatkan pengalaman belajar yang lebih mendalam.
+
 ---
 
-## 💬 Fungsi Chatbot Learnity
+## 💬 Chatbot Learnity
 
 **Fungsi:** Membantu menjawab pertanyaan, memberikan penjelasan materi, memberi saran belajar, dan mendukung pembelajaran interaktif.
 
