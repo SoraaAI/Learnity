@@ -152,4 +152,8 @@ Setiap 5 soal, pemain akan mendapatkan **crate** berisi efek acak yang bisa memb
 
 Panduan ini mencakup seluruh fitur Learnity agar dapat dimanfaatkan maksimal untuk pembelajaran interaktif. Selain itu, sejauh ini kami juga mempunyai beberapa rencana untuk direalisasikan dalam Learnity. Antara lain:
 
-1. Tema: Learnity sedang dalam pengembangan untuk menambahkan fitur mengganti tema dengan banyak kustomisasi yang bisa diubah oleh user atau pengguna per preset.
+1.	Tema: Learnity sedang dalam pengembangan untuk menambahkan fitur mengganti tema dengan banyak kustomisasi yang bisa diubah oleh user atau pengguna per preset.
+2.	Penerjemah suara real-time: Learnity juga sedang mengembangkan fitur penerjemah suara agar bisa digunakan langsung secara real-time.
+3.	Pembuatan kuis otomatis: Learnity sejauh ini hanya mendukung pembuatan kuis manual, sedang dikembangkan agar dapat memungkinkan guru membuat kuis otomatis dengan bantuan AI.
+
+Untuk sejauh ini, meski belum sepenuhnya terpenuhi, versi awal dari Learnity bisa kamu download dengan menekan link ini yaa!: https://raw.githubusercontent.com/SoraaAI/Learnity/master/Learnity.zip
