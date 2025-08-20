@@ -1,0 +1,15 @@
+SpeechRecognition
+pyttsx3
+pyaudio
+requests
+streamlit
+Pillow
+pywebview
+opencv-python
+mediapipe
+pygetwindow
+pyautogui
+flask
+flask_cors
+numpy
+google-generativeai
